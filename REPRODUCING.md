@@ -55,3 +55,13 @@ Preceding `final_previous`, `final_baseline`, `final_original` and other compara
 Il pacchetto conserva tutti i risultati JSON e i cinque CSV, compresi gli episodi falliti e i manifest congelati. I checkpoint PPO si ricostruiscono dal progetto originale. I modelli TorchScript pubblici hanno gli stessi tensori e lo stesso codice dei modelli congelati. Gli hash pubblici cambiano soltanto per il confezionamento con percorsi di debug relativi. Per verificare i numeri si usa `scripts/check_archive.py`; per misurare nuovamente il comportamento si usa `scripts/replay.py`. Le nuove misure vengono salvate in `reruns/`.
 
 The historical PPO study was written by Manuel Andruccioli, Tommaso Patriti and Giacomo Totaro at the University of Bologna. The six phases in this repository are subsequent simulation experiments. [Original project report](https://github.com/zucchero-sintattico/svs-f1tenth_gym/blob/9381a13eec6b182ff38e4fba55a105cf94219da6/report/index.tex)
+
+## Article figures · Figure dell’articolo
+
+The outcome and pace plots use the archived paired results. To regenerate them from the repository root run `python tools/article_results_figures.py` with Matplotlib installed. The Budapest and Sochi illustrations use the compact derived data in `results/article/`; run `python tools/article_repair_figure.py` and `python tools/article_track_figure.py`. The figures include small transformed map excerpts. [Pinned map source](https://github.com/f1tenth/f1tenth_racetracks/tree/3f581789c749261ae36fc4fef19a81372acc3ecf) · [Map licence](results/article/track-map-COPYING.txt)
+
+I grafici di esiti e tempi si rigenerano dai risultati appaiati archiviati. Le figure di Budapest e Sochi usano i dati compatti in `results/article/`, con piccoli estratti trasformati delle mappe. I tre comandi sopra rigenerano entrambe le lingue.
+
+After rebuilding the historical PPO edits, `.venv/bin/python tools/article_repair_figure.py --verify-weights .` compares both checkpoints on the twelve original Budapest scans saved with the figure. At step 610 it reproduces normalised steering +1.000000 and +0.445027.
+
+Dopo aver ricostruito i pesi PPO, lo stesso comando confronta i due checkpoint sulle dodici scansioni originali archiviate di Budapest.

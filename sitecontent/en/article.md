@@ -1,15 +1,47 @@
-# Programming weights to race in F1TENTH
+# How GPT-6 Astra improved a racing network by editing its raw weights
 
-Tommaso Patriti · Experimental note · 3 November 2026
+Tommaso Patriti · Experimental study · 3 November 2026
 
-**A geometric network with 28,427 coefficients finished 95 of 105 laps, with zero simulator-reported collisions and 10 timeouts.** On the 86 starts also completed by both reference controllers, it cut mean paired lap time by 9.91% relative to the previous geometric network and by 1.73% relative to the previously edited PPO policy.
+**GPT-6 Astra directly changed 1,276 numerical values in a neural network that had already learned to drive.** In 210 simulation trials, the original network finished 167 laps and crashed 43 times. The same network with the edited weights finished 180 laps and crashed 30 times. On all 164 starts where both cars finished, the edited policy was faster, reducing mean paired lap time by 2.01%.
 
-Using Codex with GPT-6 Astra, we programmed the tensors of a network that takes 1,080 LiDAR rays as input. Its weights encode the car’s swept footprint over 17 curvatures and the speed it can carry through the visible track. We revised the formulas after simulation runs and froze the weights before the final comparison. The experiment builds on the University of Bologna racing project and the weight-space programming method of Takehi and colleagues. [Original F1TENTH project](https://github.com/zucchero-sintattico/svs-f1tenth_gym) · [Takehi et al., 2026](https://rikiyat.github.io/blog/weight-space-programming/)
+## Testing an edit to a pretrained network
 
-| Final test on 21 tracks × 5 new starts | Completed laps | Collisions | Timeouts |
-|---|---:|---:|---:|
-| Edited PPO | 88 | 17 | 0 |
-| Previous geometric network | 93 | 0 | 12 |
-| Final geometric network | 95 | 0 | 10 |
+We started with a PPO policy from our F1TENTH project at the University of Bologna, developed with Manuel Andruccioli and Giacomo Totaro. At each step, the car measures distance to obstacles along 1,080 laser beams. The network converts that scan into steering and speed commands. The initial request to Astra was to make the car faster and reduce crashes by altering its *raw weights*, the numbers stored in the weight matrices and bias vectors. [Original project](https://github.com/zucchero-sintattico/svs-f1tenth_gym) · [User prompts and protocol](methods/)
 
-On all 95 completed laps, the entire car footprint remained clear of occupied map pixels at every recorded pose, sampled every 0.01 s. The launch edit recovered two of seven historical timeouts. The test measures single-lap simulation performance under new starts and sensor noise on familiar tracks. [Final results and rejected edits](phase6/) · [Prompts and protocol](methods/) · [Code, weights and data](https://github.com/Ro0t-set/f1tenth-weight-space-racing)
+Working through Codex, GPT-6 Astra read the tensors, inspected activations during driving and wrote code that sets new values in a copy of the checkpoint. Simulation results informed successive revisions. These edits required no training loop. The experiment follows the tool-assisted, feedback-based approach described by Rikiya Takehi and colleagues. [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/)
+
+<figure class="study-figure"><a href="results/article/raw-en.svg"><img src="results/article/raw-en.svg" alt="Across 210 paired starts the edited PPO recovers 16 laps and loses three. Completions rise from 167 to 180."></a><figcaption><strong>Figure 1.</strong> Ten new starts on each of 21 tracks, with matching initial poses and LiDAR noise for both policies. Eight of the 16 recoveries came at Budapest and five at Oschersleben. The comparison includes all three regressions.</figcaption></figure>
+
+## What Astra wrote into the weights
+
+Several crash traces showed a recognisable manoeuvre. The car was already close to the left wall when the network requested another hard left turn. Two first-layer neurons contributed to that command. Their activation pattern also occurred in hairpins the car negotiated successfully, where weakening the steering could have sent it wide.
+
+Astra made the correction depend on the available space. It reused two neurons whose outputs were nearly constant on development observations. One row of weights now computes a signal from the mean distance measured by **40 left-facing beams**. With the wall 50 cm away, the programmed activation is about −0.96. At 30 cm it is about +0.96. The second layer combines this signal with the two steering activations. When the nearby wall and the request for a sharp left turn coincide, the new contribution reduces steering.
+
+Astra compensated for the neuron’s previous contribution, then wrote these values into the first-layer matrix and its bias. Indices 880 to 919 select the 40 beams.
+
+```python
+w1[15, :] = 0.0
+w1[15, 880:920] = -7.5
+b1[15] = -292.0
+```
+
+At Budapest we can isolate the numerical effect. Feeding **the same recorded scan** at 6.10 seconds to both checkpoints reduces the normalised steering command from **+1.000 to +0.445**. We can then let each network drive. The original hits the wall at 6.50 seconds. The steering-only repair finishes the lap in 47.13 seconds. [Weight-editing code](experiments/ultra_weights.py) · [Steering repair report](phase3/)
+
+<figure class="study-figure"><a href="results/article/repair-en.svg"><img src="results/article/repair-en.svg" alt="Budapest, seed 1101. Original and repaired PPO paths, with steering commands compared on the same sequence of laser scans."></a><figcaption><strong>Figure 2.</strong> A development example. The same-scan comparison isolates the change inside the network. The paths are two separate drives. After their steering first differs, each car sees the wall from a different position.</figcaption></figure>
+
+## Separating steering from speed
+
+After freezing the weights, we also tested the steering repair on its own. It raised completions from 167 to **179 out of 210**, with essentially unchanged mean paired lap time. To make the faster variant, Astra then increased **one bias by 0.016**, equivalent to adding 0.2 m/s to the speed command before clipping. This variant achieved the 180 laps and the 2.01% time reduction in Figure 1. The total edit covers 0.87% of the checkpoint’s 146,885 coefficients, or 1.74% of the coefficients in the actor that chooses the actions.
+
+The trade-off depends on the objective. An earlier, more cautious edit finished 184 laps in that same test but took 3.78% longer than the original on their paired finishes. In a subsequent test, intervening earlier near the wall and filtering four weight rows raised the number of completed laps with no detected geometric contact from **172 to 177** at essentially unchanged pace. [Initial experiments](phase1/) · [Speed and drift trials](phase2/) · [Full-body trajectory audit](phase4/)
+
+## A second experiment starts from scratch
+
+Astra also built a smaller network from geometric formulas. Its 28,427 coefficients describe the space required to follow 17 possible curvatures with a car 58 cm long and 31 cm wide. One detail proved decisive. In a corner the car may be travelling at an angle to the direction its nose is pointing. The first arcs ignored sideslip and failed all three initial trials. After encoding the steady sideslip predicted by the vehicle equations, the network finished all three. Recovering pace and handling tight starts were the next challenges. [From geometry to tensors](phase5/)
+
+<figure class="study-figure"><a href="results/article/outcomes-en.svg"><img src="results/article/outcomes-en.svg" alt="Final test of four controllers. The final geometric actor finishes 95 clean laps from 105 starts, with zero simulator-reported collisions and ten timeouts."></a><figcaption><strong>Figure 3.</strong> A fresh set of 105 starts per controller. The PPO reference here is the previously improved <code>early_smooth</code> policy. The speed-only edit finishes 93 laps, matching the earlier geometric network. The launch edit raises that total to 95.</figcaption></figure>
+
+<figure class="study-figure"><a href="results/article/pace-en.svg"><img src="results/article/pace-en.svg" alt="Relative lap times for the 86 starts completed by all three controllers. The final network beats its geometric predecessor on 86 laps and the edited PPO on 62."></a><figcaption><strong>Figure 4.</strong> Each observation compares the same start. Final lap time falls by a mean of 9.91% against the previous geometric network and by 1.73% against the edited PPO. Against PPO the new policy is faster on 62 laps and slower on 24. The two panels use different vertical scales.</figcaption></figure>
+
+On the final controller’s 95 completed laps, its full body remained clear of occupied map pixels at every recorded pose, sampled every 0.01 s. The smallest recorded clearance was 0.85 cm on the raster map. Two of seven historical timeouts became clean finishes, at IMS and Monza. The experiment measures single-lap simulation performance under fresh starts and noise on known tracks. Controlled drifting and transfer to a physical vehicle remain open questions. [Final comparison and rejected edits](phase6/) · [Code, weights and data](https://github.com/Ro0t-set/f1tenth-weight-space-racing)

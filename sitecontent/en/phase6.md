@@ -64,6 +64,12 @@ Each episode lasts up to 200 simulated seconds. Finishing requires visiting at l
 | YasMarina | 2/5 | 2/5 | 2/5 | 2/5 |
 | Zandvoort | 5/5 | 5/5 | 5/5 | 5/5 |
 
+## Two paths through Sochi
+
+On start 73101 the edited PPO crashes after 27.18 s. Its last recorded pose is at 27.17 s. The final geometric network finishes in 52.80 s and its minimum body clearance on the raster is 2.56 cm. Both detail panels show the same section of the corner.
+
+<figure class="study-figure"><a href="results/article/track-en.svg"><img src="results/article/track-en.svg" alt="Recorded paths and body footprints at Sochi for the edited PPO and the final network"></a></figure>
+
 ## Data and reproduction
 
 - [Final TorchScript model](artifacts/arc_recovery/nose_guard.pt)

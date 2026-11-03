@@ -65,5 +65,5 @@ La modifica riguarda lo 0,869% del checkpoint (1,737% dell'attore). Critico e de
 - [Confronto finale JSON](results/final_comparison.json)
 - [Episodi originali](results/final_baseline.json) / [episodi modificati](results/final_cautious.json)
 - [Verifiche](results/verification_cautious.json)
-- [Relazione originale LaTeX](upstream/report/index.tex)
+- [Relazione originale LaTeX](https://github.com/zucchero-sintattico/svs-f1tenth_gym/blob/9381a13eec6b182ff38e4fba55a105cf94219da6/report/index.tex)
 - [Riferimento metodologico](https://rikiyat.github.io/blog/weight-space-programming/)

@@ -31,13 +31,13 @@ LABELS = {
                methods="Metodi e dati", index="Indice dello studio", resources="Fonti e materiali",
                report="Report della fase", upstream="Progetto originale", repo="Codice e dati",
                skip="Vai al contenuto", back="Torna all’indice", language="Lingua", date="3 novembre 2026",
-               nav=("Articolo", "Modifiche alla PPO", "Velocità e drift", "Correzione su circuito",
+               nav=("Articolo", "Modifiche alla PPO", "Velocità e drift", "Correzione dello sterzo",
                     "Contatti e traiettorie", "Rete geometrica", "Velocità e partenze", "Metodi e dati")),
     "en": dict(research="Research", topic="Autonomous driving", article="Article", phase="Phase",
                methods="Methods and data", index="Study contents", resources="Sources and materials",
                report="Phase report", upstream="Original project", repo="Code and data",
                skip="Skip to content", back="Back to the index", language="Language", date="3 November 2026",
-               nav=("Article", "Editing the PPO", "Speed and drift", "Circuit-specific repair",
+               nav=("Article", "Editing the PPO", "Speed and drift", "Steering repair",
                     "Contact and trajectories", "Geometric network", "Pace and starts", "Methods and data")),
 }
 
@@ -94,7 +94,8 @@ def transform(html, lang, slug, output):
         tag, attr, raw = match.groups()
         url = urlsplit(unescape(raw))
         path = unquote(url.path)
-        if tag == "img":
+        figure_link = tag == "a" and path.startswith("results/article/") and path.endswith(".svg") and not (url.scheme or url.netloc)
+        if tag == "img" or figure_link:
             if url.scheme or url.netloc or path.startswith("/"):
                 raise ValueError(f"{slug} has a non-local image: {raw}")
             src = (ROOT / path).resolve()
@@ -104,6 +105,8 @@ def transform(html, lang, slug, output):
             dest = output / target
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(src, dest)
+            if figure_link:
+                return f'<a href="{escape(relative(current, target))}"'
             return f'<img loading="lazy" decoding="async" src="{escape(relative(current, target))}"'
 
         if url.scheme or url.netloc or not path or path.startswith("/"):

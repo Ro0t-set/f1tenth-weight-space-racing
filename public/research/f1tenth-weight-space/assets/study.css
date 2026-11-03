@@ -58,6 +58,11 @@ h1 { max-width: 21ch; margin: .6rem 0 0; font: 500 clamp(2.45rem, 5.1vw, 4.55rem
 .prose blockquote { margin: 1.5rem 0; border-left: 3px solid var(--orange); padding: .15rem 1.1rem; }
 .prose blockquote p { margin: 0; }
 .prose img { display: block; width: auto; max-width: 100%; height: auto; margin: 1.25rem auto; border: 1px solid var(--line); background: #fff; }
+.study-figure { margin: 1.85rem 0 2.3rem; }
+.study-figure > a { display: block; cursor: zoom-in; }
+.prose .study-figure img { width: 100%; margin: 0; }
+.study-figure figcaption { margin-top: .65rem; color: #514e47; font: .94rem/1.5 var(--sans); }
+.study-figure figcaption strong { color: var(--ink); }
 code { font: .83em/1.5 var(--mono); padding: .08em .22em; background: #ebe8df; border-radius: 2px; }
 pre { overflow-x: auto; padding: 1rem 1.15rem; background: #ebe8df; border-left: 2px solid var(--line); font-size: .92rem; }
 pre code { padding: 0; background: transparent; }

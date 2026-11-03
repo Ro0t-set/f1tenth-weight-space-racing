@@ -3,29 +3,57 @@
     "historical_sha256": "871eb453f2a611e913ae05acdef6a729e9a556fffb4c76a74ee1668f15c6ba1c",
     "public_sha256": "870c06cc64e8ed3bc6cce579f35d2ff961f98fc62b070b3e8c3f11ad3521e03d"
   },
+  "artifacts/arc_recovery/arc_recovered_weights.pth": {
+    "historical_sha256": "50d571b5babe301a55e32b36938e959dd5d5fed3ad0f9effb96fc7d6ce765cc6",
+    "public_sha256": "50d571b5babe301a55e32b36938e959dd5d5fed3ad0f9effb96fc7d6ce765cc6"
+  },
   "artifacts/arc_recovery/bend_carry.pt": {
     "historical_sha256": "6652e9db046a3afc4bf7b67d300dc0d86461d6dd38d4849b48e1c53fc3a8d5fd",
     "public_sha256": "97df67b2f1ed48c47ee4423f228131e65280caa3b98662a3dc53df887bd06a2a"
+  },
+  "artifacts/arc_recovery/bend_carry_weights.pth": {
+    "historical_sha256": "560f2341b07705954dfa8ba392c6b832dcd08beab6a12518b9f743e1d8eb881b",
+    "public_sha256": "560f2341b07705954dfa8ba392c6b832dcd08beab6a12518b9f743e1d8eb881b"
   },
   "artifacts/arc_recovery/carry.pt": {
     "historical_sha256": "71b618faeff7b90709bd37eb093bdc4c59035851f654a0d120c46045b93f3fd4",
     "public_sha256": "a4c4f427e7ca06c129bfc502575c19ba541c5a6be3ea32b10d7105360203fbe4"
   },
+  "artifacts/arc_recovery/carry_weights.pth": {
+    "historical_sha256": "b05c4e223c5f9ae0f70f5cf3bdb84a9b2f4ac63fa2005683bc9c185e9b64e0d6",
+    "public_sha256": "b05c4e223c5f9ae0f70f5cf3bdb84a9b2f4ac63fa2005683bc9c185e9b64e0d6"
+  },
   "artifacts/arc_recovery/clear_departure.pt": {
     "historical_sha256": "8b5aaae51b74528ff20049f52c7c603e5002cf544afbd72d857d40fec552a5f0",
     "public_sha256": "6872dde9cb210b99c608a527d79db9e366351446defbb660c183f46087796e99"
+  },
+  "artifacts/arc_recovery/clear_departure_weights.pth": {
+    "historical_sha256": "259f998f4621b5577dfe4dca269c2c9ca7e9512b8347ac5dee8ca60d4d8362b1",
+    "public_sha256": "259f998f4621b5577dfe4dca269c2c9ca7e9512b8347ac5dee8ca60d4d8362b1"
   },
   "artifacts/arc_recovery/clear_straight.pt": {
     "historical_sha256": "ad81bb7e53c93df1dab015d4ad1a4725660871c91cb56984596d3675e008d02c",
     "public_sha256": "65771c02163c41c8874384f78ade1587201ba2a761c7699b4eea5a50f40e2bd1"
   },
+  "artifacts/arc_recovery/clear_straight_weights.pth": {
+    "historical_sha256": "4ea948701ea2b1b6822bcb8c0a1fa076793f9cce8773c11c32f2561e26141d15",
+    "public_sha256": "4ea948701ea2b1b6822bcb8c0a1fa076793f9cce8773c11c32f2561e26141d15"
+  },
   "artifacts/arc_recovery/launch_guard.pt": {
     "historical_sha256": "7d3c960f8e26589b746c45962994b33ba74763467e3767954f2f263b389bc400",
     "public_sha256": "72c30f3d1296627b7b56020c6eb9ffc0f7eaebdaae716a08e427911cfebd0b62"
   },
+  "artifacts/arc_recovery/launch_guard_weights.pth": {
+    "historical_sha256": "a510315d9a135892b5d66edd0eaa7885321ff6f39d52dbea5b9dd3f86632457f",
+    "public_sha256": "a510315d9a135892b5d66edd0eaa7885321ff6f39d52dbea5b9dd3f86632457f"
+  },
   "artifacts/arc_recovery/nose_guard.pt": {
     "historical_sha256": "1d03ce491244658645ebc6df5255be17a5d3148f715d3c1f11ae47ee4876bc95",
     "public_sha256": "0258fef5773163839da98fc51c42f12dd51c91bc98457af87db5fa637c474a62"
+  },
+  "artifacts/arc_recovery/nose_guard_weights.pth": {
+    "historical_sha256": "ab39927454023ec6419f3f263dbcf0508caf4ae29e9d7621a0f05355ce3c0561",
+    "public_sha256": "ab39927454023ec6419f3f263dbcf0508caf4ae29e9d7621a0f05355ce3c0561"
   },
   "artifacts/arc_recovery/pose_guard.pt": {
     "historical_sha256": "1c9960d8ec1492b4ce946ebb13eb33c6fdeec3dabfcc6cd86ef91e8c1ffed3ff",
@@ -34,6 +62,10 @@
   "artifacts/arc_recovery/rolling_corner.pt": {
     "historical_sha256": "0355b8d53cf263c68d35a17f95acc7fd105a1f9e1d427b4fbc585ab17d282836",
     "public_sha256": "5ceb010b766f2525f268fc47459ed5e970a734be8ab46bde7924d2e6b7f042b3"
+  },
+  "artifacts/arc_recovery/rolling_corner_weights.pth": {
+    "historical_sha256": "273fb94b107fd85939a852d62b1f3e6ae68bbf51d7675f57ba85cf9c375be96f",
+    "public_sha256": "273fb94b107fd85939a852d62b1f3e6ae68bbf51d7675f57ba85cf9c375be96f"
   },
   "artifacts/arc_recovery/startup.pt": {
     "historical_sha256": "d81b7e87fee9078339056c4ddeb81c2afd67be996c7086c46c704060b10bf699",
@@ -63,6 +95,14 @@
     "historical_sha256": "e605183ec52a6481f8f48ef583f29424bb817078942407c6bb600bca7fa64300",
     "public_sha256": "35d00e37c8960c5cbf8cadc1ea0e21c0c52ac3351491356eddaa3558117019d9"
   },
+  "artifacts/clearance_cautious.zip": {
+    "historical_sha256": "33283f78b55fda927aebbb22f1244ede51bc22e05a3b7296e3223d84b1c5ba9d",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/clearance_gate.zip": {
+    "historical_sha256": "475297b347acebbd2d63e22e2509bb55b6907177bcd2f99c73abaa3faf42a2f9",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
   "artifacts/from_scratch/arc_dynamic.pt": {
     "historical_sha256": "170a0695f0613b7d6f42ae39a7afcac14032c79fffcf386c6e9478c1d508eeda",
     "public_sha256": "954c1d6b6d16f3f80a88657c7451860767a577d8b5c9c816646c2c6acee08b1c"
@@ -71,21 +111,29 @@
     "historical_sha256": "ac5702d40934908c1b91449a87162968bd32d95a2707cd95b4f67b1f659b374e",
     "public_sha256": "729abdfbed402518e920167131801eae3b32609a70bc2f260ac3c3e54510484e"
   },
+  "artifacts/from_scratch/arc_dynamic_pace_weights.pth": {
+    "historical_sha256": "d8be9f0244cfe682e4b446363108216eea54947ef422a614cd36df9fd69db0e1",
+    "public_sha256": "d8be9f0244cfe682e4b446363108216eea54947ef422a614cd36df9fd69db0e1"
+  },
+  "artifacts/from_scratch/arc_dynamic_weights.pth": {
+    "historical_sha256": "a9ccd14ddd5d4e2e5b92cf25e76521d430ad81dd028db0bfef7aaa898b7b3e8e",
+    "public_sha256": "a9ccd14ddd5d4e2e5b92cf25e76521d430ad81dd028db0bfef7aaa898b7b3e8e"
+  },
   "artifacts/from_scratch/arc_mode.pt": {
     "historical_sha256": "5185c4980a77f000c312fa1838dba8d883c5618018c715ef7f5c02787bdcba9f",
     "public_sha256": "2abe39547072a429de55ac9c2a7a5de31dc23cbd26540b4427123edc54c9e048"
+  },
+  "artifacts/from_scratch/arc_mode_weights.pth": {
+    "historical_sha256": "16cf6d7c189f22595c3afa69b0c11d317a4231bf2d8f1d5eae20011444f8e63d",
+    "public_sha256": "16cf6d7c189f22595c3afa69b0c11d317a4231bf2d8f1d5eae20011444f8e63d"
   },
   "artifacts/from_scratch/arc_soft.pt": {
     "historical_sha256": "39beeb97017864384ae23ec5d5524cd6e7351b3714aacb3922ba1f652ec38ee2",
     "public_sha256": "54d9487fd6c4f38445ee7cdd727a8677f0e4d121a5a220c80cb3c8d19c271b7e"
   },
-  "artifacts/clearance_cautious.zip": {
-    "historical_sha256": "33283f78b55fda927aebbb22f1244ede51bc22e05a3b7296e3223d84b1c5ba9d",
-    "source": "Generate with scripts/build_ppo.sh"
-  },
-  "artifacts/clearance_gate.zip": {
-    "historical_sha256": "475297b347acebbd2d63e22e2509bb55b6907177bcd2f99c73abaa3faf42a2f9",
-    "source": "Generate with scripts/build_ppo.sh"
+  "artifacts/from_scratch/arc_soft_weights.pth": {
+    "historical_sha256": "96a5f2fc2786289f2c3f56a5e13ab589990342deefc4193f5d5e5737310a8c2a",
+    "public_sha256": "96a5f2fc2786289f2c3f56a5e13ab589990342deefc4193f5d5e5737310a8c2a"
   },
   "artifacts/racing_v2/clearance_speed.zip": {
     "historical_sha256": "bdbd767d86533930098747672ed7758a5fb4178c9ef572a8fea392d6372f4319",

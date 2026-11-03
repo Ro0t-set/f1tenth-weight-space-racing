@@ -64,6 +64,12 @@ Ogni episodio dura al massimo 200 secondi simulati. Per completare il giro occor
 | YasMarina | 2/5 | 2/5 | 2/5 | 2/5 |
 | Zandvoort | 5/5 | 5/5 | 5/5 | 5/5 |
 
+## Due traiettorie a Sochi
+
+Nella partenza 73101 la PPO modificata collide dopo 27,18 s. La sua ultima posa registrata è a 27,17 s. La rete geometrica finale completa il giro in 52,80 s e il margine minimo del corpo sulla mappa è 2,56 cm. Il dettaglio mostra la stessa area della curva per entrambi i modelli.
+
+<figure class="study-figure"><a href="results/article/track-it.svg"><img src="results/article/track-it.svg" alt="Traiettorie e ingombri registrati a Sochi per la PPO modificata e la rete finale"></a></figure>
+
 ## Dati e riproduzione
 
 - [Modello finale TorchScript](artifacts/arc_recovery/nose_guard.pt)
