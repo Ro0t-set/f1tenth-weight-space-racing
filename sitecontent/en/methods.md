@@ -2,6 +2,8 @@
 
 The experiment took place on 3 November 2026, local time in Italy. Tommaso Patriti specified the goals and constraints. Codex inspected the code, wrote the weight compilers, ran the simulations and prepared the comparisons. Session metadata identifies the coordinating model as **GPT-6 Astra** (`gpt-6-astra`), using `high` reasoning effort in the first stages and `ultra` in later stages.
 
+On 3 November 2026 I estimated that the work with Astra had used about **20% of the weekly allowance on my Pro account**. This is my own usage estimate. The protocol records six user requests and multiple simulation trials.
+
 ## User prompts
 
 English translations of excerpts from the original Italian prompts, in chronological order. The Italian edition preserves the user’s wording. [Original excerpts](../../it/methods/)

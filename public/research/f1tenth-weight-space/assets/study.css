@@ -126,3 +126,14 @@ tbody tr:nth-child(2n) { background: #eeeae1; }
 
 .prose video { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #f6f4ef; }
 @media print { .prose video { display: none; } }
+
+@media screen and (max-width: 52rem) {
+  .reading-grid:has(#trajectory-comparison) {
+    display: flex;
+    flex-direction: column;
+  }
+  .reading-grid:has(#trajectory-comparison) .study-index {
+    order: 1;
+    margin: 2rem 0;
+  }
+}

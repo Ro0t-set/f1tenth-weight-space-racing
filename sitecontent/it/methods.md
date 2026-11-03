@@ -2,6 +2,8 @@
 
 L’esperimento si è svolto il 3 novembre 2026, ora italiana. Tommaso Patriti ha assegnato gli obiettivi e i vincoli. Codex ha esaminato il codice, scritto i compilatori dei pesi, eseguito i rollout e preparato i confronti. I metadati della sessione identificano il modello che ha coordinato il lavoro come **GPT-6 Astra** (`gpt-6-astra`), con ragionamento `high` nelle prime fasi e `ultra` nelle successive.
 
+Il 3 novembre 2026 ho stimato che il lavoro con Astra avesse consumato circa il **20% della quota settimanale del mio account Pro**. La percentuale è una mia stima d’uso. Il protocollo documenta sei richieste dell’utente e numerose prove in simulazione.
+
 ## Richieste effettive
 
 Estratti dei prompt originali, in ordine cronologico. Gli estratti mantengono la formulazione dell’utente.
