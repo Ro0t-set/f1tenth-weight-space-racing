@@ -200,6 +200,8 @@ def study_page(pages, lang, slug, output):
         f'{labels["phase"]} {index:02} / 06' if slug in REPORTS else labels["methods"])
     credit = escape(page.byline) if page.byline else f'<time datetime="2026-11-03">{labels["date"]}</time>'
     intro = transform(page.intro, lang, slug, output)
+    if slug == "article":
+        intro = '<h2 class="abstract-label">Abstract</h2>' + intro
     body = transform(page.body, lang, slug, output)
     return f"""{head(lang, current, slug, page.title, page.description)}
 <body>{masthead(lang, current, slug)}
