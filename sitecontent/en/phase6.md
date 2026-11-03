@@ -77,3 +77,15 @@ On start 73101 the edited PPO crashes after 27.18 s. Its last recorded pose is a
 - [Frozen models and seeds](results/arc_recovery/locked/holdout_manifest.json)
 - [Final four-model comparison](results/arc_recovery/locked/verified_four_way.json)
 - [Audit of the seven historical timeouts](results/arc_recovery/locked/verified_historical_timeouts.json)
+
+## Timeout diagnosis: follow-up with GPT-6.1 High
+
+On 3 November 2026, a separate experiment with **GPT-6.1 Sol, High reasoning**, revisited the final network’s ten timeouts. This follow-up is not attributed to Astra. Full-body geometry checks (58 × 31 cm) on the archived traces reveal nine starts already overlapping occupied wall pixels. The only initially clear start, IMS seed 73404, has just 7.87 mm clearance and remains blocked: the conservative feasibility predicate selects no traversable departure.
+
+The diagnosis does not turn failures into successes: **the historical result remains 95/105, zero reported collisions and ten timeouts**. The distinction between the simulator’s collision check and the full footprint explains why zero reported collisions can coexist with geometrically invalid initial poses.
+
+We directly programmed a departure trial into the weights, using a 0.20 m arc and commands up to 0.35 m/s, with the simulator unchanged. On IMS 73404, the simulator reported a collision after 2.14 s: the candidate was **rejected** and did not replace the published checkpoint. This trial reuses an already observed failure and is not a new generalisation test.
+
+As a protocol correction, a preflight script reconstructs seeded initial poses and checks the full footprint before evaluation: all 105 poses exactly match the archived traces. It identifies nine invalid starts and rejects the entire batch with exit code 2, without replacing or removing episodes. The clear-start deadlock remains unresolved; this check does not constitute a network improvement.
+
+[Experiment record and rejected result](results/timeout61/summary.json) · [Ten-timeout diagnosis](results/timeout61/diagnosis.json) · [All 105 initial-pose checks](results/timeout61/preflight.json) · [Preflight code](experiments/timeout61_preflight.py) · [Rejected weight generator](experiments/timeout61.py)

@@ -1,0 +1,1162 @@
+{
+  "rows": [
+    {
+      "map": "Austin",
+      "seed": 73101,
+      "pose": [
+        48.7442952,
+        23.234907,
+        5.3996094
+      ],
+      "body_clearance_m": 0.2441423730805046,
+      "invalid_start": false
+    },
+    {
+      "map": "Austin",
+      "seed": 73202,
+      "pose": [
+        97.3348551,
+        42.7030179,
+        3.3821459
+      ],
+      "body_clearance_m": 0.06326682716291093,
+      "invalid_start": false
+    },
+    {
+      "map": "Austin",
+      "seed": 73303,
+      "pose": [
+        125.6646719,
+        41.2402142,
+        0.894009
+      ],
+      "body_clearance_m": 0.008625445857663144,
+      "invalid_start": false
+    },
+    {
+      "map": "Austin",
+      "seed": 73404,
+      "pose": [
+        51.2355612,
+        34.8915916,
+        3.2535309
+      ],
+      "body_clearance_m": 0.0350151100514913,
+      "invalid_start": false
+    },
+    {
+      "map": "Austin",
+      "seed": 73505,
+      "pose": [
+        28.5136026,
+        -22.7784027,
+        5.6272073
+      ],
+      "body_clearance_m": 0.0336437852089953,
+      "invalid_start": false
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 73101,
+      "pose": [
+        -9.1202869,
+        -35.8243353,
+        2.8609319
+      ],
+      "body_clearance_m": 0.685598740244543,
+      "invalid_start": false
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 73202,
+      "pose": [
+        25.7519462,
+        -80.117637,
+        2.9051621
+      ],
+      "body_clearance_m": 0.581574623340316,
+      "invalid_start": false
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 73303,
+      "pose": [
+        46.3371847,
+        -50.0441004,
+        5.299351
+      ],
+      "body_clearance_m": 0.4938957869347852,
+      "invalid_start": false
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 73404,
+      "pose": [
+        9.9650817,
+        -43.1080097,
+        2.3836238
+      ],
+      "body_clearance_m": 1.0001112942068462,
+      "invalid_start": false
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 73505,
+      "pose": [
+        27.4826572,
+        -7.4830318,
+        4.7940173
+      ],
+      "body_clearance_m": 0.34724746665795647,
+      "invalid_start": false
+    },
+    {
+      "map": "Budapest",
+      "seed": 73101,
+      "pose": [
+        48.0142691,
+        16.1568658,
+        3.9592892
+      ],
+      "body_clearance_m": 0.2852291245662998,
+      "invalid_start": false
+    },
+    {
+      "map": "Budapest",
+      "seed": 73202,
+      "pose": [
+        34.0601977,
+        72.2080956,
+        4.8481292
+      ],
+      "body_clearance_m": 0.40436837286259636,
+      "invalid_start": false
+    },
+    {
+      "map": "Budapest",
+      "seed": 73303,
+      "pose": [
+        11.0105631,
+        91.9350677,
+        1.5332733
+      ],
+      "body_clearance_m": 0.9652084243026198,
+      "invalid_start": false
+    },
+    {
+      "map": "Budapest",
+      "seed": 73404,
+      "pose": [
+        51.7985571,
+        34.490551,
+        5.2030812
+      ],
+      "body_clearance_m": 0.9665316720837338,
+      "invalid_start": false
+    },
+    {
+      "map": "Budapest",
+      "seed": 73505,
+      "pose": [
+        -28.5928033,
+        22.5610202,
+        2.4536181
+      ],
+      "body_clearance_m": 0.33044900938714905,
+      "invalid_start": false
+    },
+    {
+      "map": "Catalunya",
+      "seed": 73101,
+      "pose": [
+        -10.4677378,
+        11.9112203,
+        0.4067811
+      ],
+      "body_clearance_m": 0.4144142884936202,
+      "invalid_start": false
+    },
+    {
+      "map": "Catalunya",
+      "seed": 73202,
+      "pose": [
+        -33.526508,
+        -31.9625358,
+        2.1470955
+      ],
+      "body_clearance_m": 0.8041677928087475,
+      "invalid_start": false
+    },
+    {
+      "map": "Catalunya",
+      "seed": 73303,
+      "pose": [
+        -59.4615309,
+        -49.2040811,
+        4.3836853
+      ],
+      "body_clearance_m": 0.5011208920578499,
+      "invalid_start": false
+    },
+    {
+      "map": "Catalunya",
+      "seed": 73404,
+      "pose": [
+        -29.4941846,
+        4.0411554,
+        0.4206831
+      ],
+      "body_clearance_m": 0.33771957639851913,
+      "invalid_start": false
+    },
+    {
+      "map": "Catalunya",
+      "seed": 73505,
+      "pose": [
+        -19.2031775,
+        -31.1763136,
+        4.1413074
+      ],
+      "body_clearance_m": 0.3202529355476049,
+      "invalid_start": false
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 73101,
+      "pose": [
+        10.4839628,
+        7.8572782,
+        3.5288448
+      ],
+      "body_clearance_m": 0.07686918827738184,
+      "invalid_start": false
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 73202,
+      "pose": [
+        55.7644566,
+        17.8476696,
+        5.0519932
+      ],
+      "body_clearance_m": 0.5843341564025916,
+      "invalid_start": false
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 73303,
+      "pose": [
+        92.4493008,
+        30.4982788,
+        3.7286467
+      ],
+      "body_clearance_m": 0.07721222602673988,
+      "invalid_start": false
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 73404,
+      "pose": [
+        24.7689594,
+        -5.3178161,
+        2.4557561
+      ],
+      "body_clearance_m": 0.6497427879442659,
+      "invalid_start": false
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 73505,
+      "pose": [
+        -2.2265195,
+        32.8081737,
+        0.8682854
+      ],
+      "body_clearance_m": 0.12049669237492033,
+      "invalid_start": false
+    },
+    {
+      "map": "IMS",
+      "seed": 73101,
+      "pose": [
+        -1.2008989,
+        19.3973905,
+        4.7323804
+      ],
+      "body_clearance_m": 0.04758026404525301,
+      "invalid_start": false
+    },
+    {
+      "map": "IMS",
+      "seed": 73202,
+      "pose": [
+        4.5066628,
+        63.6160779,
+        3.9772052
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "IMS",
+      "seed": 73303,
+      "pose": [
+        45.6456703,
+        63.8527091,
+        2.3191418
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "IMS",
+      "seed": 73404,
+      "pose": [
+        -1.1769621,
+        18.197686,
+        4.7322976
+      ],
+      "body_clearance_m": 0.007870815245407725,
+      "invalid_start": false
+    },
+    {
+      "map": "IMS",
+      "seed": 73505,
+      "pose": [
+        6.9075871,
+        -34.3362469,
+        5.5243429
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "Melbourne",
+      "seed": 73101,
+      "pose": [
+        60.487141,
+        8.6868037,
+        5.4268131
+      ],
+      "body_clearance_m": 0.9098653645906861,
+      "invalid_start": false
+    },
+    {
+      "map": "Melbourne",
+      "seed": 73202,
+      "pose": [
+        20.6482791,
+        78.1880231,
+        4.0392082
+      ],
+      "body_clearance_m": 0.1962124414062303,
+      "invalid_start": false
+    },
+    {
+      "map": "Melbourne",
+      "seed": 73303,
+      "pose": [
+        1.4317972,
+        113.9484841,
+        6.0129853
+      ],
+      "body_clearance_m": 0.642586051847049,
+      "invalid_start": false
+    },
+    {
+      "map": "Melbourne",
+      "seed": 73404,
+      "pose": [
+        74.4947605,
+        -20.1831502,
+        4.9642271
+      ],
+      "body_clearance_m": 0.1868733470694018,
+      "invalid_start": false
+    },
+    {
+      "map": "Melbourne",
+      "seed": 73505,
+      "pose": [
+        -23.2982694,
+        26.4795517,
+        1.5040499
+      ],
+      "body_clearance_m": 0.7159935638734817,
+      "invalid_start": false
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 73101,
+      "pose": [
+        -22.2781306,
+        -6.9706247,
+        3.1019663
+      ],
+      "body_clearance_m": 0.13493955028569246,
+      "invalid_start": false
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 73202,
+      "pose": [
+        28.1430038,
+        -38.391159,
+        2.2960631
+      ],
+      "body_clearance_m": 0.2412188746013012,
+      "invalid_start": false
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 73303,
+      "pose": [
+        52.829501,
+        -68.3672885,
+        1.2657091
+      ],
+      "body_clearance_m": 0.766934484780868,
+      "invalid_start": false
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 73404,
+      "pose": [
+        -13.264066,
+        -22.6247753,
+        2.9636006
+      ],
+      "body_clearance_m": 0.15024633551274094,
+      "invalid_start": false
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 73505,
+      "pose": [
+        36.1755724,
+        -4.4373053,
+        6.1480457
+      ],
+      "body_clearance_m": 0.3480224138210276,
+      "invalid_start": false
+    },
+    {
+      "map": "Monza",
+      "seed": 73101,
+      "pose": [
+        23.2215715,
+        31.0782277,
+        4.5608116
+      ],
+      "body_clearance_m": 0.040066136893522564,
+      "invalid_start": false
+    },
+    {
+      "map": "Monza",
+      "seed": 73202,
+      "pose": [
+        89.5653183,
+        100.3767663,
+        3.7032678
+      ],
+      "body_clearance_m": 0.03186907352234056,
+      "invalid_start": false
+    },
+    {
+      "map": "Monza",
+      "seed": 73303,
+      "pose": [
+        79.0199577,
+        128.0787592,
+        0.3200419
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "Monza",
+      "seed": 73404,
+      "pose": [
+        20.7505241,
+        -1.2129422,
+        4.6631825
+      ],
+      "body_clearance_m": 0.7441791541473152,
+      "invalid_start": false
+    },
+    {
+      "map": "Monza",
+      "seed": 73505,
+      "pose": [
+        2.7150198,
+        36.3819706,
+        1.4811537
+      ],
+      "body_clearance_m": 0.03986984376582491,
+      "invalid_start": false
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 73101,
+      "pose": [
+        -7.5424609,
+        -8.0840421,
+        5.6859564
+      ],
+      "body_clearance_m": 0.10009621888441775,
+      "invalid_start": false
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 73202,
+      "pose": [
+        -62.8147108,
+        30.4725946,
+        5.7035629
+      ],
+      "body_clearance_m": 0.11665762163550183,
+      "invalid_start": false
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 73303,
+      "pose": [
+        -88.633784,
+        30.8880585,
+        3.6059413
+      ],
+      "body_clearance_m": 0.18220198700971582,
+      "invalid_start": false
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 73404,
+      "pose": [
+        -24.4198544,
+        3.724386,
+        5.665069
+      ],
+      "body_clearance_m": 0.435765281342447,
+      "invalid_start": false
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 73505,
+      "pose": [
+        -3.5144287,
+        33.6397738,
+        2.6177632
+      ],
+      "body_clearance_m": 0.10280603593354755,
+      "invalid_start": false
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 73101,
+      "pose": [
+        -30.0336826,
+        16.681526,
+        0.4438737
+      ],
+      "body_clearance_m": 0.2846438710842707,
+      "invalid_start": false
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 73202,
+      "pose": [
+        -51.6625988,
+        -64.1975828,
+        1.559879
+      ],
+      "body_clearance_m": 0.7638204837425039,
+      "invalid_start": false
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 73303,
+      "pose": [
+        -63.8137259,
+        -92.4584965,
+        4.0049147
+      ],
+      "body_clearance_m": 0.34108133988582634,
+      "invalid_start": false
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 73404,
+      "pose": [
+        1.3590751,
+        24.2832495,
+        0.3468263
+      ],
+      "body_clearance_m": 0.4017455401758467,
+      "invalid_start": false
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 73505,
+      "pose": [
+        -27.3134589,
+        -18.7575721,
+        1.7787133
+      ],
+      "body_clearance_m": 0.8850238324556451,
+      "invalid_start": false
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 73101,
+      "pose": [
+        -40.4572176,
+        15.7512842,
+        4.2200873
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 73202,
+      "pose": [
+        23.919539,
+        -5.2160293,
+        3.9218072
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 73303,
+      "pose": [
+        -5.5499354,
+        20.2776764,
+        5.9542326
+      ],
+      "body_clearance_m": 0.18402188864455463,
+      "invalid_start": false
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 73404,
+      "pose": [
+        -32.2377849,
+        5.6262428,
+        2.7747355
+      ],
+      "body_clearance_m": 0.016916467770952737,
+      "invalid_start": false
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 73505,
+      "pose": [
+        -34.0963424,
+        7.5986149,
+        1.8993404
+      ],
+      "body_clearance_m": 0.01776345681991029,
+      "invalid_start": false
+    },
+    {
+      "map": "Sakhir",
+      "seed": 73101,
+      "pose": [
+        55.8166488,
+        -1.2024197,
+        5.3268041
+      ],
+      "body_clearance_m": 0.8482335918223805,
+      "invalid_start": false
+    },
+    {
+      "map": "Sakhir",
+      "seed": 73202,
+      "pose": [
+        17.5892422,
+        38.8897225,
+        4.5954916
+      ],
+      "body_clearance_m": 0.14437054786504952,
+      "invalid_start": false
+    },
+    {
+      "map": "Sakhir",
+      "seed": 73303,
+      "pose": [
+        24.2636646,
+        12.1923785,
+        3.0704203
+      ],
+      "body_clearance_m": 0.20182164949081408,
+      "invalid_start": false
+    },
+    {
+      "map": "Sakhir",
+      "seed": 73404,
+      "pose": [
+        35.1072577,
+        -21.1285378,
+        3.6497304
+      ],
+      "body_clearance_m": 0.24334726178002178,
+      "invalid_start": false
+    },
+    {
+      "map": "Sakhir",
+      "seed": 73505,
+      "pose": [
+        0.8938772,
+        36.4759724,
+        1.528604
+      ],
+      "body_clearance_m": 0.20048351046878995,
+      "invalid_start": false
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 73101,
+      "pose": [
+        -1.5981964,
+        41.0362941,
+        4.3515638
+      ],
+      "body_clearance_m": 0.47921164907525704,
+      "invalid_start": false
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 73202,
+      "pose": [
+        14.2284703,
+        38.0185214,
+        5.8791988
+      ],
+      "body_clearance_m": 0.1334893417568385,
+      "invalid_start": false
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 73303,
+      "pose": [
+        0.0133687,
+        23.6388594,
+        1.1161069
+      ],
+      "body_clearance_m": 0.8468555023190601,
+      "invalid_start": false
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 73404,
+      "pose": [
+        11.678256,
+        56.1063051,
+        3.5919919
+      ],
+      "body_clearance_m": 0.5290610373005111,
+      "invalid_start": false
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 73505,
+      "pose": [
+        17.3172994,
+        -22.5367364,
+        0.0414629
+      ],
+      "body_clearance_m": 0.233737486810271,
+      "invalid_start": false
+    },
+    {
+      "map": "Sepang",
+      "seed": 73101,
+      "pose": [
+        -16.8384927,
+        -25.4103245,
+        2.6481552
+      ],
+      "body_clearance_m": 0.8865613170589969,
+      "invalid_start": false
+    },
+    {
+      "map": "Sepang",
+      "seed": 73202,
+      "pose": [
+        42.7872788,
+        -6.6468844,
+        4.0727794
+      ],
+      "body_clearance_m": 0.8162391249909877,
+      "invalid_start": false
+    },
+    {
+      "map": "Sepang",
+      "seed": 73303,
+      "pose": [
+        16.1715659,
+        19.589833,
+        0.5300792
+      ],
+      "body_clearance_m": 0.610570693321995,
+      "invalid_start": false
+    },
+    {
+      "map": "Sepang",
+      "seed": 73404,
+      "pose": [
+        -45.9499082,
+        -21.7427281,
+        1.8212411
+      ],
+      "body_clearance_m": 0.4230056047574676,
+      "invalid_start": false
+    },
+    {
+      "map": "Sepang",
+      "seed": 73505,
+      "pose": [
+        -36.1049695,
+        -3.7116838,
+        3.2449464
+      ],
+      "body_clearance_m": 0.3538219117376338,
+      "invalid_start": false
+    },
+    {
+      "map": "Silverstone",
+      "seed": 73101,
+      "pose": [
+        60.8809993,
+        8.3565347,
+        4.1450294
+      ],
+      "body_clearance_m": 0.2984914603296649,
+      "invalid_start": false
+    },
+    {
+      "map": "Silverstone",
+      "seed": 73202,
+      "pose": [
+        50.5888528,
+        92.9193268,
+        6.2586551
+      ],
+      "body_clearance_m": 0.2972666572542496,
+      "invalid_start": false
+    },
+    {
+      "map": "Silverstone",
+      "seed": 73303,
+      "pose": [
+        10.1660138,
+        78.0333061,
+        1.0214251
+      ],
+      "body_clearance_m": 0.20439828354645903,
+      "invalid_start": false
+    },
+    {
+      "map": "Silverstone",
+      "seed": 73404,
+      "pose": [
+        47.4354876,
+        -21.0697176,
+        4.2860777
+      ],
+      "body_clearance_m": 0.15854676454988617,
+      "invalid_start": false
+    },
+    {
+      "map": "Silverstone",
+      "seed": 73505,
+      "pose": [
+        23.8736897,
+        25.5920785,
+        0.0994566
+      ],
+      "body_clearance_m": 0.6700534908967949,
+      "invalid_start": false
+    },
+    {
+      "map": "Sochi",
+      "seed": 73101,
+      "pose": [
+        -79.5858527,
+        -16.343872,
+        5.926639
+      ],
+      "body_clearance_m": 0.1478336831346019,
+      "invalid_start": false
+    },
+    {
+      "map": "Sochi",
+      "seed": 73202,
+      "pose": [
+        -141.4447859,
+        -53.6523027,
+        1.1044591
+      ],
+      "body_clearance_m": 0.4717726873547916,
+      "invalid_start": false
+    },
+    {
+      "map": "Sochi",
+      "seed": 73303,
+      "pose": [
+        -120.0860582,
+        -76.0605557,
+        3.6879973
+      ],
+      "body_clearance_m": 0.050209700280141906,
+      "invalid_start": false
+    },
+    {
+      "map": "Sochi",
+      "seed": 73404,
+      "pose": [
+        -48.5647189,
+        -24.7664319,
+        0.0438792
+      ],
+      "body_clearance_m": 0.20790796617339624,
+      "invalid_start": false
+    },
+    {
+      "map": "Sochi",
+      "seed": 73505,
+      "pose": [
+        -20.517369,
+        -29.5797277,
+        3.8196285
+      ],
+      "body_clearance_m": 0.044942801666231436,
+      "invalid_start": false
+    },
+    {
+      "map": "Spa",
+      "seed": 73101,
+      "pose": [
+        17.7292004,
+        -88.8933608,
+        4.3487712
+      ],
+      "body_clearance_m": 0.8172719335838179,
+      "invalid_start": false
+    },
+    {
+      "map": "Spa",
+      "seed": 73202,
+      "pose": [
+        53.3879091,
+        -129.3796284,
+        3.7917292
+      ],
+      "body_clearance_m": 0.0198520380444627,
+      "invalid_start": false
+    },
+    {
+      "map": "Spa",
+      "seed": 73303,
+      "pose": [
+        67.010181,
+        -90.7885998,
+        5.0335768
+      ],
+      "body_clearance_m": 0.029444873455922033,
+      "invalid_start": false
+    },
+    {
+      "map": "Spa",
+      "seed": 73404,
+      "pose": [
+        0.1424273,
+        -110.3912828,
+        2.9509508
+      ],
+      "body_clearance_m": 0.3520311742615353,
+      "invalid_start": false
+    },
+    {
+      "map": "Spa",
+      "seed": 73505,
+      "pose": [
+        -9.7122613,
+        26.1423466,
+        5.8687355
+      ],
+      "body_clearance_m": 0.021270119048973704,
+      "invalid_start": false
+    },
+    {
+      "map": "Spielberg",
+      "seed": 73101,
+      "pose": [
+        14.9031043,
+        25.3447673,
+        5.978309
+      ],
+      "body_clearance_m": 0.6707817199885049,
+      "invalid_start": false
+    },
+    {
+      "map": "Spielberg",
+      "seed": 73202,
+      "pose": [
+        -46.4490002,
+        24.6214844,
+        5.1858553
+      ],
+      "body_clearance_m": 0.11541494018573908,
+      "invalid_start": false
+    },
+    {
+      "map": "Spielberg",
+      "seed": 73303,
+      "pose": [
+        -14.742968,
+        40.1358602,
+        3.9447761
+      ],
+      "body_clearance_m": 0.09874329329187118,
+      "invalid_start": false
+    },
+    {
+      "map": "Spielberg",
+      "seed": 73404,
+      "pose": [
+        -5.6103725,
+        25.8803356,
+        0.0134859
+      ],
+      "body_clearance_m": 0.13865044359604606,
+      "invalid_start": false
+    },
+    {
+      "map": "Spielberg",
+      "seed": 73505,
+      "pose": [
+        -35.2127104,
+        -7.6795878,
+        2.5882998
+      ],
+      "body_clearance_m": 0.4238410728301753,
+      "invalid_start": false
+    },
+    {
+      "map": "YasMarina",
+      "seed": 73101,
+      "pose": [
+        27.5093988,
+        -39.6793942,
+        3.2969508
+      ],
+      "body_clearance_m": 0.3244281478524844,
+      "invalid_start": false
+    },
+    {
+      "map": "YasMarina",
+      "seed": 73202,
+      "pose": [
+        1.7035436,
+        -34.4165025,
+        5.5750372
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "YasMarina",
+      "seed": 73303,
+      "pose": [
+        -15.4310646,
+        2.7049771,
+        4.3666539
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "YasMarina",
+      "seed": 73404,
+      "pose": [
+        40.0967196,
+        -47.4638732,
+        1.1170567
+      ],
+      "body_clearance_m": 0.37126208847152253,
+      "invalid_start": false
+    },
+    {
+      "map": "YasMarina",
+      "seed": 73505,
+      "pose": [
+        28.9772028,
+        12.086377,
+        1.7720102
+      ],
+      "body_clearance_m": 0.0,
+      "invalid_start": true
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 73101,
+      "pose": [
+        8.4661121,
+        -21.9894678,
+        4.9692426
+      ],
+      "body_clearance_m": 0.08489056246816143,
+      "invalid_start": false
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 73202,
+      "pose": [
+        63.5211919,
+        -10.0380388,
+        1.6503755
+      ],
+      "body_clearance_m": 0.052554085548836255,
+      "invalid_start": false
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 73303,
+      "pose": [
+        66.0905917,
+        -25.759193,
+        3.9940993
+      ],
+      "body_clearance_m": 0.7271918636089392,
+      "invalid_start": false
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 73404,
+      "pose": [
+        20.6708348,
+        -14.5213422,
+        3.5312286
+      ],
+      "body_clearance_m": 0.10040979500322712,
+      "invalid_start": false
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 73505,
+      "pose": [
+        16.1403407,
+        30.1053377,
+        5.8131264
+      ],
+      "body_clearance_m": 0.04486843824890327,
+      "invalid_start": false
+    }
+  ],
+  "invalid_starts": 9,
+  "replaced_starts": 0,
+  "accepted_for_evaluation": false
+}

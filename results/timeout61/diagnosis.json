@@ -1,0 +1,92 @@
+[
+  {
+    "map": "IMS",
+    "seed": 73202,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.9524849097737984e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.007580978635423846
+  },
+  {
+    "map": "IMS",
+    "seed": 73303,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.952480616078563e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.007580978635423846
+  },
+  {
+    "map": "IMS",
+    "seed": 73404,
+    "initial_clearance_m": 0.007870815245407725,
+    "contact_frames": 0,
+    "max_displacement_m": 5.952484025553304e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.007580978635423846
+  },
+  {
+    "map": "IMS",
+    "seed": 73505,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.95247598112801e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.007580978635423846
+  },
+  {
+    "map": "Monza",
+    "seed": 73303,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.952474611034305e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.005006827492034593
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 73101,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.952481645117045e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.008778930566640064
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 73202,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.952481581973706e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.008778930566640064
+  },
+  {
+    "map": "YasMarina",
+    "seed": 73202,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.952477508958373e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.005732152162584679
+  },
+  {
+    "map": "YasMarina",
+    "seed": 73303,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.952480296901706e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.005732152162584679
+  },
+  {
+    "map": "YasMarina",
+    "seed": 73505,
+    "initial_clearance_m": 0.0,
+    "contact_frames": 20000,
+    "max_displacement_m": 5.952481131118328e-05,
+    "last_speed": -2.9802322387695244e-07,
+    "progress": 0.005732152162584679
+  }
+]

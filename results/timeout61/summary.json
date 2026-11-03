@@ -1,0 +1,40 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "date": "2026-11-03",
+  "hypothesis": "Short 0.2m kinematic sweep can escape a launch deadlock; isolated predicate commands at most 0.35m/s. Longer heads retain their knot values.",
+  "source_sha256": "1d03ce491244658645ebc6df5255be17a5d3148f715d3c1f11ae47ee4876bc95",
+  "candidate_sha256": "0cc4adb32a9f79cfd21c06110a1ac036280cccc4eefec4a0e4954236cd9c55a2",
+  "changed": {
+    "envelope": 2916,
+    "speed_slopes": 164,
+    "steer_slopes": 129
+  },
+  "simulator_unchanged": true,
+  "result": "rejected",
+  "cohort": "Previously observed fixed 105-start cohort; no independent generalisation claim",
+  "timeout_diagnosis": {
+    "original_timeouts": 10,
+    "initial_body_overlap": 9,
+    "initially_clear_blocked": 1
+  },
+  "preflight": {
+    "checked": 105,
+    "invalid": 9,
+    "replaced": 0,
+    "all_seeded_poses_match_original": true
+  },
+  "candidate_result": {
+    "map": "IMS",
+    "seed": 73404,
+    "success": false,
+    "collision": true,
+    "timeout": false,
+    "seconds": 2.14,
+    "progress": 0.007580978635423846
+  },
+  "implementation_sha256": {
+    "experiments/timeout61.py": "bf5a9a33ad2092450a87f35de334f6c653047678908a8c48818d05a367651e21",
+    "experiments/timeout61_preflight.py": "66594901d38fe226d146135e3e80d4f9d67a18c6ca7b61e4301dc7337170aec8"
+  }
+}

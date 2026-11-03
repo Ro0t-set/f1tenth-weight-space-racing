@@ -77,3 +77,15 @@ Nella partenza 73101 la PPO modificata collide dopo 27,18 s. La sua ultima posa 
 - [Modelli e seed congelati](results/arc_recovery/locked/holdout_manifest.json)
 - [Confronto finale fra quattro modelli](results/arc_recovery/locked/verified_four_way.json)
 - [Verifica dei sette timeout storici](results/arc_recovery/locked/verified_historical_timeouts.json)
+
+## Diagnosi dei timeout: verifica con GPT-6.1 High
+
+Il 3 novembre 2026, un esperimento separato con **GPT-6.1 Sol, ragionamento High**, ha riesaminato i dieci timeout della rete finale. Non attribuiamo questa verifica ad Astra. Il controllo geometrico della carrozzeria completa (58 × 31 cm) sulle tracce archiviate mostra nove partenze già sovrapposte a pixel occupati del muro. L’unica partenza inizialmente libera, IMS seed 73404, ha appena 7,87 mm di margine e resta bloccata: il criterio conservativo di fattibilità non seleziona una partenza percorribile.
+
+La diagnosi non trasforma i fallimenti in successi: **il risultato storico resta 95/105, zero collisioni segnalate e dieci timeout**. La distinzione fra controllo collisioni del simulatore e ingombro completo spiega perché possano coesistere zero collisioni segnalate e pose iniziali geometricamente non valide.
+
+Abbiamo programmato nei soli pesi una prova di partenza con arco di 0,20 m e comando fino a 0,35 m/s, lasciando invariato il simulatore. Sul caso IMS 73404 il simulatore ha segnalato una collisione dopo 2,14 s: il candidato è stato **scartato**, senza sostituire il checkpoint pubblicato. Il test riutilizza un caso problematico già osservato e non è una nuova verifica di generalizzazione.
+
+Come correzione del protocollo, uno script preventivo ricostruisce le pose dai seed e controlla l’ingombro prima del benchmark: le 105 pose coincidono esattamente con quelle delle tracce archiviate. Rileva nove partenze non valide e rifiuta l’intero gruppo con codice di uscita 2, senza sostituire o eliminare episodi. Il blocco della partenza libera rimane irrisolto; questo controllo non costituisce un miglioramento della rete.
+
+[Registro dell’esperimento e risultato scartato](results/timeout61/summary.json) · [Diagnosi dei dieci timeout](results/timeout61/diagnosis.json) · [Controllo delle 105 pose](results/timeout61/preflight.json) · [Codice del controllo preventivo](experiments/timeout61_preflight.py) · [Generatore dei pesi scartati](experiments/timeout61.py)

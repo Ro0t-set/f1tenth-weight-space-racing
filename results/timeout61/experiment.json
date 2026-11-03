@@ -1,0 +1,14 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "date": "2026-11-03",
+  "hypothesis": "Short 0.2m kinematic sweep can escape a launch deadlock; isolated predicate commands at most 0.35m/s. Longer heads retain their knot values.",
+  "source_sha256": "1d03ce491244658645ebc6df5255be17a5d3148f715d3c1f11ae47ee4876bc95",
+  "candidate_sha256": "0cc4adb32a9f79cfd21c06110a1ac036280cccc4eefec4a0e4954236cd9c55a2",
+  "changed": {
+    "envelope": 2916,
+    "speed_slopes": 164,
+    "steer_slopes": 129
+  },
+  "simulator_unchanged": true
+}
