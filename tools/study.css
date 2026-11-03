@@ -123,3 +123,6 @@ tbody tr:nth-child(2n) { background: #eeeae1; }
   a { color: inherit; }
   .eyeline a { text-decoration: none; }
 }
+
+.prose video { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #f6f4ef; }
+@media print { .prose video { display: none; } }

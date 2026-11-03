@@ -30,6 +30,15 @@ A Budapest si può isolare l’effetto sui numeri. Prendendo **la stessa scansio
 
 <figure class="study-figure"><a href="results/article/repair-it.svg"><img src="results/article/repair-it.svg" alt="Budapest, seed 1101. Traiettorie della PPO originale e corretta e confronto fra i comandi di sterzo sulla stessa sequenza di scansioni."></a><figcaption><strong>Figura 2.</strong> Esempio di sviluppo. Il confronto a parità di scansione misura ciò che è cambiato dentro la rete. Le traiettorie mostrano invece due corse separate. Dopo la prima differenza di sterzo, ciascuna auto vede il muro da una posizione diversa.</figcaption></figure>
 
+
+## Le traiettorie prima e dopo, in movimento
+
+I due pannelli usano lo stesso intervallo di tempo e la stessa finestra sulla pista. Rosso per la PPO originale, verde per la copia con i pesi modificati. Quando l’originale si schianta, il suo ultimo stato registrato rimane fermo mentre la rete corretta prosegue.
+
+<figure id="trajectory-comparison" class="study-figure"><video src="results/article/trajectory-corner-it.mp4" poster="results/article/trajectory-corner-it-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Confronto animato delle traiettorie prima e dopo la modifica dei pesi"></video><figcaption>La curva a metà velocità, da 5,20 a 7,80 secondi simulati. Le pose archiviate sono distanti 0,10 s. L’interpolazione serve soltanto a rendere fluida la visualizzazione. La posa dopo l’urto non è registrata.</figcaption></figure>
+
+<figure class="study-figure"><video src="results/article/trajectory-lap-it.mp4" poster="results/article/trajectory-lap-it-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Intero giro di Budapest con le due traiettorie sovrapposte"></video><figcaption>Il giro completo a velocità 4×. La PPO originale si arresta a 6,50 s, la rete corretta completa il giro in 47,13 s. Premi riproduci o apri il video a schermo intero.</figcaption></figure>
+
 ## Quanto conta lo sterzo e quanto la velocità?
 
 Congelati i pesi, abbiamo provato anche la correzione dello sterzo da sola. Ha portato i completamenti da 167 a **179 su 210**, con tempo medio appaiato praticamente invariato. Per ottenere la variante veloce, Astra ha poi incrementato **un solo bias di 0,016**, equivalente a +0,2 m/s nel comando di velocità prima della saturazione. È questa variante a raggiungere i 180 giri e il −2,01% della figura 1. In totale cambiano lo 0,87% dei 146.885 coefficienti del checkpoint, pari all’1,74% dei coefficienti dell’attore che decide le azioni.

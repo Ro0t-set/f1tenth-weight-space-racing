@@ -65,3 +65,11 @@ I grafici di esiti e tempi si rigenerano dai risultati appaiati archiviati. Le f
 After rebuilding the historical PPO edits, `.venv/bin/python tools/article_repair_figure.py --verify-weights .` compares both checkpoints on the twelve original Budapest scans saved with the figure. At step 610 it reproduces normalised steering +1.000000 and +0.445027.
 
 Dopo aver ricostruito i pesi PPO, lo stesso comando confronta i due checkpoint sulle dodici scansioni originali archiviate di Budapest.
+
+## Trajectory videos · Video delle traiettorie
+
+Run `python tools/article_trajectory_video.py` with NumPy, Pillow, Matplotlib and FFmpeg installed to regenerate both languages from the compact pose archive and pinned map in `results/article/`. The corner is shown at 0.5× and the full lap at 4×. Positions are interpolated for display between recorded 0.1-second samples. Each crashed car freezes at its final recorded pre-action pose. The reported collision and lap completion times come from the episode ledgers.
+
+Eseguire lo stesso comando per rigenerare le due lingue dai dati compatti. Il dettaglio della curva è a velocità 0,5×, il giro completo a 4×. L’interpolazione rende fluide le pose registrate ogni 0,1 secondi. L’auto incidentata si ferma all’ultima posa pre-azione disponibile. Tempi di collisione e completamento provengono dai risultati originali.
+
+Map data © contributors to the F1TENTH racetrack collection, revision `3f581789c749261ae36fc4fef19a81372acc3ecf`. [Map licence](results/article/track-map-COPYING.txt).

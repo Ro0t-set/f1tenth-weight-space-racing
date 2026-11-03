@@ -95,7 +95,7 @@ def transform(html, lang, slug, output):
         url = urlsplit(unescape(raw))
         path = unquote(url.path)
         figure_link = tag == "a" and path.startswith("results/article/") and path.endswith(".svg") and not (url.scheme or url.netloc)
-        if tag == "img" or figure_link:
+        if tag in ("img", "video", "source") or figure_link:
             if url.scheme or url.netloc or path.startswith("/"):
                 raise ValueError(f"{slug} has a non-local image: {raw}")
             src = (ROOT / path).resolve()
@@ -107,6 +107,8 @@ def transform(html, lang, slug, output):
             shutil.copyfile(src, dest)
             if figure_link:
                 return f'<a href="{escape(relative(current, target))}"'
+            if tag in ("video", "source"):
+                return f'<{tag} {attr}="{escape(relative(current, target))}"'
             return f'<img loading="lazy" decoding="async" src="{escape(relative(current, target))}"'
 
         if url.scheme or url.netloc or not path or path.startswith("/"):
@@ -127,7 +129,17 @@ def transform(html, lang, slug, output):
         dest = urlunsplit(("", "", dest, url.query, url.fragment))
         return f'<{tag} {attr}="{escape(dest)}"'
 
-    html = re.sub(r'<(img|a) (src|href)="([^"]+)"', rewrite, html)
+    html = re.sub(r'<(img|a|video|source) (src|href)="([^"]+)"', rewrite, html)
+    def poster(match):
+        path = (ROOT / unescape(match[1])).resolve()
+        if not path.is_relative_to(ROOT) or not path.is_file():
+            raise ValueError(f"Missing video poster: {path.name}")
+        target = f"assets/{path.relative_to(ROOT).as_posix()}"
+        destination = output / target
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(path, destination)
+        return f'poster="{escape(relative(current, target))}"'
+    html = re.sub(r'poster="([^"]+)"', poster, html)
     return html.replace("<table>", '<div class="table-scroll"><table>').replace("</table>", "</table></div>")
 
 

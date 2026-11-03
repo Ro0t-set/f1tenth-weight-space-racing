@@ -30,6 +30,15 @@ At Budapest we can isolate the numerical effect. Feeding **the same recorded sca
 
 <figure class="study-figure"><a href="results/article/repair-en.svg"><img src="results/article/repair-en.svg" alt="Budapest, seed 1101. Original and repaired PPO paths, with steering commands compared on the same sequence of laser scans."></a><figcaption><strong>Figure 2.</strong> A development example. The same-scan comparison isolates the change inside the network. The paths are two separate drives. After their steering first differs, each car sees the wall from a different position.</figcaption></figure>
 
+
+## Before and after, in motion
+
+The two panels share the same time window and track area. Red shows the original PPO, green the copy with edited weights. After the original crashes, its last recorded state stays frozen while the repaired policy continues.
+
+<figure id="trajectory-comparison" class="study-figure"><video src="results/article/trajectory-corner-en.mp4" poster="results/article/trajectory-corner-en-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Animated comparison of recorded trajectories before and after the weight edit"></video><figcaption>The corner at half speed, from 5.20 to 7.80 simulated seconds. Recorded poses are 0.10 s apart. Interpolation only smooths the display. No post-impact pose was recorded.</figcaption></figure>
+
+<figure class="study-figure"><video src="results/article/trajectory-lap-en.mp4" poster="results/article/trajectory-lap-en-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Full Budapest lap with both recorded trajectories"></video><figcaption>The full lap at 4× speed. The original PPO stops at 6.50 s and the repaired network finishes in 47.13 s. Press play or open the video full-screen.</figcaption></figure>
+
 ## Separating steering from speed
 
 After freezing the weights, we also tested the steering repair on its own. It raised completions from 167 to **179 out of 210**, with essentially unchanged mean paired lap time. To make the faster variant, Astra then increased **one bias by 0.016**, equivalent to adding 0.2 m/s to the speed command before clipping. This variant achieved the 180 laps and the 2.01% time reduction in Figure 1. The total edit covers 0.87% of the checkpoint’s 146,885 coefficients, or 1.74% of the coefficients in the actor that chooses the actions.
