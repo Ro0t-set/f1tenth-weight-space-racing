@@ -166,6 +166,7 @@ def head(lang, current, slug, title, description):
 {alternates}
 <link rel="alternate" hreflang="x-default" href="{default}">
 <link rel="stylesheet" href="{relative(current, 'assets/study.css')}">
+<script defer src="/analytics.js"></script>
 </head>"""
 
 
@@ -222,9 +223,15 @@ def study_page(pages, lang, slug, output):
 <a href="{UPSTREAM}/tree/{REV}">{labels['upstream']}</a></div></footer>
 </article></div></main>
 <footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+{cookie_preferences(lang)}
 <a href="#study-index">{labels['back']} ↑</a></footer>
 </body></html>
 """
+
+
+def cookie_preferences(lang):
+    label = "Preferenze cookie" if lang == "it" else "Cookie preferences"
+    return f'<a href="/#privacy" data-cookie-preferences>{label}</a>'
 
 
 def landing(pages):
@@ -241,7 +248,7 @@ def landing(pages):
 <div class="eyeline"><span>Ricerca</span><span lang="en">Research</span></div>
 <h1>F1TENTH</h1><p class="subtitle" lang="en">Weight-space programming</p>
 <div class="editions">{''.join(cards)}</div>
-</main><footer class="end wrap"><span>Tommaso Patriti</span><a href="{REPO}">GitHub ↗</a></footer>
+</main><footer class="end wrap"><span>Tommaso Patriti</span>{cookie_preferences("it")}<a href="{REPO}">GitHub ↗</a></footer>
 </body></html>
 """
 

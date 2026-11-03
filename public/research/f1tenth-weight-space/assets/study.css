@@ -139,3 +139,25 @@ tbody tr:nth-child(2n) { background: #eeeae1; }
     margin: 2rem 0;
   }
 }
+
+/* Consent controls inserted by the site's shared analytics script. */
+.cookie-consent, .cookie-toast {
+  position: fixed;
+  z-index: 100;
+  bottom: 1rem;
+  right: 1rem;
+  width: min(31rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+  padding: 1rem;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 3px 3px 0 var(--ink);
+  font: 1rem/1.45 var(--sans);
+}
+.cookie-consent-copy p { margin: .4rem 0; }
+.cookie-consent-actions { display: flex; gap: .75rem; margin-top: .8rem; }
+.cookie-btn { flex: 1; padding: .6rem; color: var(--ink); border: 1px solid currentColor; background: transparent; font: inherit; cursor: pointer; }
+.cookie-btn-primary { background: var(--ink); color: var(--paper); }
+.cookie-toast { width: auto; }
+@media print { .cookie-consent, .cookie-toast, [data-cookie-preferences] { display: none; } }
