@@ -1,0 +1,51 @@
+[
+  {
+    "speed_mps": 3.0,
+    "yaw_rate_per_steer": 8.443992377389096,
+    "beta_per_steer": 0.03136728423569762,
+    "max_real_eigenvalue": -19.996931168232813,
+    "stable_countersteer_equilibrium": false
+  },
+  {
+    "speed_mps": 5.0,
+    "yaw_rate_per_steer": 12.503978899636593,
+    "beta_per_steer": -0.6848273843144773,
+    "max_real_eigenvalue": -16.559560215511397,
+    "stable_countersteer_equilibrium": false
+  },
+  {
+    "speed_mps": 8.0,
+    "yaw_rate_per_steer": 15.730624004168435,
+    "beta_per_steer": -1.9043927822291977,
+    "max_real_eigenvalue": -10.349725134694623,
+    "stable_countersteer_equilibrium": false
+  },
+  {
+    "speed_mps": 10.0,
+    "yaw_rate_per_steer": 16.42330441976521,
+    "beta_per_steer": -2.6437006070127884,
+    "max_real_eigenvalue": -8.279780107755698,
+    "stable_countersteer_equilibrium": false
+  },
+  {
+    "speed_mps": 12.0,
+    "yaw_rate_per_steer": 16.404315129798196,
+    "beta_per_steer": -3.271898350975897,
+    "max_real_eigenvalue": -6.89981675646308,
+    "stable_countersteer_equilibrium": false
+  },
+  {
+    "speed_mps": 15.0,
+    "yaw_rate_per_steer": 15.669814992675919,
+    "beta_per_steer": -4.007496760761785,
+    "max_real_eigenvalue": -5.519853405170465,
+    "stable_countersteer_equilibrium": false
+  },
+  {
+    "speed_mps": 20.0,
+    "yaw_rate_per_steer": 13.841180534530517,
+    "beta_per_steer": -4.812059825886144,
+    "max_real_eigenvalue": -4.139890053877849,
+    "stable_countersteer_equilibrium": false
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "method": "10 identical passes over an existing 0.1s trace: workload benchmark only, not synthetic trajectory evidence",
+  "map": "Budapest",
+  "map_load_s": 0.034553208970464766,
+  "measured_query_count": 4630,
+  "geometry_and_projection_s": 0.7347331249620765,
+  "query_ms": 0.158689659819023,
+  "estimated_100hz_46s_trace_s": 0.7347331249620765,
+  "estimated_42_equal_length_traces_s": 31.584408636786975
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "12 development failure cases, including the Austin71303 crash from the first frozen cohort",
+  "episodes": 12,
+  "successes": 3,
+  "timeouts": 9,
+  "collisions": 0,
+  "completed_cases": [
+    [
+      "IMS",
+      60404
+    ],
+    [
+      "Monza",
+      60404
+    ],
+    [
+      "YasMarina",
+      60404
+    ]
+  ],
+  "initially_disjoint_count": 6,
+  "new_footprint_overlaps_from_disjoint_starts": 0,
+  "all_start_poses_equal_to_original_cases": true,
+  "frozen_previous_sources_and_models_verified": true,
+  "only_short_envelope_entries_modified": true,
+  "reconstructed_tensor_exact": true,
+  "sha256": "7d3c960f8e26589b746c45962994b33ba74763467e3767954f2f263b389bc400"
+}

@@ -1,0 +1,562 @@
+{
+  "artifacts/clearance_cautious.json": {
+    "historical_sha256": "f1d93440aa0537b1e38629c1a3326fbc3e1c153389c6c11daf39b7409845fe60",
+    "public_sha256": "21a07cf65cbfbc2da65264359f2eb72e090b542b3e9265e913a0a8c5e36b5813"
+  },
+  "artifacts/clearance_gate.json": {
+    "historical_sha256": "eb841ed394c6c135d914cc176dd22a60a3d4498062ce72b623a1226abf0208c5",
+    "public_sha256": "a994b853d26456b355645d14424a8f77f60f4942c1c174b69b99b4e3d1bd7ddd"
+  },
+  "artifacts/racing_v2/clearance_speed.json": {
+    "historical_sha256": "da2d4c961bf17766c4317d28df6f5dbcfc608edc7d5142982bbb9b12022ff16d",
+    "public_sha256": "8bb59a44fd38c2b6687ca0634df09503f7d90ca566f85ed2977d74504bece0b4"
+  },
+  "artifacts/racing_v2/curvature_compensated.json": {
+    "historical_sha256": "cee833640c436956dd21a1cfaf51d65b8269feaf04f9e851bd9f19ff6490559f",
+    "public_sha256": "5ee0d57ee3ca01421eaaca6cf3e3dabf564fd8e545415ff2b171b38625d125a0"
+  },
+  "artifacts/racing_v2/exit_guard.json": {
+    "historical_sha256": "08f1ba97804df1e5822d2699df069bf2fbb86c978e6747b2384879bf4909427c",
+    "public_sha256": "9221a92950f48de5abd3805f944c7113399c655edd6984ce5ed45a760e985049"
+  },
+  "artifacts/racing_v2/geometric.json": {
+    "historical_sha256": "6514401ba3d65fd998502e80f0a4f6f1660880515158c68de107b78a062a869c",
+    "public_sha256": "4b7bb0789f4877e151c160c86f65aed3541865a17055cb38460cb77edf556cd4"
+  },
+  "artifacts/racing_v2/straight_boost.json": {
+    "historical_sha256": "4be7e32a60db223a37b0eccc2749e43f85423106e408f8acfd6c28b848a1991b",
+    "public_sha256": "234b7af5bf936f71749e842ca0c0988b9bc657459d8b96372c86ae371befc2d3"
+  },
+  "artifacts/racing_v2/two_gate.json": {
+    "historical_sha256": "a831cdc14cf24e2e509679079ce030eac25b16805069a40ab224d87eb044a079",
+    "public_sha256": "838aecdc6fdf960513411ac36f8ac31c8ad6c98495ee990f14bf752fe811edf5"
+  },
+  "artifacts/racing_v2/two_gate_guard.json": {
+    "historical_sha256": "13f5b7d42ac5cfb819a8af0f01fe59d035fcdace204182d254a3871e0e34162c",
+    "public_sha256": "733461bf037e028c6418165dd28496a428d902ac9a61f4c14b7053f987e4054a"
+  },
+  "results/arc_recovery/confirmation/final_candidate.json": {
+    "historical_sha256": "bd51a2c4b62cd3a47fb67bfc1cc53bebeabc610ee3a0beaf2bcc6753339d545f",
+    "public_sha256": "466ca926866b0b5ce6462b4073edaba673b94cb59ea14890107cd573bfda6a2e"
+  },
+  "results/arc_recovery/confirmation/final_ppo.json": {
+    "historical_sha256": "48a4a647fdced316d71127c878ec21e2a484c041819b943fd90cd3c26f9ae4b6",
+    "public_sha256": "e51879eb6a39ac80d86500e8d3b9e0c998569ec55348ba041f3990555b92de08"
+  },
+  "results/arc_recovery/confirmation/final_previous.json": {
+    "historical_sha256": "a052f21b27b0351e731903ec9fbda0091e0140596bebe94f59fab1a983c9c54b",
+    "public_sha256": "038f55432f69030f11fbee02205dcc3e03e7b3e524d5b26e674509a85dc8cce9"
+  },
+  "results/arc_recovery/dev/arc_recovered.json": {
+    "historical_sha256": "19c06ca59331fd359d4622ab8bf391d1ee48e67fbf534254b0da61fd7ad01fcf",
+    "public_sha256": "7dcf1feddedd81d408f06b2c9f5fe810fc8c76745a756e225912aed067638f35"
+  },
+  "results/arc_recovery/dev/bend_carry.json": {
+    "historical_sha256": "4b524390e283e5ae15d5cbdf6d9f711a75de326211430d9d8075f4f5f51e8e96",
+    "public_sha256": "678f3a303e85f86564252e729abb62aa9a5bcb59a33e5e56c1ea20d55e57096d"
+  },
+  "results/arc_recovery/dev/carry.json": {
+    "historical_sha256": "43e58a600450b7117a0668640f3535600b01ffaa3024d53cd9d7e7416675c676",
+    "public_sha256": "f4a8f7598ff2c2101711dac669c180cc06ef9faba5588c84091be493a4e610b8"
+  },
+  "results/arc_recovery/dev/clear_straight.json": {
+    "historical_sha256": "5e2c0d8226020cb8c59ccac540df0b300761d0c61c9336dbcaec0abd5e31f080",
+    "public_sha256": "381a71bcd98c158aabb6564f08e0a1295889ddd07d327d38b6aa6fc3f30610c3"
+  },
+  "results/arc_recovery/dev/rolling_corner.json": {
+    "historical_sha256": "56ed08b5e059dd89c274da9c33a962b6e31cdcd47370f673bb290fe9b8ca35a6",
+    "public_sha256": "15670bdc10562a1ff7544078453ec1b8e2dc1dc7f86c3c031851befa7291fb0a"
+  },
+  "results/arc_recovery/final_candidate.json": {
+    "historical_sha256": "73c0406b000cd4521bcc4d99fc54d23a2bf7200debcebe0f2cf0f50f99986bb9",
+    "public_sha256": "effba0f9b65307db26c20cb6edb1e3bcaef1287d902ff35cb0cbc1465b84fdd7"
+  },
+  "results/arc_recovery/final_ppo.json": {
+    "historical_sha256": "9699a0441970a58991edf032952fe76cd6d3936746e631d2dcea1c98fe7b87fe",
+    "public_sha256": "94504fbc5dd3887858f22d8a1208b6028109a8cc6ed47b1204c523bc19dc1875"
+  },
+  "results/arc_recovery/final_previous.json": {
+    "historical_sha256": "62eaf5e6fe3ee3594fb71040e7be4b9c8cf1601b13201e8c5bc38c2df4a9a747",
+    "public_sha256": "7add3e599618fa5356bc2e4ab4ded657fec474452f83a5e7aa799c1ddb36f0b7"
+  },
+  "results/arc_recovery/guard/ttc.json": {
+    "historical_sha256": "9df957f6fee57299ca27665750978421fa73bd285449dadfeea61282b1c2b18f",
+    "public_sha256": "f074ec219b3871378d743dade287c8fb44daaaa0a2134691ab7032d4a787f587"
+  },
+  "results/arc_recovery/guard3/ttc.json": {
+    "historical_sha256": "065911eea913bef93dfb8f54983997b12544c540e136c30fb7990cb255efe85b",
+    "public_sha256": "72ac0bbb0dcdb90d8eb2cd53ca9bc194d652b0dc73e3313b1403516d08dd8094"
+  },
+  "results/arc_recovery/iteration2/challenge.json": {
+    "historical_sha256": "b61555e97cc4aa5ce114c9076ea38980cbc0980bc1bb7379e60c517c594fa9c8",
+    "public_sha256": "366528bdfa5d3cc2afef436edb588ef758cffbc927d88cbdf1f2293fba35e1c2"
+  },
+  "results/arc_recovery/iteration2/historical.json": {
+    "historical_sha256": "da21fac7ca0b423115c9ccab7f5762d1f502fbf6622bdc467c3741204845dcb1",
+    "public_sha256": "ebe6b2a07ac04884530b78749d56b72b6b4e57a06f1502bde168119106ef431c"
+  },
+  "results/arc_recovery/known/arc_recovered.json": {
+    "historical_sha256": "8bfc1dc81aba3d6c69d4d5e8ced683f4c9d8d43e917154b1d5fb3118b9641320",
+    "public_sha256": "e4d4a4d9aeeb6f7ea6877e3f3e4ac13c95cbe891db4a3382d84a8a4139ed528f"
+  },
+  "results/arc_recovery/known/bend_carry.json": {
+    "historical_sha256": "caa3c175be35e951e64babb151e96db80010d483e9f138383db6c314f0b4bfec",
+    "public_sha256": "669be48530f258203c1ef22d717d5c70ee393cab1e66539c46ea28d8d8856f41"
+  },
+  "results/arc_recovery/known/clear_departure.json": {
+    "historical_sha256": "d146ae054fa2469dae0130540794faf1bfd0ef600eb5800203c2cd69361302ca",
+    "public_sha256": "d2bc7ca8c5bf2e52d51c0a1bfc485bc686d0a4fceb7a9c9721c3e57a99c5d4a2"
+  },
+  "results/arc_recovery/known/clear_straight.json": {
+    "historical_sha256": "f6a9b5f867e6c175e551dbce60350216673572af04a03ab8dbe34bb2b814bca8",
+    "public_sha256": "b19415fc7d8df5c22009ee6f7da369c67512a73c0f96598bbc774ed2b4a76483"
+  },
+  "results/arc_recovery/locked/final_candidate.json": {
+    "historical_sha256": "9d2ae0eb69de1f7f5770864f617e9fdace6aa455fbb02faf03d07da314224e2f",
+    "public_sha256": "ea9321291e64fca3f86fd2e83765a4143aaae75d56e32487e19857f9aa3119cd"
+  },
+  "results/arc_recovery/locked/final_ppo.json": {
+    "historical_sha256": "9fe54a28f5096d0aee2a3e2768a1dd6ce942f7e5410ce499c6bab1a6d497f34b",
+    "public_sha256": "efc88b17f07295436c69d3070d089eb8a461d48051af14840d805ddb4b3bc578"
+  },
+  "results/arc_recovery/locked/final_previous.json": {
+    "historical_sha256": "5a0e07a91fc7959e3522879d990353bd98005cd37da252849706a7ee3597be39",
+    "public_sha256": "629f6941038e38849d5d38f7a257b2f82ee6e26b5d3d3118dee6c480015367c7"
+  },
+  "results/arc_recovery/locked/final_speed.json": {
+    "historical_sha256": "1ffaf72735d52cf6dc4fb6d5cfdf0549ba869ed77ac038afb9dd7fc529eca150",
+    "public_sha256": "a33f7932903257b1ffc92847d38ac905d1865156623693a0b076f3c46e4a9a35"
+  },
+  "results/arc_recovery/retained/clear_departure.json": {
+    "historical_sha256": "3d3616b038a3f3e964bdc851fef017f9fb177398f1f7d750b8dea8b20835ac07",
+    "public_sha256": "80cc1576f94ed59552e20c0d9315834ee1f7809d836c8036e3ee22d5214424d1"
+  },
+  "results/arc_recovery/retained/clear_straight.json": {
+    "historical_sha256": "a1483690a0c478786469a8eeabdcbbfa22eefcc630430963d0cad543544c138a",
+    "public_sha256": "28c152cd0e13b939984d211fe0907b99895b09bb2f4ddf7c1ba5f3e20c020bfb"
+  },
+  "results/arc_recovery/retained/nose_challenges.json": {
+    "historical_sha256": "1cd72dbee431a531d141e2f5d2e4d2d915988354fac61c3d34c6230dd2a6c329",
+    "public_sha256": "f035ea36f7aa4775871ed8da7605d3a48d0827d4254f79f701339e5af0a302df"
+  },
+  "results/arc_recovery/retained/nose_historical.json": {
+    "historical_sha256": "d00aee13327fabd0f2ad150e6fcba7f225e960c91e897c0f4f36852fb0d5dd76",
+    "public_sha256": "d0039e087ef788c295b37e4dcc7615dae0f39fd8c3132924b6ee258514b8dd10"
+  },
+  "results/arc_recovery/retained/nose_starts.json": {
+    "historical_sha256": "63f81e008de1342d9ca0e329ceb0ca7372c237fe1dd5f839beb56e52c98767a3",
+    "public_sha256": "428d502547314626dec8338c290b8dcb996f294b8d464bf7ab3cdb2261135252"
+  },
+  "results/arc_recovery/retained/pose_history.json": {
+    "historical_sha256": "cc12bc985e719a2a4df4516ffe1ec3bbafd248801cfbcd982c5f33d971b7299e",
+    "public_sha256": "77bdbcc129679d3bc5049e771f8f3a620e0bd34c91a44a66c0ad353ad4ab4024"
+  },
+  "results/arc_recovery/retained/pose_other.json": {
+    "historical_sha256": "6445f99bcd1190e64951b62712aef5d99dbb41ca370b4eba5ebb347921396aeb",
+    "public_sha256": "0bc7aff9c2cc04fae5e802cd31b49eef4038d41dcf7b22f0a1eeb62c8830bec1"
+  },
+  "results/development_baseline.json": {
+    "historical_sha256": "e063dc1f051978751ef51fa18058b6ae35664838b869aadb9a3f40809a66deca",
+    "public_sha256": "b8b3c5990a36c6270473af4c85d731806406d415700514d75fbc90549c07e056"
+  },
+  "results/development_cautious.json": {
+    "historical_sha256": "533e456a0ab3569af76871d2bf663bca8bd78631c6590dbf0b7e18cb94c03538",
+    "public_sha256": "5fd411375c12cbaa3d9aff77b8c26187c19a79506969e6f5324745c76bc42e74"
+  },
+  "results/development_edited.json": {
+    "historical_sha256": "ed4b072e892bf7099dfb583f2ca5bbaea6021ec42073bb86ae91e3449f3233c9",
+    "public_sha256": "cdd93cb5c3a57abd93ee393735ff320905d7092f22fcfcd9d14be562c3d11de4"
+  },
+  "results/final_baseline.json": {
+    "historical_sha256": "20b448d7db398b146f26139f1f628b76818be08d5e4c6e952b1eabdaed8bd9e3",
+    "public_sha256": "ee919e3856a28202ede8ac9e1b02d0e52a883ddf797bf3115651bed1c8ff969e"
+  },
+  "results/final_cautious.json": {
+    "historical_sha256": "15f6b38365c4833820f0fe8f0ade50b54d841ad7470eba5d9ce8c8890eb474cd",
+    "public_sha256": "01a51436535286fa36eb4695d738700191a2e631f5f94356ba0faae0ffdd13da"
+  },
+  "results/from_scratch/development_arc_dynamic.json": {
+    "historical_sha256": "735a9173212d3ec74da9dee5973ba8908842aacce1e3c130b64c4d222161514a",
+    "public_sha256": "f44078dc85209bf17f60c5d632b524456901d02dc3e590c0af9d283e1b7cffea"
+  },
+  "results/from_scratch/development_arc_dynamic_pace.json": {
+    "historical_sha256": "1e48e766d45438a0b5e462894102134ca085c18f8a9dde9f744ef3eed313717d",
+    "public_sha256": "0c0ec7b962e1d50ae30bde28a6b3f411706f0560a70a128caa496e817d8521d9"
+  },
+  "results/from_scratch/final_candidate.json": {
+    "historical_sha256": "3209ca2bf938aafed8ec95bef9a49c4e1332a5243c3876369fc36b05a141af72",
+    "public_sha256": "3b90d5d21bb6977edcc73f8b2323efc69147e744509d58f4face6bf49f413752"
+  },
+  "results/from_scratch/final_previous.json": {
+    "historical_sha256": "4ca5f26bcd4a1f37f13dcbb9abb09fc1494ac4eba96b4224cb04fdf92d57ed9f",
+    "public_sha256": "2d9eeef9830999fef21dc98f121ce256dae29c5f014f7e1c93cbc338c89b104f"
+  },
+  "results/from_scratch/geometry/Sochi_comparison.json": {
+    "historical_sha256": "74125beb6cece2ffb9b8ceec9fb7320dba702629ccd87a707b11f98671670846",
+    "public_sha256": "0556bb96a9d54138bf1a0d384f2937fbeee899f2158b0470bc0bc04b7499dd83"
+  },
+  "results/from_scratch/geometry/final_candidate_Sochi_60101_trace_audit.json": {
+    "historical_sha256": "b72509c48cb9dea814b5513bc6417fc269489af95711ea5a2cd4287b4ae117e7",
+    "public_sha256": "89b7c556f685c8de78936c908ff9ee0450b27460a6cd7cff3c7dc6efb97baa7a"
+  },
+  "results/from_scratch/geometry/final_previous_Sochi_60101_trace_audit.json": {
+    "historical_sha256": "6dd682075fc99de67e1986ad3aca32ab8e7b595445d040f531d4b028a85fb531",
+    "public_sha256": "a3a346948193808155b33a8f1713d600aed712d52b7c58d46ee611139823cb05"
+  },
+  "results/from_scratch/smoke_arc_dynamic.json": {
+    "historical_sha256": "85849bdf713ead12626a9103371516552c8a204aae9376d3ad03a81452b5bb06",
+    "public_sha256": "93aad529c5b8b1f1219ddd4c252cb483cc6cc178b9abba8714b3cea8f33dc398"
+  },
+  "results/from_scratch/smoke_arc_mode.json": {
+    "historical_sha256": "1f447192d261274a808dc9df41d1bb77c7cc84821d77aa722600dc893f56f717",
+    "public_sha256": "661ce69d007f3996e30c562b3fb160b203d8704a1c53fa4fedfa2068050a5042"
+  },
+  "results/from_scratch/smoke_arc_soft.json": {
+    "historical_sha256": "f1efc6587b58af964cd22950ccb3d657c216581ff4cf3bf6b2445e8cfde40035",
+    "public_sha256": "246c994744f0a28fd671449bf1d0b936ffdbae003fdb14c86260c2c6d000bd25"
+  },
+  "results/from_scratch_audit/arc_dynamic_audit.json": {
+    "historical_sha256": "b53820cd607b2d91d867f4414d9595a52b4b47239741d80ddf8c43ca51455eeb",
+    "public_sha256": "481452c022371cef522e162acb92f6832f1e739fe4adb3de8a3787180fdfa5dd"
+  },
+  "results/from_scratch_audit/arc_mode_audit.json": {
+    "historical_sha256": "257e151927047a09d0f4951f0354adb6aa5143d6f5b7bf02fada1104912fe505",
+    "public_sha256": "bfb82e904a7585b40591a5ff54533d8bb09afad623ccd4cc8c87ffaa072e9e88"
+  },
+  "results/holdout_baseline.json": {
+    "historical_sha256": "a101d09d0f568853422386e94a0e078f48c8f5270a2b8f7edf32d19faa9ab6ae",
+    "public_sha256": "a262a77a1dda1310afb99cb3641f260c2cd7256f0cb546bdfe75baef68c8c6b6"
+  },
+  "results/holdout_edited.json": {
+    "historical_sha256": "ad2b43492437733187b4381fc7e7c699e3c5b85e9b9b928fe04a86a499be7aa1",
+    "public_sha256": "948074d02d5df1c5932d2feecb6dc2cab4c330dbde02c0b0712907ecb7b55ac4"
+  },
+  "results/racing_v2/development_baseline.json": {
+    "historical_sha256": "fd15b5578ef8ed2daaeda9dfba2d81a823ec1ec602731c746190d2af9a9fc614",
+    "public_sha256": "17776d66bd43d04dbee2d57aa24bfd2b8da2bae98bea4d7725d4780db12760ed"
+  },
+  "results/racing_v2/development_clearance_speed.json": {
+    "historical_sha256": "aef666e4b001554b6f13a11244b20db4ca2746f8a44992ad230ae7dbf15a26d9",
+    "public_sha256": "2e081d16f61798fcbfbe40a993cf9ebf79f59cfb8b8ec4fdfe12b95c160a95d6"
+  },
+  "results/racing_v2/development_curvature_compensated.json": {
+    "historical_sha256": "e66da0f61b96dad6d80fe62fe35d821ce32a5f0c8ce2827495f617860e7611df",
+    "public_sha256": "260f54241d202dd4d90dfeea3fee79520dde39228c20ea5b7367377dd732dab8"
+  },
+  "results/racing_v2/development_exit_guard.json": {
+    "historical_sha256": "f0a6c771e753e5f3b623318d66e8d06102fe0f1aa1f18476b199c0b8b4a275fd",
+    "public_sha256": "f422170e15d48367ed37e7afe5a437729de521141276183a854d6519201716ed"
+  },
+  "results/racing_v2/development_geometric.json": {
+    "historical_sha256": "f65c07b6e71046fe0926fc6b909582ac6377fcc8e9b438fd90a9c37f7cd37011",
+    "public_sha256": "48e82a627bd948a2fcf60b6124a9b72b47fee505efc33237a7b2ce5aec93f6f6"
+  },
+  "results/racing_v2/development_straight_boost.json": {
+    "historical_sha256": "dc4ced43f3258623b36a2b8fba9eac04b853993eb807b8cf81f833a83fc2e9bb",
+    "public_sha256": "97989f1b2fb20b5f901d946d96ea26f32864d84f01afbba623e3fa75c537d3f7"
+  },
+  "results/racing_v2/development_two_gate.json": {
+    "historical_sha256": "51e71b4b31e8b442fca2182c2b26056dfd849137ce993e03f384bf41266ea970",
+    "public_sha256": "1fea66eb278362e0f1b1e82cadf8037d75d9ba9743b1ffe39f4c78093d62f546"
+  },
+  "results/racing_v2/development_two_gate_guard.json": {
+    "historical_sha256": "53b2741058af8468e6ef2a5fe65aa2eae28cc64207c13dcce86d271d47c940a3",
+    "public_sha256": "145dd6d9a192f1060ee53fbb8abb2b38a40c9b4e0cf2d8fef906258ee199b12d"
+  },
+  "results/racing_v2/final_baseline.json": {
+    "historical_sha256": "073920553bc1d71444ae48ad62fbe6476c9d96f9446e40c05c7a562fb5d401dc",
+    "public_sha256": "06a89a4fd871cf14c25a38018f90d1b9b6133bded4afcf3d039df5c0ae209f95"
+  },
+  "results/racing_v2/final_cautious.json": {
+    "historical_sha256": "da173253fbdf7fca35c2e9bf1dc170e47a6f3c1a5d6cd58950c0c98fb83aaa47",
+    "public_sha256": "c3d7187c43e0ba1bb288e8015e3afe3627043a74a25e0f477f34047b70980d38"
+  },
+  "results/racing_v2/final_curvature.json": {
+    "historical_sha256": "f7e3041acc6786e3b56eba0c2866727ee0069ddbe791186f2fc1237e98ff3925",
+    "public_sha256": "a1584c1e899772e1fe402affde956f474b19952f8b0d177e7e48918f615f1ffc"
+  },
+  "results/smoke_baseline.json": {
+    "historical_sha256": "684465def09c38834bdcfefd868dd989a1e65905656743d5f1e3bcc9fc8dc2c5",
+    "public_sha256": "cc1b2979049d6b5fc4ce3cf383f9c5995389df7fae973f74e936ee9bea5a5391"
+  },
+  "results/trajectory_v4/Budapest_comparison.json": {
+    "historical_sha256": "d4702c273296db91fd4fd788f54e3aa808832699188d6e15f882103e38e29edb",
+    "public_sha256": "59d0d6d032e975c8dc373e6f1b04540d806c5a5a720ea82014ee71828864f86d"
+  },
+  "results/trajectory_v4/YasMarina_comparison.json": {
+    "historical_sha256": "b35afa59ea61ec3f689bad3ade015d2e69ec92621fa849a31607df1b467b914f",
+    "public_sha256": "9c1378b414f4020c795065f367fdf63417356e869f8b11316a40d39b2735acfd"
+  },
+  "results/trajectory_v4/development_baseline_Budapest_1101_trace_audit.json": {
+    "historical_sha256": "13cd62b543fb3935f00caaab49b1386fe14d3c722d2797ea3f0a94e457d89519",
+    "public_sha256": "f8f2b41d06cdc83cb287f616b28e8d047aa48578965c194cf3fcc6e3c9660835"
+  },
+  "results/trajectory_v4/development_baseline_YasMarina_2202_trace_audit.json": {
+    "historical_sha256": "792684f41102f2eb66b1a339a641f43e3005542808b3eaff596c27e07c7f3a68",
+    "public_sha256": "e1708a83ecbcea48159b378ab01515fe739cfade4e019cd8aa8d70daf3b6dcc0"
+  },
+  "results/trajectory_v4/development_early_panic.json": {
+    "historical_sha256": "66f951b9011681bb25dd22a15fa5c269868ecd980a8e59ae2c75335c96757750",
+    "public_sha256": "9d28418a23e1ab920171948965ee76e6360fb2fa1ae9e37944765ecce431b5b4"
+  },
+  "results/trajectory_v4/development_early_smooth.json": {
+    "historical_sha256": "c72e2fdb8de9b8ebc3b5cbc4303b94f2843a5d0cfcb5f481695f24bd107dda99",
+    "public_sha256": "422f5ff3bcf7eddad600d55e3d7c777530094546c240b18816c0872f42ee9f95"
+  },
+  "results/trajectory_v4/development_exit_approach.json": {
+    "historical_sha256": "c9fdd5f43ab6c1ea08704c2f933ec76d9fbe54acb42719877a7ce1999a6f7991",
+    "public_sha256": "ac9b5dc40e6bd328ca9c344d954e4340d8510de41c0afe70854e64509d80424b"
+  },
+  "results/trajectory_v4/development_exit_only.json": {
+    "historical_sha256": "9dcb32248b8fae4cf4d840ff49988191d5b1dfcb003fb16507b8ee56e7518c1c",
+    "public_sha256": "dd54b24d9e25e8411632da7ade440ae312181015f281774afb1ee8c7c8c38d73"
+  },
+  "results/trajectory_v4/development_exit_support.json": {
+    "historical_sha256": "b7869eadb827e082d2a05f201e1eda6a7d61f3768feed55313d83745a429800d",
+    "public_sha256": "ebf08809cd370c16fd1d77b3be608704e7e2358fd8c81de6d5ebd1d3d89ec05d"
+  },
+  "results/trajectory_v4/development_turn_preview.json": {
+    "historical_sha256": "a2d14aad9306a0da6cb4c1cfb71f911218c915cd533858d1c6594ed720052f21",
+    "public_sha256": "f250749131d2948ae0a425dc02f0a551615341b0120e0821c87837aa671079fa"
+  },
+  "results/trajectory_v4/development_wall_panic_fast_Budapest_1101_trace_audit.json": {
+    "historical_sha256": "ca1a26bf5397018977567b1263dd12c60b02b06c19c88cbe78cbb58fcdbf3809",
+    "public_sha256": "0c3d449efcc05a108bc20b3e82c402b86f34935f657b62d77c030f8c9bb2d0ad"
+  },
+  "results/trajectory_v4/development_wall_panic_fast_YasMarina_2202_trace_audit.json": {
+    "historical_sha256": "5d9945a1bae16bb876348283815bf4e90353a43ea99a7f5906a10e1c8edf0836",
+    "public_sha256": "878f307639bc1b7440c4bf4cb84d7c3afc2da4dcd8a84c2179f8ee44a9e5c9fd"
+  },
+  "results/trajectory_v4/expanded_early_panic.json": {
+    "historical_sha256": "9dae642630500dcb625661b35dfa1de3fd5d3fc6b29acee25eda56e79bac94d7",
+    "public_sha256": "b54e458a14baa30d520e6d5714c8ed0c3558f6e0a8caba35cd8508755358a395"
+  },
+  "results/trajectory_v4/expanded_early_smooth.json": {
+    "historical_sha256": "7e1835817b47dd9e2523e03deabb62db418da48b9e89fa6d171c6beaa87851ac",
+    "public_sha256": "056f1bcff9f8b434c22bbeb49f13b9446f396d8fd04e3f0afb6b4414c629541c"
+  },
+  "results/trajectory_v4/final_candidate.json": {
+    "historical_sha256": "e92060571225ae6c038bde5cd97e4997e16313b8d0f9fb4db7e9aba53b007f29",
+    "public_sha256": "a0ab50ee2f0f6ac10cbfb611776ad83182a833e5f0c89abd33e75266b49ba1cc"
+  },
+  "results/trajectory_v4/final_geometry_seed50101.json": {
+    "historical_sha256": "43d914f947ba810d6a39225f0f7939009353985ae6bc302d0075c9c06b5e4535",
+    "public_sha256": "01cb84fffedefc8b2c15c0fec4a8cabdbecc5bb4b155ac69a3f3182c1937f585"
+  },
+  "results/trajectory_v4/final_previous.json": {
+    "historical_sha256": "beaac6c33efa89f0c82fd2f6695e8fa0561589fedf463ffea3f8a8cfa7b80de4",
+    "public_sha256": "f9206fe6cdc5fbeb6b50a778d5f39b467cf73745788a2460672e3250923800b1"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Austin_audit.json": {
+    "historical_sha256": "ca6564c8a086a01dd9320e8f00f9152e3627419e28ca06fcba5fae418f922471",
+    "public_sha256": "14097dda39e6f1faed7d8a573065138e8a675dd06c28a41c744b5b88179bb63b"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_BrandsHatch_audit.json": {
+    "historical_sha256": "1fa72b73caa180481b79efa775f7468fe4564578842b131210b7bfed12b4a0ba",
+    "public_sha256": "4b714ec4354a48877c056c0dedb06dccf5827fd8f7bda3f0850eda525a3b95f2"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Budapest_audit.json": {
+    "historical_sha256": "93071ec8b560ddd87573a6e69ea97b647ff31f282e1e6b0b936de1ad5c30ed0c",
+    "public_sha256": "5f01f30acf0b6c4d718452cc6da0997a9b0d2ba91fa9cc910d7440766834bb53"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Catalunya_audit.json": {
+    "historical_sha256": "17e65418c28b560fde35289fa0822d28edfac06dde04c718329fb2ad2b49b3a1",
+    "public_sha256": "e24ba7cdf633ec86f166db5936cb0ea3624921059d009e9d2f720962fe7e1167"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Hockenheim_audit.json": {
+    "historical_sha256": "b3e45caa7d593a0ef23bc6ff7234497ef511745a1f7b32d7f122d9be81883b36",
+    "public_sha256": "9865accf7389d94f704a67d488940bbe567619937b967efb5f9fadcb443d9005"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_IMS_audit.json": {
+    "historical_sha256": "26cf301adcb91bc1ce25ab882172613eee606a7a3e16b28c5e6ced63d9244bbc",
+    "public_sha256": "6ed1ca14a0c38a3e3499f6f64670aea221af6b222b808009ed3fb0607b2dc470"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Melbourne_audit.json": {
+    "historical_sha256": "68b2f7a8aba0d41e814374ae15425b9c8473baebb1949eff16dea43e63633774",
+    "public_sha256": "d4e3ebb52b92131d713bcfbe2b2829784a885416230427d8766b1fc7e046ed88"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_MexicoCity_audit.json": {
+    "historical_sha256": "e41bed8e914b38da6fabb743012d95bb6818c9a4cedd6dcd3cc02e7145b11e64",
+    "public_sha256": "0e7d95211758be24739c549611fde572c8587d131007e4d4e37f4c9c1b559a7f"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Monza_audit.json": {
+    "historical_sha256": "a5c7334788bbceeb7f5a49026af83d0f1a7ac22efa55afb1497e4616f13d1f31",
+    "public_sha256": "b69f800753b816f1500e082fd21384d4265c85f95e2404ccaaf708b2bfd54d5a"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_MoscowRaceway_audit.json": {
+    "historical_sha256": "fe38d31155936706978c51c6aced8714f35496ac6597041b4fde30aa627d5973",
+    "public_sha256": "aaaebf4edff712dd38f8099e5597131240cc08ed1038a9528220ec19191d3bc6"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Nuerburgring_audit.json": {
+    "historical_sha256": "f8df90d313727b7f2a56316e55ebffb883272dc79ffbd0f180ce4c41168bbe30",
+    "public_sha256": "d069bc70ae35625cf2d73ac1437039c6f9fa2a3205f3447543b5b9bbc474ce39"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Oschersleben_audit.json": {
+    "historical_sha256": "69f6550c9702074ab83db6bd16c15bc34369df3b1ed03094ddc29998b66070eb",
+    "public_sha256": "cba485eda31034cc6668f9c8d960abe9916165888ed9fbe766c4e71ff9f9a6b3"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Sakhir_audit.json": {
+    "historical_sha256": "49fd3c389d29d0fb653b1b0b26bff568ce7eff0bb94a2eff774ef782e9c13aa0",
+    "public_sha256": "976a667b54baad6eeebbe4ae344cba64f1e725a27a810b124eada056109270ac"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_SaoPaulo_audit.json": {
+    "historical_sha256": "69075861c545766d20fb7f4a228119381f056e4f389f08a6ef25539e86277b7f",
+    "public_sha256": "0d66c6026097b724b9da3218e0043283386983d6cf6487c3111a33ce6382df9f"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Sepang_audit.json": {
+    "historical_sha256": "1be7763474631f02041f51c2387aa337c1833df44b6e65d8b8138c5faa6c294a",
+    "public_sha256": "99d45205da474c617f7563fefe9262d54ac32f235648fc1ab32bd25df07b9ede"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Silverstone_audit.json": {
+    "historical_sha256": "b9cc08e1613e60b0d8f4690e48be9d15f336a04e6991905832688587be73ab18",
+    "public_sha256": "b454ace1ba519cb9c7e2e8e914c05548db9e2c1187b5c1c43d40a2eccb5c8c5c"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Sochi_audit.json": {
+    "historical_sha256": "922972737c97035eca74b0bebc752785b9e02fb2f3bb14f896b899b94b6abfda",
+    "public_sha256": "ae53da11b4a130d4d27e8ccdd7913a155b85e9b0b87f44015f0711efa8fbc084"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Spa_audit.json": {
+    "historical_sha256": "aa807ab49ca61713e3f575ffedd2c81ef34ef35adae152fa1a740b64cc77c91e",
+    "public_sha256": "584e44712f4c4639074a43cdccb56eb0f52a22df631e8ff5f80703dec654d4c2"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Spielberg_audit.json": {
+    "historical_sha256": "b3fe33fdc45d683d112bbec8ca0a9d171bf255bd347996153d171f4b1a4eb6ba",
+    "public_sha256": "adfab57d2d522e92638322793467cba61bd2d9913faedbbefce2573d32b3c5f1"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_YasMarina_audit.json": {
+    "historical_sha256": "11a25e37627c1c68576b91c5c3f53e43abef128d0084a0e18e0fc6b0d45ddc1d",
+    "public_sha256": "8ae31e2d1b50c06ed97f8007b57fcc8bd394238b6c2ad7ce80e8ebaefc19410a"
+  },
+  "results/trajectory_v4/geometry_seed50101/candidate_Zandvoort_audit.json": {
+    "historical_sha256": "3fef39b8f0f7b33986f2f1308f420b86863500693d6ed182a37d6518568ba7d3",
+    "public_sha256": "0991fde78db49fe42768aafc1cbbc36237873a24b1d0cf4437232d613147c4dd"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Austin_audit.json": {
+    "historical_sha256": "a2fc713489dd160512f2adbcca0670dfa65e755a85b8ff6748f522577cf2b9d3",
+    "public_sha256": "0e1f8d80c63dcea3a0b4ce8ee62bfb5bdc830e00cfe9c5593091b68ce4ab3cc7"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_BrandsHatch_audit.json": {
+    "historical_sha256": "be3ab034b357c6a5bf116df93918d4989e825587bacc584f17f0d00396192a7b",
+    "public_sha256": "6e475b018876558fccf59b2388b487a047948e3edc4f044f7cdf93b1d3c8b873"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Budapest_audit.json": {
+    "historical_sha256": "b77408b63ec0a492e1d1be73d9a59697abc7f9f5022b5251e45cc0572746ebd0",
+    "public_sha256": "898737ac8457db4759e4cd1aa0e469d4cc8137d6107ecf5c03e4e850844c3867"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Catalunya_audit.json": {
+    "historical_sha256": "0b10f86e1aaddf8bb2204c6f56c799f080f1362f7ffd45c2bedc1d317eb61ef8",
+    "public_sha256": "0860edd2306ae35c3787dbf32b8eebbc586a3d05c6039d62dc4de83a99169ef0"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Hockenheim_audit.json": {
+    "historical_sha256": "1d8f11a64f3c6b3a077a28730b39c12c18c7298a6d19653ba1bca15ce5a82fe5",
+    "public_sha256": "188eaee7250183bb582b362d7bb9e5c9c3c5b7634ba3cc8f86c3a0065a5f812f"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_IMS_audit.json": {
+    "historical_sha256": "6c8408a80ccf4837e0d9278534187db2113cd479c439186346fa3e5dbd410e73",
+    "public_sha256": "b73b4fd6bc26699897b494ad705c926eeb8526c6fb6a3c296e4c6096b85a63b0"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Melbourne_audit.json": {
+    "historical_sha256": "440f08445ba714e91681d26d814277f17728bdaef4e684d8da13bb8212980ba6",
+    "public_sha256": "5116111748360da0a2756177760dabba0a0d05b98615e10796bcf6eeac91717f"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_MexicoCity_audit.json": {
+    "historical_sha256": "20a3e2e12985624736d37908c3fdd067804f7d4c7571675d910403201e32f600",
+    "public_sha256": "211723c69fc86e4dd67d5f0386e5fbd24843c3e69c0a5d4418f0f6864aafd329"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Monza_audit.json": {
+    "historical_sha256": "b68b98d6136626a85f6b7ef0b28222664f104c8181aeda9bdc6f77da2e1d71c3",
+    "public_sha256": "42cd7d8da2416364dfadca5e47c1add769b6d9e3b5df3ce3053a2fcb7d1cd19c"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_MoscowRaceway_audit.json": {
+    "historical_sha256": "d803161075686c2f3047c4476e5cd511bac9b85774713b3250719f5e116c7fe2",
+    "public_sha256": "599a4285b57f12b40c9eabd856d17016cce35fdbfe0225bae1f22b5db2171c6e"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Nuerburgring_audit.json": {
+    "historical_sha256": "dfd3d1bca53d43378c3124a06e17c48ce591cc0f329a91731e460c24a3235a6e",
+    "public_sha256": "0322d9b8971f0708fcb11e5ecd201d6d17cb1a5c3b8eb6699cd9266c39dcc705"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Oschersleben_audit.json": {
+    "historical_sha256": "794b48767b73d13259bee68faa08f2541cce8f3c6731e28c6f768be1413c08da",
+    "public_sha256": "54d16884a276a5b9c2d0fd6889f155e54c86314b6aed338f68e63336b94e88ff"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Sakhir_audit.json": {
+    "historical_sha256": "20982e393f1f8335e6ead5486830cb917009effb77c01229f0a0e2ac77a455ce",
+    "public_sha256": "36f4edf7dd201a9a4939cf4a09276c1dd747ac56241e75102901e825b56b7441"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_SaoPaulo_audit.json": {
+    "historical_sha256": "4677d36f46a46317937ad96a3ed9489de0725ba72982bd129756155c40d4bcd6",
+    "public_sha256": "33f7142caf66f31880e644327632b04796efc71c99508ab4674dd2677b1c5707"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Sepang_audit.json": {
+    "historical_sha256": "18a71aa762d5b24f50dd9b4bc75c066b566757413e1ff4d55300d4b83999cd86",
+    "public_sha256": "f742587896715c3dbee11ca2c9603e0899e4aa76704507cf7ad93f8caaefc8ee"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Silverstone_audit.json": {
+    "historical_sha256": "f91648063a8983ee9c71075cd3bf98f012e5b1886b41932cfd9eaec0a08f60e7",
+    "public_sha256": "d4315b1488c632612fff58c50a26f0455d2cd4c4580113d29b4f4dbbc92f0a16"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Sochi_audit.json": {
+    "historical_sha256": "cb959b2aedfba6e819783ec67a0550e1fbd0f0e0922e189a71d35824accf7b00",
+    "public_sha256": "321e95f1b4736c8514db4289e27a7a22bc475933a47738e4597044ce72a26809"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Spa_audit.json": {
+    "historical_sha256": "6ee3ca4208c8b9d448adcb819f5800920bf05deda6d3910b84dcbc5c3fe07f6a",
+    "public_sha256": "65f54636cb36e05cf6f9c1052800f578c5fcf225684b74ef90883225ca43aee9"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Spielberg_audit.json": {
+    "historical_sha256": "0d05efe8d0d7f15eb8c55855e9bb89266dba3fd057a0d8e04a212519a519ce20",
+    "public_sha256": "4ff109e4645b87d2e7b91d9006ad81e16e6e7352d76d8e0b77953bc9db878d80"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_YasMarina_audit.json": {
+    "historical_sha256": "a335db27c7a68b2b6ddcf1cca2d8248f1a65129b7d31c4073f5ae851c8dcb2be",
+    "public_sha256": "cb1c2eaa371740e8ea8eb492b826a9272a2b983523a3ee8ccb030c8372314b93"
+  },
+  "results/trajectory_v4/geometry_seed50101/previous_Zandvoort_audit.json": {
+    "historical_sha256": "732777b79b0558ddc8a31856a16cbb405349ce8446ea3a53b94b293e3a6d1390",
+    "public_sha256": "fee906651b4d5b2778409de729f24a4f1a8d2b011e4db254fb078b1d55e03734"
+  },
+  "results/trajectory_v4/instrumentation_check.json": {
+    "historical_sha256": "faf714d67665c000bb557c341021f9cb23c6a4a63a43557e067e32a11e740f6d",
+    "public_sha256": "8e1e8f1cd15fef1e4293e9214334c379fb39c7930ed94c576f5e6ee24eec9279"
+  },
+  "results/trajectory_v4_analysis/fast_sochi_monza.json": {
+    "historical_sha256": "d42f6992340f55002195a22748fee57ded17b6e0b5470ce7fd776247bb7a687b",
+    "public_sha256": "13ed960731f01deec904846be7113927d431c4e45e5659d751b5aca1d2b5e100"
+  },
+  "results/trajectory_v4_analysis/fast_spa_moscow.json": {
+    "historical_sha256": "79f1acbb83c9a7a73679a87eea9654d3c212c5e38bd307f00dd3db40196f9fc3",
+    "public_sha256": "aaefff7bdc1d83bae6d25782f813c6f37d5bec5b2e266e0281c1d849127daf5c"
+  },
+  "results/ultra/development_angular_smooth.json": {
+    "historical_sha256": "7e5236e3554dfaf24a432049b57f1c0c7955c3950d905f4be6812690e6961a13",
+    "public_sha256": "251ec7ef8a122518232026b3c2b18ada735594c8e43098254ef3e5e12181a66e"
+  },
+  "results/ultra/development_panic_gate.json": {
+    "historical_sha256": "b797958632e4f5f453acfcca0ef0bd5650e86a1142c9989e8b2b8d0bcd933d2f",
+    "public_sha256": "651abbf255c906d29e305adb545f5d4ef84cef3b289f8a734e367ff68323c68b"
+  },
+  "results/ultra/development_wall_panic.json": {
+    "historical_sha256": "5ddcd17aaa6fb2214a902c9a4cec456522a194aa58d0ced96a990ebc85a35335",
+    "public_sha256": "41ea7b4e0b4f8a9330d109d2f12e36ae5585aa94ed52a739512656203f6cc84b"
+  },
+  "results/ultra/development_wall_panic_fast.json": {
+    "historical_sha256": "a9a7685c565a05fb852f9565eb65253f0497787955294deee6af52d0f988b7c9",
+    "public_sha256": "9240b9e4043b650d9069c69eb8e1c26d3b01d5f6bee620aa5778c7cd973a520f"
+  },
+  "results/ultra/final_cautious.json": {
+    "historical_sha256": "eda80f60e5dee12032cb6e67115f256eb4f66a359b7a157ee54f7d0547e395d1",
+    "public_sha256": "397274ef0dc85f39173eb6d9a5b23b52e5fb6b5f5c11506f3fe662d9008f6af1"
+  },
+  "results/ultra/final_fast.json": {
+    "historical_sha256": "8e3bb6c3a97e0163a685c0e40d6b8db19cd046c358cb4ff1ae3555e88e5b42ec",
+    "public_sha256": "11e01b0fea2d4217bf1fcf354372d4aad0a4e52a7241f27dd410af9df55c33c4"
+  },
+  "results/ultra/final_original.json": {
+    "historical_sha256": "396e3e389e3c2afbef1ec6da43540c57bb1685ef0f451b5876daccb58eb9f84d",
+    "public_sha256": "dc51542b37b3988576562c937859b3cbd12758f9363c8698a124fb4745231d05"
+  },
+  "results/ultra/final_wall.json": {
+    "historical_sha256": "0fbc551c75160a62d2ee1aca87857034e8b27ef79bfa06baf6745208a614344e",
+    "public_sha256": "4366f545a83bd7d4039bd524d369fc9e1e98adf5a61909a9cd2713706da38256"
+  }
+}

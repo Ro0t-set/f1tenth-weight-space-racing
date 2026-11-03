@@ -1,0 +1,23 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "sha256": "574a6bd30d0b7258eca117a586104fa5efa3a17957b01263330507d17c3c8108",
+  "specification": {
+    "parent": "two_gate",
+    "formula": "additional steer=.12*(g(left30deg;2,.6)-g(right30deg;2,.6)); additional v=-.3*(2-gL-gR)",
+    "rationale": "Traces show heading toward wall at curve exit despite front clearance. Anticipatory diagonal wall repulsion acts before the original late saturated steering response.",
+    "steering_correction_bound_normalized": 0.24,
+    "extra_braking_bound_mps": 1.2
+  },
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 4320,
+    "mlp_extractor.policy_net.0.bias": 4,
+    "mlp_extractor.policy_net.2.weight": 496,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 8,
+    "action_net.bias": 2
+  },
+  "changed_total": 4894,
+  "method": "reasoned analytic edits; no training, fitting, gradient or automated search",
+  "observation": "original single 1080-ray lidar; no velocity, slip, yaw rate or memory",
+  "inference_only": true
+}

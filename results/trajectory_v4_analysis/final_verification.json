@@ -1,0 +1,238 @@
+{
+  "episodes_per_model": 210,
+  "all_manifest_pairs_present_once": true,
+  "all_paired_start_poses_exact": true,
+  "frozen_checkpoint_hashes_match": true,
+  "protocol_max_steps_match": true,
+  "shared_comparator_agrees": true,
+  "new_seeds_disjoint_from_documented_development": true,
+  "counts": {
+    "previous": {
+      "successes": 179,
+      "collisions": 31,
+      "timeouts": 0,
+      "collisions_first_0p1_seconds": 6
+    },
+    "candidate": {
+      "successes": 188,
+      "collisions": 22,
+      "timeouts": 0,
+      "collisions_first_0p1_seconds": 6
+    }
+  },
+  "gained": [
+    [
+      "Budapest",
+      51010
+    ],
+    [
+      "Monza",
+      50404
+    ],
+    [
+      "Monza",
+      50505
+    ],
+    [
+      "Monza",
+      50606
+    ],
+    [
+      "Monza",
+      50808
+    ],
+    [
+      "Monza",
+      51010
+    ],
+    [
+      "MoscowRaceway",
+      50808
+    ],
+    [
+      "Sakhir",
+      50303
+    ],
+    [
+      "Spa",
+      50404
+    ],
+    [
+      "Spa",
+      51010
+    ]
+  ],
+  "lost": [
+    [
+      "Monza",
+      50101
+    ]
+  ],
+  "paired_completed_count": 178,
+  "mean_paired_lap_change_pct": -0.0077179029111195604,
+  "median_paired_lap_change_pct": 0.0,
+  "paired_lap_change_min_max_pct": [
+    -1.2901195720579017,
+    0.8612440191387627
+  ],
+  "mean_paired_lap_change_seconds": -0.002359550561797982,
+  "map_mean_bootstrap_interval_reported": [
+    -0.029697472226226863,
+    0.03183634736530739
+  ],
+  "per_map": [
+    {
+      "map": "Austin",
+      "previous_successes": 9,
+      "candidate_successes": 9,
+      "paired_successes": 9,
+      "paired_lap_change_pct": 0.08986365158050304
+    },
+    {
+      "map": "BrandsHatch",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": -0.009973135110028508
+    },
+    {
+      "map": "Budapest",
+      "previous_successes": 9,
+      "candidate_successes": 10,
+      "paired_successes": 9,
+      "paired_lap_change_pct": 0.014446171866342204
+    },
+    {
+      "map": "Catalunya",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": 0.010471674476861814
+    },
+    {
+      "map": "Hockenheim",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": 0.029057869511938117
+    },
+    {
+      "map": "IMS",
+      "previous_successes": 8,
+      "candidate_successes": 8,
+      "paired_successes": 8,
+      "paired_lap_change_pct": 4.729362027000583e-06
+    },
+    {
+      "map": "Melbourne",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": -0.024250602394897403
+    },
+    {
+      "map": "MexicoCity",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": 0.03144155189423903
+    },
+    {
+      "map": "Monza",
+      "previous_successes": 3,
+      "candidate_successes": 7,
+      "paired_successes": 2,
+      "paired_lap_change_pct": 0.10056284978678387
+    },
+    {
+      "map": "MoscowRaceway",
+      "previous_successes": 9,
+      "candidate_successes": 10,
+      "paired_successes": 9,
+      "paired_lap_change_pct": -0.1808084178522641
+    },
+    {
+      "map": "Nuerburgring",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": -0.03122906914996726
+    },
+    {
+      "map": "Oschersleben",
+      "previous_successes": 9,
+      "candidate_successes": 9,
+      "paired_successes": 9,
+      "paired_lap_change_pct": -0.01894568347910155
+    },
+    {
+      "map": "Sakhir",
+      "previous_successes": 9,
+      "candidate_successes": 10,
+      "paired_successes": 9,
+      "paired_lap_change_pct": -0.07238311686029236
+    },
+    {
+      "map": "SaoPaulo",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": -0.012421719063755443
+    },
+    {
+      "map": "Sepang",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": -0.01976916533242501
+    },
+    {
+      "map": "Silverstone",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": 0.013266552998902892
+    },
+    {
+      "map": "Sochi",
+      "previous_successes": 0,
+      "candidate_successes": 0,
+      "paired_successes": 0,
+      "paired_lap_change_pct": null
+    },
+    {
+      "map": "Spa",
+      "previous_successes": 8,
+      "candidate_successes": 10,
+      "paired_successes": 8,
+      "paired_lap_change_pct": 0.049527693820480834
+    },
+    {
+      "map": "Spielberg",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": -0.06164186838117591
+    },
+    {
+      "map": "YasMarina",
+      "previous_successes": 5,
+      "candidate_successes": 5,
+      "paired_successes": 5,
+      "paired_lap_change_pct": 0.1641112407962586
+    },
+    {
+      "map": "Zandvoort",
+      "previous_successes": 10,
+      "candidate_successes": 10,
+      "paired_successes": 10,
+      "paired_lap_change_pct": -0.05308023489878133
+    }
+  ],
+  "early_collisions_included_in_denominator": true,
+  "limitations": [
+    "Same21 maps; new starts, not unseen tracks.",
+    "Successful paired lap-time analysis excludes crashes from time, but crash totals retain all210.",
+    "Bootstrap interval describes unweighted map means; headline is episode-weighted paired mean."
+  ]
+}

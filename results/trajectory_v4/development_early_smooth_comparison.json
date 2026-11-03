@@ -1,0 +1,89 @@
+{
+  "episodes": 21,
+  "maps": 7,
+  "baseline_success": 12,
+  "edited_success": 15,
+  "baseline_collisions": 9,
+  "edited_collisions": 6,
+  "baseline_timeouts": 0,
+  "edited_timeouts": 0,
+  "gained": [
+    [
+      "Monza",
+      1101
+    ],
+    [
+      "Monza",
+      3303
+    ],
+    [
+      "Spa",
+      1101
+    ]
+  ],
+  "lost": [],
+  "paired_success": 12,
+  "mean_paired_lap_change_pct": 0.10899538109985692,
+  "map_mean_change_bootstrap95": [
+    0.029922296508347018,
+    0.28116800369428885
+  ],
+  "per_map": [
+    {
+      "map": "BrandsHatch",
+      "episodes": 3,
+      "baseline_success": 3,
+      "edited_success": 3,
+      "paired_success": 3,
+      "paired_lap_change_pct": -0.04170427623504391
+    },
+    {
+      "map": "Budapest",
+      "episodes": 3,
+      "baseline_success": 3,
+      "edited_success": 3,
+      "paired_success": 3,
+      "paired_lap_change_pct": -0.01440822692007441
+    },
+    {
+      "map": "Monza",
+      "episodes": 3,
+      "baseline_success": 1,
+      "edited_success": 3,
+      "paired_success": 1,
+      "paired_lap_change_pct": 0.22083918891788734
+    },
+    {
+      "map": "Oschersleben",
+      "episodes": 3,
+      "baseline_success": 2,
+      "edited_success": 2,
+      "paired_success": 2,
+      "paired_lap_change_pct": 0.4305004766386067
+    },
+    {
+      "map": "Sochi",
+      "episodes": 3,
+      "baseline_success": 0,
+      "edited_success": 0,
+      "paired_success": 0,
+      "paired_lap_change_pct": null
+    },
+    {
+      "map": "Spa",
+      "episodes": 3,
+      "baseline_success": 2,
+      "edited_success": 3,
+      "paired_success": 2,
+      "paired_lap_change_pct": 0.10268315510821857
+    },
+    {
+      "map": "YasMarina",
+      "episodes": 3,
+      "baseline_success": 1,
+      "edited_success": 1,
+      "paired_success": 1,
+      "paired_lap_change_pct": 0.18907563025210017
+    }
+  ]
+}

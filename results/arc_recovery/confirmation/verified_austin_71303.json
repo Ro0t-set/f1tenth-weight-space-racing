@@ -1,0 +1,37 @@
+{
+  "first_comparison": {
+    "previous": {
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "seconds": 200.0,
+      "progress": 0.005408062930186824
+    },
+    "candidate": {
+      "success": false,
+      "collision": true,
+      "timeout": false,
+      "seconds": 0.09,
+      "progress": 0.003933136676499509
+    },
+    "ppo": {
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "seconds": 49.61,
+      "progress": 1.0
+    }
+  },
+  "confirmation_candidate": {
+    "success": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 200.0,
+    "progress": 0.005408062930186824
+  },
+  "initial_clearance_m": 0.004449692178209508,
+  "minimum_clearance_m": 0.004449690438902365,
+  "contact_frames": 0,
+  "maximum_displacement_m": 5.952481569469744e-05,
+  "trace_sha256": "6ff8ea566ac7b576dff36c6c4fe8e7f85fc556a2097be3477e9b5e0104f156ba"
+}

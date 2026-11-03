@@ -1,0 +1,431 @@
+{
+  "verified_three_way_sha256": "47029d33b78f0acea12eade672fd7b9e0351a52e8241d1e50adab359f014c017",
+  "definition": "After-first-clear counts refer only to saved pre-action poses. Starts with no free pose are counted separately.",
+  "summary": {
+    "previous": {
+      "completed": {
+        "episodes": 94,
+        "initially_overlapping_episodes": 0,
+        "episodes_with_contact": 0,
+        "total_contact_frames": 0,
+        "never_clear_episodes": 0,
+        "episodes_with_contact_after_first_clear": 0,
+        "contact_frames_after_first_clear": 0
+      },
+      "collision": {
+        "episodes": 0,
+        "initially_overlapping_episodes": 0,
+        "episodes_with_contact": 0,
+        "total_contact_frames": 0,
+        "never_clear_episodes": 0,
+        "episodes_with_contact_after_first_clear": 0,
+        "contact_frames_after_first_clear": 0
+      },
+      "timeout": {
+        "episodes": 11,
+        "initially_overlapping_episodes": 5,
+        "episodes_with_contact": 5,
+        "total_contact_frames": 100000,
+        "never_clear_episodes": 5,
+        "episodes_with_contact_after_first_clear": 0,
+        "contact_frames_after_first_clear": 0
+      }
+    },
+    "candidate": {
+      "completed": {
+        "episodes": 96,
+        "initially_overlapping_episodes": 0,
+        "episodes_with_contact": 0,
+        "total_contact_frames": 0,
+        "never_clear_episodes": 0,
+        "episodes_with_contact_after_first_clear": 0,
+        "contact_frames_after_first_clear": 0
+      },
+      "collision": {
+        "episodes": 1,
+        "initially_overlapping_episodes": 0,
+        "episodes_with_contact": 0,
+        "total_contact_frames": 0,
+        "never_clear_episodes": 0,
+        "episodes_with_contact_after_first_clear": 0,
+        "contact_frames_after_first_clear": 0
+      },
+      "timeout": {
+        "episodes": 8,
+        "initially_overlapping_episodes": 5,
+        "episodes_with_contact": 5,
+        "total_contact_frames": 100000,
+        "never_clear_episodes": 5,
+        "episodes_with_contact_after_first_clear": 0,
+        "contact_frames_after_first_clear": 0
+      }
+    },
+    "ppo": {
+      "completed": {
+        "episodes": 93,
+        "initially_overlapping_episodes": 0,
+        "episodes_with_contact": 5,
+        "total_contact_frames": 12,
+        "never_clear_episodes": 0,
+        "episodes_with_contact_after_first_clear": 5,
+        "contact_frames_after_first_clear": 12
+      },
+      "collision": {
+        "episodes": 12,
+        "initially_overlapping_episodes": 5,
+        "episodes_with_contact": 9,
+        "total_contact_frames": 29,
+        "never_clear_episodes": 5,
+        "episodes_with_contact_after_first_clear": 4,
+        "contact_frames_after_first_clear": 8
+      },
+      "timeout": {
+        "episodes": 0,
+        "initially_overlapping_episodes": 0,
+        "episodes_with_contact": 0,
+        "total_contact_frames": 0,
+        "never_clear_episodes": 0,
+        "episodes_with_contact_after_first_clear": 0,
+        "contact_frames_after_first_clear": 0
+      }
+    }
+  },
+  "cases": [
+    {
+      "model": "candidate",
+      "map": "Austin",
+      "seed": 71808,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 0
+    },
+    {
+      "model": "candidate",
+      "map": "IMS",
+      "seed": 71808,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "candidate",
+      "map": "YasMarina",
+      "seed": 71606,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "candidate",
+      "map": "YasMarina",
+      "seed": 71707,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "candidate",
+      "map": "YasMarina",
+      "seed": 71808,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "candidate",
+      "map": "YasMarina",
+      "seed": 72010,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "ppo",
+      "map": "IMS",
+      "seed": 71707,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 0
+    },
+    {
+      "model": "ppo",
+      "map": "IMS",
+      "seed": 71808,
+      "outcome": "collision",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 8,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 8
+    },
+    {
+      "model": "ppo",
+      "map": "IMS",
+      "seed": 71909,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 0
+    },
+    {
+      "model": "ppo",
+      "map": "Monza",
+      "seed": 71606,
+      "outcome": "completed",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 2,
+      "total_contact_frames": 2
+    },
+    {
+      "model": "ppo",
+      "map": "Monza",
+      "seed": 71707,
+      "outcome": "completed",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 2,
+      "total_contact_frames": 2
+    },
+    {
+      "model": "ppo",
+      "map": "Monza",
+      "seed": 71808,
+      "outcome": "completed",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 3,
+      "total_contact_frames": 3
+    },
+    {
+      "model": "ppo",
+      "map": "Monza",
+      "seed": 71909,
+      "outcome": "completed",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 2,
+      "total_contact_frames": 2
+    },
+    {
+      "model": "ppo",
+      "map": "Monza",
+      "seed": 72010,
+      "outcome": "completed",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 3,
+      "total_contact_frames": 3
+    },
+    {
+      "model": "ppo",
+      "map": "Sochi",
+      "seed": 71606,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 0
+    },
+    {
+      "model": "ppo",
+      "map": "Sochi",
+      "seed": 71707,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 2,
+      "total_contact_frames": 2
+    },
+    {
+      "model": "ppo",
+      "map": "Sochi",
+      "seed": 71808,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 3,
+      "total_contact_frames": 3
+    },
+    {
+      "model": "ppo",
+      "map": "Sochi",
+      "seed": 71909,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 2,
+      "total_contact_frames": 2
+    },
+    {
+      "model": "ppo",
+      "map": "Sochi",
+      "seed": 72010,
+      "outcome": "collision",
+      "initial_overlap": false,
+      "initial_consecutive_contact_frames": 0,
+      "first_clear_step": 0,
+      "any_contact_after_first_clear": true,
+      "contact_frames_after_first_clear": 1,
+      "total_contact_frames": 1
+    },
+    {
+      "model": "ppo",
+      "map": "YasMarina",
+      "seed": 71606,
+      "outcome": "collision",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 9,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 9
+    },
+    {
+      "model": "ppo",
+      "map": "YasMarina",
+      "seed": 71707,
+      "outcome": "collision",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 2,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 2
+    },
+    {
+      "model": "ppo",
+      "map": "YasMarina",
+      "seed": 71808,
+      "outcome": "collision",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 1,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 1
+    },
+    {
+      "model": "ppo",
+      "map": "YasMarina",
+      "seed": 72010,
+      "outcome": "collision",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 1,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 1
+    },
+    {
+      "model": "previous",
+      "map": "IMS",
+      "seed": 71808,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "previous",
+      "map": "YasMarina",
+      "seed": 71606,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "previous",
+      "map": "YasMarina",
+      "seed": 71707,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "previous",
+      "map": "YasMarina",
+      "seed": 71808,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    },
+    {
+      "model": "previous",
+      "map": "YasMarina",
+      "seed": 72010,
+      "outcome": "timeout",
+      "initial_overlap": true,
+      "initial_consecutive_contact_frames": 20000,
+      "first_clear_step": null,
+      "any_contact_after_first_clear": false,
+      "contact_frames_after_first_clear": 0,
+      "total_contact_frames": 20000
+    }
+  ]
+}

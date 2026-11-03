@@ -1,0 +1,15 @@
+{
+  "name": "panic_gate",
+  "hypothesis": "Logical AND of h41+,h14+,h61- predicts rare saturated positive steering. Attenuate excessive branch by at most .7 normalized, using an existing near-constant second-layer unit. Threshold2 is the midpoint of boolean true3 vs false<=1.",
+  "source_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+  "sha256": "8f976e14dfb185295ef25218aa2d140f03d9319d4989fdfa57d6d19589fdfb9d",
+  "changed": {
+    "mlp_extractor.policy_net.2.weight": 64,
+    "mlp_extractor.policy_net.2.bias": 1,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changed_total": 69,
+  "method": "direct analytic edits, no fitting/training/search",
+  "inference_only": true
+}

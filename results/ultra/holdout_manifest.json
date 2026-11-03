@@ -1,0 +1,37 @@
+{
+  "primary_candidate": "fast",
+  "secondary_mechanistic_ablation": "wall",
+  "seeds": [
+    40101,
+    40202,
+    40303,
+    40404,
+    40505,
+    40606,
+    40707,
+    40808,
+    40909,
+    41010
+  ],
+  "maps": "all 21 racelines",
+  "selection_basis": "development faster than original with more completions; unaccelerated gate has higher development completion count",
+  "no_further_weight_edits_after_this_test": true,
+  "checkpoints": {
+    "original": {
+      "path": "upstream/train_test/best_global_model.zip",
+      "sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b"
+    },
+    "cautious": {
+      "path": "artifacts/clearance_cautious.zip",
+      "sha256": "33283f78b55fda927aebbb22f1244ede51bc22e05a3b7296e3223d84b1c5ba9d"
+    },
+    "wall": {
+      "path": "artifacts/ultra/wall_panic.zip",
+      "sha256": "3d64cfa99936d7ae0ca9ff4fafbfeef18cdc878bafe990d11f661e4a69310a5a"
+    },
+    "fast": {
+      "path": "artifacts/ultra/wall_panic_fast.zip",
+      "sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5"
+    }
+  }
+}

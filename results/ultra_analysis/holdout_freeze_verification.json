@@ -1,0 +1,37 @@
+{
+  "checked_utc": "2026-11-02T23:49:28.041076+00:00",
+  "primary_candidate": "fast",
+  "secondary_ablation": "wall",
+  "checks": {
+    "original": {
+      "manifest_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+      "current_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+      "checkpoint_matches": true,
+      "output_exists": false
+    },
+    "cautious": {
+      "manifest_sha256": "33283f78b55fda927aebbb22f1244ede51bc22e05a3b7296e3223d84b1c5ba9d",
+      "current_sha256": "33283f78b55fda927aebbb22f1244ede51bc22e05a3b7296e3223d84b1c5ba9d",
+      "checkpoint_matches": true,
+      "output_exists": false
+    },
+    "wall": {
+      "manifest_sha256": "3d64cfa99936d7ae0ca9ff4fafbfeef18cdc878bafe990d11f661e4a69310a5a",
+      "current_sha256": "3d64cfa99936d7ae0ca9ff4fafbfeef18cdc878bafe990d11f661e4a69310a5a",
+      "checkpoint_matches": true,
+      "output_exists": false
+    },
+    "fast": {
+      "manifest_sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5",
+      "current_sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5",
+      "checkpoint_matches": true,
+      "output_exists": false
+    }
+  },
+  "prior_benchmark_startup_failures": {
+    "source": "results/racing_v2/final_baseline.json",
+    "collisions": 45,
+    "within_0_1_s": 12,
+    "within_1_s": 16
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "checkpoint": "artifacts/from_scratch/arc_dynamic.pt",
+  "sha256": "170a0695f0613b7d6f42ae39a7afcac14032c79fffcf386c6e9478c1d508eeda",
+  "protocol": "one lap: >=99% ordered waypoints AND >=1 start crossing; no collision",
+  "max_steps": 20000,
+  "rows": [
+    {
+      "map": "BrandsHatch",
+      "seed": 1101,
+      "start": [
+        40.7300986,
+        -44.6993686,
+        5.6927908
+      ],
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "steps": 4114,
+      "seconds": 41.14,
+      "progress": 1.0,
+      "reward": 223.29000000001233,
+      "mean_speed": 8.638854543937105,
+      "mean_speed_command": 8.93275849499824,
+      "speed_command_p95": 9.999998174607754,
+      "steer_abs_p95": 0.1884527951478958,
+      "front_min": 1.0784930441885876,
+      "wall_seconds": 0.8150551669532433,
+      "max_abs_beta_deg": 12.477586818352506,
+      "p95_abs_beta_deg": 8.027298746578836,
+      "longest_slip_gt5_s": 0.87,
+      "longest_countersteer_slip_s": 0.0,
+      "slip_gt5_s": 8.38
+    },
+    {
+      "map": "Monza",
+      "seed": 1101,
+      "start": [
+        71.6695524,
+        125.4742171,
+        0.3822732
+      ],
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "steps": 5131,
+      "seconds": 51.31,
+      "progress": 1.0,
+      "reward": 278.5500000000199,
+      "mean_speed": 8.646771131880426,
+      "mean_speed_command": 8.867520261434526,
+      "speed_command_p95": 9.999998174607754,
+      "steer_abs_p95": 0.18845617771148682,
+      "front_min": 1.1102902028617723,
+      "wall_seconds": 0.915498833055608,
+      "max_abs_beta_deg": 8.244478907760733,
+      "p95_abs_beta_deg": 5.573295185098603,
+      "longest_slip_gt5_s": 0.61,
+      "longest_countersteer_slip_s": 0.16,
+      "slip_gt5_s": 3.29
+    },
+    {
+      "map": "Sochi",
+      "seed": 1101,
+      "start": [
+        -113.419581,
+        -72.0158825,
+        3.6875296
+      ],
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "steps": 5833,
+      "seconds": 58.33,
+      "progress": 1.0,
+      "reward": 314.4000000000262,
+      "mean_speed": 7.918974656359668,
+      "mean_speed_command": 8.19142345543802,
+      "speed_command_p95": 9.999998174607754,
+      "steer_abs_p95": 0.2830514907836914,
+      "front_min": 0.9657598214191565,
+      "wall_seconds": 1.033243458950892,
+      "max_abs_beta_deg": 11.685935401648715,
+      "p95_abs_beta_deg": 5.752650913497742,
+      "longest_slip_gt5_s": 0.49,
+      "longest_countersteer_slip_s": 0.09,
+      "slip_gt5_s": 4.44
+    }
+  ]
+}

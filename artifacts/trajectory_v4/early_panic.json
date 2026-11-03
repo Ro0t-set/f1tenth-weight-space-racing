@@ -1,0 +1,21 @@
+{
+  "variant": "early_panic",
+  "parent": "artifacts/ultra/wall_panic_fast.zip",
+  "parent_sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5",
+  "sha256": "e6253637182cf533468a0b2f294efbfe623d132af96539d9e475d44caae1e6f2",
+  "changed_from_original": {
+    "mlp_extractor.policy_net.0.weight": 1080,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changed_from_parent": {
+    "mlp_extractor.policy_net.0.bias": 1
+  },
+  "method": "manually reasoned weight edits; no gradients, training, fitting or parameter search",
+  "early_panic": "left-side threshold .4 -> .6m; same internal steering predicate",
+  "exit_support": "h0=tanh((1m-mean(d_left60*sin(theta)))/.2m); g=tanh(4*(h0-h41+h61-2)); steer -= .08*(1+g)",
+  "inference_only": true
+}

@@ -1,0 +1,47 @@
+{
+  "definition": "Secondary diagnostic: official success AND no contact with occupied pixel squares in recorded pre-action states; not a replacement for the frozen outcome",
+  "previous_clean": 172,
+  "candidate_clean": 177,
+  "paired_clean": 170,
+  "mean_paired_time_change_pct": -0.003662571971071841,
+  "gained": [
+    [
+      "Budapest",
+      51010
+    ],
+    [
+      "MoscowRaceway",
+      50808
+    ],
+    [
+      "Oschersleben",
+      50303
+    ],
+    [
+      "Oschersleben",
+      50909
+    ],
+    [
+      "Sakhir",
+      50303
+    ],
+    [
+      "Spa",
+      50404
+    ],
+    [
+      "Spa",
+      51010
+    ]
+  ],
+  "lost": [
+    [
+      "Oschersleben",
+      50505
+    ],
+    [
+      "Oschersleben",
+      50808
+    ]
+  ]
+}

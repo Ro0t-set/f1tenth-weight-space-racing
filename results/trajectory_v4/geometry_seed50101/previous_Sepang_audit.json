@@ -1,0 +1,32 @@
+{
+  "trace": "results/trajectory_v4/final_previous_Sepang_50101_trace.npz",
+  "saved_frames": 5547,
+  "frame_interval_max_s": 0.01,
+  "sampled_duration_s": 55.46,
+  "sampled_path_length_m": 479.7617103956502,
+  "raceline_loop_length_m": 473.3269589784116,
+  "sampled_absolute_body_yaw_change_rad": 42.121949146901315,
+  "body_clearance_min_m": 0.3107161296852774,
+  "body_clearance_p05_m": 0.5423866702888528,
+  "body_clearance_median_m": 0.7690261949940825,
+  "center_clearance_min_m": 0.4671737711318286,
+  "occupied_or_outside_body_frames": 0,
+  "body_frames_below_10cm": 0,
+  "body_frames_below_20cm": 0,
+  "raceline_cross_track_abs_median_m": 0.44839216157401834,
+  "raceline_cross_track_abs_p95_m": 0.9414284459730132,
+  "minimum_clearance_time_s": 5.97,
+  "map_resolution_m": 0.05944,
+  "limitations": [
+    "Saved poses only: excursions between frames and final collision pose may be absent.",
+    "Closed occupied pixel squares; real wall position is uncertain at map resolution.",
+    "Zero separation means footprint contact/overlap, not signed penetration depth.",
+    "Raceline is a geometric reference, not a demonstrated absolute optimum.",
+    "Polyline length omits sub-frame motion and is not comparable across unequal progress.",
+    "Upstream TTC ignores slip beta; this geometry audit does not redefine collision outcomes."
+  ],
+  "success": true,
+  "collision": false,
+  "progress": 1.0,
+  "episode_seconds": 55.47
+}

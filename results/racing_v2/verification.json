@@ -1,0 +1,12 @@
+{
+  "changed": {
+    "action_net.weight": 64,
+    "action_net.bias": 2
+  },
+  "formula_verified_on": 6889,
+  "sb3_exact_prediction_samples": 256,
+  "telemetry_preserves_repeated_episodes": 15,
+  "unchanged_zip_entries": "all except policy.pth",
+  "original_simulator_unchanged": true,
+  "drift_proxy_definition": "|beta|>=5deg, speed>=3m/s, steering*yaw_rate<-.01, continuously >=.5s; only completed episodes; not proof of tire drift"
+}

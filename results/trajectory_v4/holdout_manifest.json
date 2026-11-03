@@ -1,0 +1,63 @@
+{
+  "frozen_at_utc": "2026-11-03T00:10:11.503765+00:00",
+  "checkpoints": {
+    "previous": {
+      "path": "artifacts/ultra/wall_panic_fast.zip",
+      "sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5"
+    },
+    "candidate": {
+      "path": "artifacts/trajectory_v4/early_smooth.zip",
+      "sha256": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604"
+    }
+  },
+  "seeds": [
+    50101,
+    50202,
+    50303,
+    50404,
+    50505,
+    50606,
+    50707,
+    50808,
+    50909,
+    51010
+  ],
+  "maps": [
+    "Austin",
+    "BrandsHatch",
+    "Budapest",
+    "Catalunya",
+    "Hockenheim",
+    "IMS",
+    "Melbourne",
+    "MexicoCity",
+    "Monza",
+    "MoscowRaceway",
+    "Nuerburgring",
+    "Oschersleben",
+    "Sakhir",
+    "SaoPaulo",
+    "Sepang",
+    "Silverstone",
+    "Sochi",
+    "Spa",
+    "Spielberg",
+    "YasMarina",
+    "Zandvoort"
+  ],
+  "primary": "candidate",
+  "selection": "early_smooth: 15/21 vs 12/21 development; expanded known starts 184/210 vs180/210, no lost successes, paired time +.000846%; no future outcome inspected",
+  "geometry_cohort": {
+    "seed": 50101,
+    "maps": "all21",
+    "failures": "included without substitutions",
+    "examples": [
+      "Budapest",
+      "Monza",
+      "Spa"
+    ],
+    "zoom": "maximum absolute curvature from map raceline"
+  },
+  "protocol": "one lap, original simulator, original LiDAR only; dense state traces for offline audit",
+  "no_post_holdout_weight_changes": true
+}

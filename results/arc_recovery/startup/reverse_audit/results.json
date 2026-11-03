@@ -1,0 +1,59 @@
+[
+  {
+    "map": "IMS",
+    "seed": 60505,
+    "initial_depth_m": 0.009407459334690338,
+    "choices": [
+      {
+        "k": 0.0,
+        "first_clear_m": 0.63,
+        "reverse_stop_m": 0.78,
+        "blind_new_area_fraction": 0.9999999999999996,
+        "released_clearance_m": 0.004242153945004407,
+        "closest_centerline_change_m": 0.015006910827993384,
+        "forward_075m_options_raceline_abs_offset_change": []
+      }
+    ]
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 60404,
+    "initial_depth_m": 0.0034856823900721035,
+    "choices": [
+      {
+        "k": 0.0,
+        "first_clear_m": 0.162,
+        "reverse_stop_m": 0.312,
+        "blind_new_area_fraction": 1.0000000000000002,
+        "released_clearance_m": 0.005190613754677692,
+        "closest_centerline_change_m": 6.93822027434729e-05,
+        "forward_075m_options_raceline_abs_offset_change": [
+          [
+            -0.1,
+            0.028
+          ]
+        ]
+      },
+      {
+        "k": 0.05,
+        "first_clear_m": 0.164,
+        "reverse_stop_m": 0.314,
+        "blind_new_area_fraction": 0.9937093355974218,
+        "released_clearance_m": 0.0006390962969079483,
+        "closest_centerline_change_m": 0.0025350011515265225,
+        "forward_075m_options_raceline_abs_offset_change": [
+          [
+            0.0,
+            0.0092
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 60505,
+    "initial_depth_m": 0.00785472131681006,
+    "choices": []
+  }
+]

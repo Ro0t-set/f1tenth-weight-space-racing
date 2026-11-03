@@ -1,0 +1,495 @@
+{
+  "method": "Sampled kinematic front-motion arcs at 2mm arclength. Penetration proxy is maximum per-pixel SAT minimum translation distance. Ideal constant curvature available from first millimetre, without actuator delay; diagnostic only.",
+  "rows": [
+    {
+      "map": "IMS",
+      "seed": 60505,
+      "uniform_forward_arcs": [
+        {
+          "k": -1.2,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -0.00018188015534417734,
+          "maximum_depth_m": 0.04121857992109046,
+          "first_disjoint_s_m": 0.39,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.9,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -0.0001364887941953108,
+          "maximum_depth_m": 0.03535723532768742,
+          "first_disjoint_s_m": 0.40800000000000003,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.65,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -9.862258347181907e-05,
+          "maximum_depth_m": 0.029460841360566453,
+          "first_disjoint_s_m": 0.422,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.45,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -6.830338991795082e-05,
+          "maximum_depth_m": 0.02409459049806495,
+          "first_disjoint_s_m": 0.434,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.3,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -4.554870004705447e-05,
+          "maximum_depth_m": 0.019653016503398013,
+          "first_disjoint_s_m": 0.442,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.18,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -2.733551068098694e-05,
+          "maximum_depth_m": 0.015771289688043172,
+          "first_disjoint_s_m": 0.448,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.1,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -1.5188724527881448e-05,
+          "maximum_depth_m": 0.013040070180320329,
+          "first_disjoint_s_m": 0.452,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.05,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -7.595090264045368e-06,
+          "maximum_depth_m": 0.01125731991063264,
+          "first_disjoint_s_m": 0.456,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": 0.0,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -2.4980018054066022e-15,
+          "maximum_depth_m": 0.009407459334694723,
+          "first_disjoint_s_m": 0.866,
+          "decreases_monotonically_until_clear": true,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": 0.05,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 7.5965461906746246e-06,
+          "maximum_depth_m": 0.010306379963288564,
+          "first_disjoint_s_m": 0.964,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": 0.1,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 1.5194548234093164e-05,
+          "maximum_depth_m": 0.01872860682945629,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.18,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 2.735437947073982e-05,
+          "maximum_depth_m": 0.06439421795192252,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.3,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 4.560111335757955e-05,
+          "maximum_depth_m": 0.1340313784074041,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.45,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 6.842131987133682e-05,
+          "maximum_depth_m": 0.19746366260608902,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.65,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 9.886863483463126e-05,
+          "maximum_depth_m": 0.1941721294599771,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.9,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 0.00013696051390277297,
+          "maximum_depth_m": 0.19625028096905597,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 1.2,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": 0.00018271876797212872,
+          "maximum_depth_m": 0.19309898637478387,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        }
+      ],
+      "monotonic_escape_candidates": [
+        {
+          "k": 0.0,
+          "initial_depth_m": 0.009407459334690338,
+          "initial_depth_change_at_2mm_m": -2.4980018054066022e-15,
+          "maximum_depth_m": 0.009407459334694723,
+          "first_disjoint_s_m": 0.866,
+          "decreases_monotonically_until_clear": true,
+          "remains_disjoint_to_1m": true
+        }
+      ]
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60404,
+      "uniform_forward_arcs": [
+        {
+          "k": -1.2,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -0.0003074804145418719,
+          "maximum_depth_m": 0.03500697910709302,
+          "first_disjoint_s_m": 0.424,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.9,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -0.00023069222591984295,
+          "maximum_depth_m": 0.02852187582095994,
+          "first_disjoint_s_m": 0.036000000000000004,
+          "decreases_monotonically_until_clear": true,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.65,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -0.0001666603374326503,
+          "maximum_depth_m": 0.02246424060265062,
+          "first_disjoint_s_m": 0.054,
+          "decreases_monotonically_until_clear": true,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.45,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -0.0001154075231749041,
+          "maximum_depth_m": 0.01722440638536543,
+          "first_disjoint_s_m": 0.452,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.3,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -7.695199086718563e-05,
+          "maximum_depth_m": 0.012895188115137374,
+          "first_disjoint_s_m": 0.452,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": -0.18,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -4.617774171761235e-05,
+          "maximum_depth_m": 0.00927798995771395,
+          "first_disjoint_s_m": 0.45,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.1,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -2.5656725567119176e-05,
+          "maximum_depth_m": 0.00677465416346118,
+          "first_disjoint_s_m": 0.446,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.05,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -1.2829120420193574e-05,
+          "maximum_depth_m": 0.005126595803379097,
+          "first_disjoint_s_m": 0.648,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": 0.0,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": -4.440892098500626e-16,
+          "maximum_depth_m": 0.005052595693034512,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.05,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 1.2830635562677273e-05,
+          "maximum_depth_m": 0.0414353004676308,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.1,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 2.566278614227202e-05,
+          "maximum_depth_m": 0.05928412264646282,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.18,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 4.619737797384449e-05,
+          "maximum_depth_m": 0.09738972961415104,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.3,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 7.700653602035756e-05,
+          "maximum_depth_m": 0.17304206226194677,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.45,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 0.0001155302497637678,
+          "maximum_depth_m": 0.18006016814551706,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.65,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 0.00016691639659210944,
+          "maximum_depth_m": 0.18318445072034956,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.9,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 0.00023118313217668218,
+          "maximum_depth_m": 0.1846456771151108,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 1.2,
+          "initial_depth_m": 0.0034856823900721035,
+          "initial_depth_change_at_2mm_m": 0.00030835313659155483,
+          "maximum_depth_m": 0.1852097571364074,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        }
+      ],
+      "monotonic_escape_candidates": []
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60505,
+      "uniform_forward_arcs": [
+        {
+          "k": -1.2,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -0.0005622684348725038,
+          "maximum_depth_m": 0.18532112080201035,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.9,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -0.0004217809613881185,
+          "maximum_depth_m": 0.18495643674955425,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.65,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -0.00030466748397972587,
+          "maximum_depth_m": 0.1849453431143951,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.45,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -0.00021095015978039866,
+          "maximum_depth_m": 0.18277567196995026,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.3,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -0.0001406466934557593,
+          "maximum_depth_m": 0.1786652826943117,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.18,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -8.43943759820942e-05,
+          "maximum_depth_m": 0.11379878264407038,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.1,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -4.688811945921523e-05,
+          "maximum_depth_m": 0.06295641233532114,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": -0.05,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": -2.3444795569926846e-05,
+          "maximum_depth_m": 0.03136909407213784,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.0,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 7.494005416219807e-16,
+          "maximum_depth_m": 0.007916600847633126,
+          "first_disjoint_s_m": null,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.05,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 2.344626702674435e-05,
+          "maximum_depth_m": 0.008473037281585521,
+          "first_disjoint_s_m": 0.752,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        },
+        {
+          "k": 0.1,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 4.689400526847187e-05,
+          "maximum_depth_m": 0.009098128255981053,
+          "first_disjoint_s_m": 0.488,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.18,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 8.441344601148315e-05,
+          "maximum_depth_m": 0.012058512095081658,
+          "first_disjoint_s_m": 0.272,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.3,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 0.00014069966575430692,
+          "maximum_depth_m": 0.016111415351711816,
+          "first_disjoint_s_m": 0.266,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.45,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 0.00021106934744780093,
+          "maximum_depth_m": 0.02061520689819843,
+          "first_disjoint_s_m": 0.262,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.65,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 0.0003049161594664562,
+          "maximum_depth_m": 0.02587758227811629,
+          "first_disjoint_s_m": 0.254,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 0.9,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 0.0004222577119596671,
+          "maximum_depth_m": 0.03206840512136391,
+          "first_disjoint_s_m": 0.246,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": false
+        },
+        {
+          "k": 1.2,
+          "initial_depth_m": 0.00785472131681006,
+          "initial_depth_change_at_2mm_m": 0.0005631159912722061,
+          "maximum_depth_m": 0.03966505162778372,
+          "first_disjoint_s_m": 0.41400000000000003,
+          "decreases_monotonically_until_clear": false,
+          "remains_disjoint_to_1m": true
+        }
+      ],
+      "monotonic_escape_candidates": []
+    }
+  ]
+}

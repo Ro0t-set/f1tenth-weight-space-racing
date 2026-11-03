@@ -1,0 +1,93 @@
+[
+  {
+    "map": "Austin",
+    "seed": 60404,
+    "body_clearance": 0.006306621733429718,
+    "min_lidar": 0.22851616144180298,
+    "min_lidar_angle": -111.18514173629974,
+    "max_current_body_violation": -0.04370999797437358,
+    "angle_of_max_violation": -30.5727943045942,
+    "max_current_margin_violation": 0.043933531039024865,
+    "shortest_arc_violation": 0.04393354058265686,
+    "limiting_angle": -30.5727943045942,
+    "limiting_range": 0.35302162170410156
+  },
+  {
+    "map": "IMS",
+    "seed": 60404,
+    "body_clearance": 0.02890132192605846,
+    "min_lidar": 0.18678009510040283,
+    "min_lidar_angle": 80.4875605161766,
+    "max_current_body_violation": -0.023865080027668767,
+    "angle_of_max_violation": 44.29935501277935,
+    "max_current_margin_violation": 0.04870435172176962,
+    "shortest_arc_violation": 0.0487043559551239,
+    "limiting_angle": 44.29935501277935,
+    "limiting_range": 0.24883031845092773
+  },
+  {
+    "map": "IMS",
+    "seed": 60505,
+    "body_clearance": 0.0,
+    "min_lidar": 0.1707923412322998,
+    "min_lidar_angle": 83.48244648887153,
+    "max_current_body_violation": -0.009604952558862262,
+    "angle_of_max_violation": 66.76099980799142,
+    "max_current_margin_violation": 0.04512164109418243,
+    "shortest_arc_violation": 0.04801440238952637,
+    "limiting_angle": 111.68428939841556,
+    "limiting_range": 0.18602102994918823
+  },
+  {
+    "map": "Monza",
+    "seed": 60404,
+    "body_clearance": 0.018055007335582074,
+    "min_lidar": 0.26044607162475586,
+    "min_lidar_angle": 130.40232672775895,
+    "max_current_body_violation": -0.053009441353956466,
+    "angle_of_max_violation": 131.15104822093272,
+    "max_current_margin_violation": 0.013905600668882079,
+    "shortest_arc_violation": 0.029722392559051514,
+    "limiting_angle": 20.34026723121983,
+    "limiting_range": 0.4636886715888977
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 60404,
+    "body_clearance": 0.0,
+    "min_lidar": 0.1497030258178711,
+    "min_lidar_angle": 104.69622212879405,
+    "max_current_body_violation": 0.01053938765952922,
+    "angle_of_max_violation": 104.1970744666782,
+    "max_current_margin_violation": 0.0811760681257308,
+    "shortest_arc_violation": 0.08117607235908508,
+    "limiting_angle": 44.29935501277935,
+    "limiting_range": 0.21635860204696655
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 60505,
+    "body_clearance": 0.0,
+    "min_lidar": 0.15306204557418823,
+    "min_lidar_angle": -111.68428939841557,
+    "max_current_body_violation": 0.014328220139856462,
+    "angle_of_max_violation": -111.43471556735766,
+    "max_current_margin_violation": 0.07689559861833567,
+    "shortest_arc_violation": 0.07697561383247375,
+    "limiting_angle": -111.43471556735766,
+    "limiting_range": 0.15306204557418823
+  },
+  {
+    "map": "YasMarina",
+    "seed": 60404,
+    "body_clearance": 0.009842622623973202,
+    "min_lidar": 0.20400792360305786,
+    "min_lidar_angle": -111.18514173629974,
+    "max_current_body_violation": -0.00595058471237736,
+    "angle_of_max_violation": -35.06512326363662,
+    "max_current_margin_violation": 0.0821776850629623,
+    "shortest_arc_violation": 0.08217769861221313,
+    "limiting_angle": -35.06512326363662,
+    "limiting_range": 0.2791482210159302
+  }
+]

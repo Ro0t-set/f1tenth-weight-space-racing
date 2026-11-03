@@ -1,0 +1,11 @@
+{
+  "zero_simulator_collisions": false,
+  "zero_raster_contact_in_completed_laps": true,
+  "at_least_as_many_completions_as_previous": true,
+  "at_least_as_many_clean_completions_as_previous": true,
+  "no_more_timeouts_than_previous": true,
+  "faster_than_previous_on_common_standard_triplets": true,
+  "faster_than_ppo_on_common_standard_triplets": true,
+  "faster_than_previous_on_common_clean_triplets": true,
+  "faster_than_ppo_on_common_clean_triplets": true
+}

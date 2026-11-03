@@ -1,0 +1,58 @@
+{
+  "frozen_at_utc": "2026-11-03T08:33:53.015172+00:00",
+  "maps": [
+    "Austin",
+    "BrandsHatch",
+    "Budapest",
+    "Catalunya",
+    "Hockenheim",
+    "IMS",
+    "Melbourne",
+    "MexicoCity",
+    "Monza",
+    "MoscowRaceway",
+    "Nuerburgring",
+    "Oschersleben",
+    "Sakhir",
+    "SaoPaulo",
+    "Sepang",
+    "Silverstone",
+    "Sochi",
+    "Spa",
+    "Spielberg",
+    "YasMarina",
+    "Zandvoort"
+  ],
+  "seeds": [
+    71101,
+    71202,
+    71303,
+    71404,
+    71505
+  ],
+  "checkpoints": {
+    "previous": {
+      "path": "artifacts/from_scratch/arc_dynamic.pt",
+      "sha256": "170a0695f0613b7d6f42ae39a7afcac14032c79fffcf386c6e9478c1d508eeda"
+    },
+    "candidate": {
+      "path": "artifacts/arc_recovery/arc_recovered.pt",
+      "sha256": "871eb453f2a611e913ae05acdef6a729e9a556fffb4c76a74ee1668f15c6ba1c"
+    },
+    "ppo": {
+      "path": "artifacts/trajectory_v4/early_smooth.zip",
+      "sha256": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604"
+    }
+  },
+  "source_sha256": {
+    "experiments/arc_recovery_weights.py": "94694b4fad60d7fba60b3dbabc7147f30770fb0082943d4d9b5852baab170bf8",
+    "experiments/arc_launch_weights.py": "4565c74362884eb80959d368483b8dd235f665b73748cbffd719ea6c1cb0d426",
+    "experiments/from_scratch.py": "a130930797eb0ab11d1db97613d05cfb64c29400fbb572ba31a22ca33181892c",
+    "experiments/evaluate.py": "5156079591e82d8a24be899755def5191a5552f26c74e989214e48521f1db6f7",
+    "experiments/verify_arc_recovery.py": "423070a70b32904a393ab882891ca643dbf58d01a09002dd18fd930b162f5ff5",
+    "experiments/trajectory_audit.py": "80a466e30499242b130f98fcab41b7293d5ec75d8cd237d40355c2ee5c26833a",
+    "experiments/audit_all_footprints_v4.py": "ea5768f1aa9e9dfe85f5b997f692ad8f59ce08bfbb5ee9e81c924a33337cfc26"
+  },
+  "selection": "clear_straight plus launch core. 102/105 on previously observed starts vs 98/105, no observed simulator collision, gains all 4 initially disjoint historical timeouts. 18/21 development laps and 0 collisions. Separate 7 historical replays and all 105 new paired starts retained.",
+  "evaluation": "Old arc and PPO ran before candidate freeze. Their new-seed outcomes stayed unopened until selection. New model runs after freeze. Compare times on identical jointly completed and clean triplets; inspect full footprint on every step and episode."
+}

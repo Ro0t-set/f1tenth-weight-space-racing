@@ -1,0 +1,11 @@
+/upstream/
+/.venv/
+/.cache/
+/reruns/
+__pycache__/
+*.pyc
+*.npz
+*.log
+.DS_Store
+/artifacts/**/*.zip
+/artifacts/*.zip

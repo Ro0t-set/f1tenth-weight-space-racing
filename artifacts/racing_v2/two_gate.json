@@ -1,0 +1,24 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "sha256": "11c5284f542eae4e058b3494578f3211476d8f3f6e7975b03eaeb25ec796d4e6",
+  "specification": {
+    "formula": "v_original + 0.4*(1+g(d;16,4)) - 0.8*(1-g(d;5,2)); g=tanh(2*tanh((d-centre)/width))/tanh(2)",
+    "rationale": "Retain trained throttle/steering relationship. Boost up to .8m/s on open straight, brake up to 1.6m/s only at tight corners. No intervention in ordinary bends.",
+    "correction_bounds_mps": [
+      -1.6,
+      0.8
+    ]
+  },
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 2160,
+    "mlp_extractor.policy_net.0.bias": 2,
+    "mlp_extractor.policy_net.2.weight": 252,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 4,
+    "action_net.bias": 2
+  },
+  "changed_total": 2484,
+  "method": "reasoned analytic edits; no training, fitting, gradient or automated search",
+  "observation": "original single 1080-ray lidar; no velocity, slip, yaw rate or memory",
+  "inference_only": true
+}

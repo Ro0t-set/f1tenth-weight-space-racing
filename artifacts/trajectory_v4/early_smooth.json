@@ -1,0 +1,24 @@
+{
+  "variant": "early_smooth",
+  "parent": "artifacts/ultra/wall_panic_fast.zip",
+  "parent_sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5",
+  "sha256": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604",
+  "changed_from_original": {
+    "mlp_extractor.policy_net.0.weight": 5400,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changed_from_parent": {
+    "mlp_extractor.policy_net.0.weight": 4320,
+    "mlp_extractor.policy_net.0.bias": 1
+  },
+  "method": "manually reasoned weight edits; no gradients, training, fitting or parameter search",
+  "early_panic": "left-side threshold .4 -> .6m; same internal steering predicate",
+  "exit_support": "h0=tanh((1m-mean(d_left60*sin(theta)))/.2m); g=tanh(4*(h0-h41+h61-2)); steer -= .08*(1+g)",
+  "exit_approach": "Requires additionally h62=tanh((y_left120-y_left60-.15m)/.075m) and h1 positive; g=tanh(4*(h0-h41+h61+h62+h1-4))",
+  "early_smooth": "Gaussian angular low-pass sigma 2 beams (~0.5deg), only learned first-layer rows 1,14,41,61",
+  "inference_only": true
+}

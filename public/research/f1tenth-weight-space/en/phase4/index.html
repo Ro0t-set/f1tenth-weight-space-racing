@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Measuring the whole car through a turn · Tommaso Patriti</title>
+<meta name="description" content="Triggering the wall response earlier and smoothing angular peaks raises completions from 179 to 188. The candidate recovers ten episodes and loses one. Time changes by −0.0077% across 178 paired finishes. The…">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Measuring the whole car through a turn">
+<meta property="og:description" content="Triggering the wall response earlier and smoothing angular peaks raises completions from 179 to 188. The candidate recovers ten episodes and loses one. Time changes by −0.0077% across 178 paired finishes. The…">
+<meta property="og:url" content="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase4/">
+<link rel="canonical" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase4/">
+<link rel="alternate" hreflang="it" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase4/">
+<link rel="alternate" hreflang="en" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase4/">
+<link rel="alternate" hreflang="x-default" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase4/">
+<link rel="stylesheet" href="../../assets/study.css">
+</head>
+<body><a class="skip" href="#content">Skip to content</a>
+<header class="mast"><div class="wrap mast-row">
+<a class="signature" rel="home" href="https://tommasopatriti.me/"><b aria-hidden="true">TP</b> Tommaso Patriti</a>
+<nav class="languages" aria-label="Language"><a href="../../it/phase4/" lang="it" hreflang="it" aria-label="Italiano">IT</a><a href="./" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a></nav>
+</div></header>
+<main id="content" class="wrap">
+<header class="hero">
+<div class="eyeline"><a href="../../">Research</a>
+<span>F1TENTH</span><span>Autonomous driving</span></div>
+<div class="folio"><b>Phase 04 / 06</b> <span><time datetime="2026-11-03">3 November 2026</time></span></div>
+<h1>Measuring the whole car through a turn</h1>
+<div class="intro"><p>Triggering the wall response earlier and smoothing angular peaks raises completions from 179 to 188. The candidate recovers ten episodes and loses one. Time changes by −0.0077% across 178 paired finishes. The descriptive bootstrap interval based on track means spans zero, from −0.0297% to +0.0318%.</p>
+</div>
+</header>
+<div class="reading-grid">
+<nav class="study-index" id="study-index" aria-label="Study contents">
+<h2>Study contents</h2><ol><li><a href="../"><span aria-hidden="true">↳</span>Article</a></li><li><a href="../phase1/"><span aria-hidden="true">01</span>Editing the PPO</a></li><li><a href="../phase2/"><span aria-hidden="true">02</span>Speed and drift</a></li><li><a href="../phase3/"><span aria-hidden="true">03</span>Circuit-specific repair</a></li><li><a href="./" aria-current="page"><span aria-hidden="true">04</span>Contact and trajectories</a></li><li><a href="../phase5/"><span aria-hidden="true">05</span>Geometric network</a></li><li><a href="../phase6/"><span aria-hidden="true">06</span>Pace and starts</a></li><li><a href="../methods/"><span aria-hidden="true">§</span>Methods and data</a></li></ol></nav>
+<article class="prose"><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Model</th>
+<th align="right">Completed laps</th>
+<th align="right">Collisions</th>
+<th align="right">Paired lap time</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Previous fast model</td>
+<td align="right">179/210</td>
+<td align="right">31</td>
+<td align="right">baseline</td>
+</tr>
+<tr>
+<td>Edited weights</td>
+<td align="right">188/210</td>
+<td align="right">22</td>
+<td align="right">-0.0077%</td>
+</tr>
+</tbody></table></div>
+<p><img loading="lazy" decoding="async" src="../../assets/results/trajectory_v4/final_comparison.png" alt="Finishes and times with early_smooth"></p>
+<h2>Two changes to the weights</h2>
+<p>The left-wall threshold moves from 0.4 to 0.6 m. A two-ray Gaussian filter, about 0.5°, is folded into first-layer rows 1, 14, 41 and 61 only. Compared with the previous candidate, 4,321 scalars change. The shared layers also affect speed. Across 9,319 development observations, the mean absolute change in commanded speed is 0.01046 m/s.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Hypothesis</th>
+<th align="right">Completions (previous model 12/21)</th>
+<th align="right">Paired lap time</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>early_panic</code></td>
+<td align="right">14/21</td>
+<td align="right">+0.012%</td>
+</tr>
+<tr>
+<td><code>exit_support</code></td>
+<td align="right">0/21</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td><code>exit_only</code></td>
+<td align="right">0/21</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td><code>exit_approach</code></td>
+<td align="right">14/21</td>
+<td align="right">+0.313%</td>
+</tr>
+<tr>
+<td><code>early_smooth</code></td>
+<td align="right">15/21</td>
+<td align="right">+0.109%</td>
+</tr>
+<tr>
+<td><code>turn_preview</code></td>
+<td align="right">12/21</td>
+<td align="right">-0.894%</td>
+</tr>
+</tbody></table></div>
+<p>Generic corner-exit corrections lead to zero finishes. Previewing right turns speeds up some laps but loses successes. On the 210 previously observed starts from phase three, both <code>early_panic</code> and <code>early_smooth</code> complete 184 laps against 180. The latter better preserves pace and is frozen before ten new starts per track from 50101 to 51010.</p>
+<h2>Wall clearance at the body of the car</h2>
+<p>The simulator’s detector uses a length of 0.3302 m and excludes sideslip from its velocity projection. A separate audit compares the oriented 0.58 × 0.31 m body rectangle with occupied map pixels every 0.01 s. Across 420 episodes and 1,774,769 poses, contacts appear in seven completed laps for the previous model and eleven for the candidate. Finishes without sampled contact rise from 172 to 177. On the 170 contact-free pairs, time changes by −0.0037%.</p>
+<p>In the prespecified seed-50101 cohort, 17 tracks have a paired finish. On average, path length increases by 0.0072%, the fifth percentile of body clearance improves by 0.403 cm and the 95th percentile of distance from the racing line falls by 0.602 cm. Map resolution and motion between poses limit these measurements. Budapest, Monza and Spa were chosen for the figures before testing.</p>
+<p>Each episode lasts up to 200 simulated seconds. Finishing requires visiting at least 99% of the waypoints in order and crossing the start line without a simulator collision. Models share starting poses and LiDAR noise. Times compare laps completed from the same starts by the specified models. A negative value means a faster lap.</p>
+<h2>Interpreting raster clearance</h2>
+<p>For each pose the audit rotates the body rectangle and treats each pixel with intensity ≤128 as an occupied square. A spatial index selects nearby cells, then polygon-to-polygon Euclidean distance measures separation. Zero denotes contact or overlap. Racing-line error uses the nearest segment, and travel distance uses the polyline through recorded body centres. The exploratory 0.1 s traces precede the final 0.01 s recordings.</p>
+<p>At YasMarina 2202 the centre is 3.91 cm clear of the wall at launch but the body already intersects it. Across all final outcomes, episodes with at least one raster contact fall from 30 to 23 and contacting poses from 123 to 98. Seven of the candidate’s eleven finishes with contact are at Monza, three at Oschersleben and one at YasMarina. At Monza an independent check finds a corner of the car controlled by <code>wall_panic_fast</code> inside an occupied cell at 36.33 s, seed 50101. Map resolution is 9.585 cm per pixel.</p>
+<h2>Finishes and times by track</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Track</th>
+<th align="right">Previous model</th>
+<th align="right">Candidate</th>
+<th align="right">Paired lap time</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Austin</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">+0.090%</td>
+</tr>
+<tr>
+<td>BrandsHatch</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.010%</td>
+</tr>
+<tr>
+<td>Budapest</td>
+<td align="right">9/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.014%</td>
+</tr>
+<tr>
+<td>Catalunya</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.010%</td>
+</tr>
+<tr>
+<td>Hockenheim</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.029%</td>
+</tr>
+<tr>
+<td>IMS</td>
+<td align="right">8/10</td>
+<td align="right">8/10</td>
+<td align="right">+0.000%</td>
+</tr>
+<tr>
+<td>Melbourne</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.024%</td>
+</tr>
+<tr>
+<td>MexicoCity</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.031%</td>
+</tr>
+<tr>
+<td>Monza</td>
+<td align="right">3/10</td>
+<td align="right">7/10</td>
+<td align="right">+0.101%</td>
+</tr>
+<tr>
+<td>MoscowRaceway</td>
+<td align="right">9/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.181%</td>
+</tr>
+<tr>
+<td>Nuerburgring</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.031%</td>
+</tr>
+<tr>
+<td>Oschersleben</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">-0.019%</td>
+</tr>
+<tr>
+<td>Sakhir</td>
+<td align="right">9/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.072%</td>
+</tr>
+<tr>
+<td>SaoPaulo</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.012%</td>
+</tr>
+<tr>
+<td>Sepang</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.020%</td>
+</tr>
+<tr>
+<td>Silverstone</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.013%</td>
+</tr>
+<tr>
+<td>Sochi</td>
+<td align="right">0/10</td>
+<td align="right">0/10</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>Spa</td>
+<td align="right">8/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.050%</td>
+</tr>
+<tr>
+<td>Spielberg</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.062%</td>
+</tr>
+<tr>
+<td>YasMarina</td>
+<td align="right">5/10</td>
+<td align="right">5/10</td>
+<td align="right">+0.164%</td>
+</tr>
+<tr>
+<td>Zandvoort</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.053%</td>
+</tr>
+</tbody></table></div>
+<h2>Data and reproduction</h2>
+<ul>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/experiments/trajectory_audit.py">Clearance and trajectory calculation</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/trajectory_v4/final_geometry_seed50101.json">Prespecified trajectory cohort</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/trajectory_v4/final_all_footprints.json">Full pose audit</a></li>
+</ul>
+
+
+<footer class="sources"><h2>Sources and materials</h2><div><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/TRAJECTORY_RESULTS.md">Phase report</a>
+<a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Code and data</a>
+<a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/tree/9381a13eec6b182ff38e4fba55a105cf94219da6">Original project</a></div></footer>
+</article></div></main>
+<footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+<a href="#study-index">Back to the index ↑</a></footer>
+</body></html>

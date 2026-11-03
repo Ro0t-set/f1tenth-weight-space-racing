@@ -1,0 +1,12 @@
+{
+  "sha256": "7d3c960f8e26589b746c45962994b33ba74763467e3767954f2f263b389bc400",
+  "forward_graph_equal_to_arc_dynamic": true,
+  "all_coefficients_reproduced_exactly": true,
+  "num_coefficients": 28427,
+  "changed": {
+    "envelope": 12082,
+    "speed_slopes": 74,
+    "steer_slopes": 64
+  },
+  "changed_count": 12220
+}

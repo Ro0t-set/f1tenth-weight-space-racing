@@ -1,0 +1,162 @@
+{
+  "artifacts/arc_recovery/arc_recovered.pt": {
+    "historical_sha256": "871eb453f2a611e913ae05acdef6a729e9a556fffb4c76a74ee1668f15c6ba1c",
+    "public_sha256": "870c06cc64e8ed3bc6cce579f35d2ff961f98fc62b070b3e8c3f11ad3521e03d"
+  },
+  "artifacts/arc_recovery/bend_carry.pt": {
+    "historical_sha256": "6652e9db046a3afc4bf7b67d300dc0d86461d6dd38d4849b48e1c53fc3a8d5fd",
+    "public_sha256": "97df67b2f1ed48c47ee4423f228131e65280caa3b98662a3dc53df887bd06a2a"
+  },
+  "artifacts/arc_recovery/carry.pt": {
+    "historical_sha256": "71b618faeff7b90709bd37eb093bdc4c59035851f654a0d120c46045b93f3fd4",
+    "public_sha256": "a4c4f427e7ca06c129bfc502575c19ba541c5a6be3ea32b10d7105360203fbe4"
+  },
+  "artifacts/arc_recovery/clear_departure.pt": {
+    "historical_sha256": "8b5aaae51b74528ff20049f52c7c603e5002cf544afbd72d857d40fec552a5f0",
+    "public_sha256": "6872dde9cb210b99c608a527d79db9e366351446defbb660c183f46087796e99"
+  },
+  "artifacts/arc_recovery/clear_straight.pt": {
+    "historical_sha256": "ad81bb7e53c93df1dab015d4ad1a4725660871c91cb56984596d3675e008d02c",
+    "public_sha256": "65771c02163c41c8874384f78ade1587201ba2a761c7699b4eea5a50f40e2bd1"
+  },
+  "artifacts/arc_recovery/launch_guard.pt": {
+    "historical_sha256": "7d3c960f8e26589b746c45962994b33ba74763467e3767954f2f263b389bc400",
+    "public_sha256": "72c30f3d1296627b7b56020c6eb9ffc0f7eaebdaae716a08e427911cfebd0b62"
+  },
+  "artifacts/arc_recovery/nose_guard.pt": {
+    "historical_sha256": "1d03ce491244658645ebc6df5255be17a5d3148f715d3c1f11ae47ee4876bc95",
+    "public_sha256": "0258fef5773163839da98fc51c42f12dd51c91bc98457af87db5fa637c474a62"
+  },
+  "artifacts/arc_recovery/pose_guard.pt": {
+    "historical_sha256": "1c9960d8ec1492b4ce946ebb13eb33c6fdeec3dabfcc6cd86ef91e8c1ffed3ff",
+    "public_sha256": "47aa7bfbde852a28d3d40145740a2105b66d74bc45b4e1251d67706d303cb828"
+  },
+  "artifacts/arc_recovery/rolling_corner.pt": {
+    "historical_sha256": "0355b8d53cf263c68d35a17f95acc7fd105a1f9e1d427b4fbc585ab17d282836",
+    "public_sha256": "5ceb010b766f2525f268fc47459ed5e970a734be8ab46bde7924d2e6b7f042b3"
+  },
+  "artifacts/arc_recovery/startup.pt": {
+    "historical_sha256": "d81b7e87fee9078339056c4ddeb81c2afd67be996c7086c46c704060b10bf699",
+    "public_sha256": "3dad660fd35fa6ef48d131bc85ab5a4a359db875626fe5fe7c439cba47e7b34d"
+  },
+  "artifacts/arc_recovery/startup_body.pt": {
+    "historical_sha256": "0af6e1477b53e2911a35a64bd72d6a2473c936734323e94dada1d0dc1ee7323a",
+    "public_sha256": "b193360f4185ced2175624ab80fc924974e0b52f436fd3646dd0aa09bac3a4ad"
+  },
+  "artifacts/arc_recovery/startup_core.pt": {
+    "historical_sha256": "d81b7e87fee9078339056c4ddeb81c2afd67be996c7086c46c704060b10bf699",
+    "public_sha256": "3dad660fd35fa6ef48d131bc85ab5a4a359db875626fe5fe7c439cba47e7b34d"
+  },
+  "artifacts/arc_recovery/startup_escape.pt": {
+    "historical_sha256": "9394bd0cad15ab7cf2655b1612d3e1803dc727f61818a414fe03034eb8e1fce2",
+    "public_sha256": "8dbb244bdb860e3c4cf7035683bc9173cd36f3e4cc7e67d40b2e306c6f91e2be"
+  },
+  "artifacts/arc_recovery/startup_noise.pt": {
+    "historical_sha256": "401b74a8ac4ca76f9bb3b255448d00fabae0c21a7bdef69380901f74eed37659",
+    "public_sha256": "f6f10a5f20733ce7deabf831f4dbda711d54d4464615fe9b355f70e062128d9a"
+  },
+  "artifacts/arc_recovery/startup_shoulder.pt": {
+    "historical_sha256": "e9193750505ac5ded106c152c54becb3ed139708203431be0a4e0e152d126067",
+    "public_sha256": "9292bbb7d12d5b86985165ab481822d7e5ff25fbb0368ba2b3ac93353587776f"
+  },
+  "artifacts/arc_recovery/startup_tapered.pt": {
+    "historical_sha256": "e605183ec52a6481f8f48ef583f29424bb817078942407c6bb600bca7fa64300",
+    "public_sha256": "35d00e37c8960c5cbf8cadc1ea0e21c0c52ac3351491356eddaa3558117019d9"
+  },
+  "artifacts/from_scratch/arc_dynamic.pt": {
+    "historical_sha256": "170a0695f0613b7d6f42ae39a7afcac14032c79fffcf386c6e9478c1d508eeda",
+    "public_sha256": "954c1d6b6d16f3f80a88657c7451860767a577d8b5c9c816646c2c6acee08b1c"
+  },
+  "artifacts/from_scratch/arc_dynamic_pace.pt": {
+    "historical_sha256": "ac5702d40934908c1b91449a87162968bd32d95a2707cd95b4f67b1f659b374e",
+    "public_sha256": "729abdfbed402518e920167131801eae3b32609a70bc2f260ac3c3e54510484e"
+  },
+  "artifacts/from_scratch/arc_mode.pt": {
+    "historical_sha256": "5185c4980a77f000c312fa1838dba8d883c5618018c715ef7f5c02787bdcba9f",
+    "public_sha256": "2abe39547072a429de55ac9c2a7a5de31dc23cbd26540b4427123edc54c9e048"
+  },
+  "artifacts/from_scratch/arc_soft.pt": {
+    "historical_sha256": "39beeb97017864384ae23ec5d5524cd6e7351b3714aacb3922ba1f652ec38ee2",
+    "public_sha256": "54d9487fd6c4f38445ee7cdd727a8677f0e4d121a5a220c80cb3c8d19c271b7e"
+  },
+  "artifacts/clearance_cautious.zip": {
+    "historical_sha256": "33283f78b55fda927aebbb22f1244ede51bc22e05a3b7296e3223d84b1c5ba9d",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/clearance_gate.zip": {
+    "historical_sha256": "475297b347acebbd2d63e22e2509bb55b6907177bcd2f99c73abaa3faf42a2f9",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/racing_v2/clearance_speed.zip": {
+    "historical_sha256": "bdbd767d86533930098747672ed7758a5fb4178c9ef572a8fea392d6372f4319",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/racing_v2/curvature_compensated.zip": {
+    "historical_sha256": "f165ebf088b8bfdc383838acd0b3460efba6ef4e3cac584fdf2bfeaca4709efe",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/racing_v2/exit_guard.zip": {
+    "historical_sha256": "f20c0e49412e99c4108f13946ccde2449dfb7826b626d8060921bb2281b729f3",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/racing_v2/geometric.zip": {
+    "historical_sha256": "1d84dfcbc18a7e2e40434fc73b73c8844ab8de656be5c947f66bfd40ed56fbd8",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/racing_v2/straight_boost.zip": {
+    "historical_sha256": "4bae618d9258e7c4d1951f364decc2d1576369b7a2b5eb321e469de76e46d9c2",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/racing_v2/two_gate.zip": {
+    "historical_sha256": "11c5284f542eae4e058b3494578f3211476d8f3f6e7975b03eaeb25ec796d4e6",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/racing_v2/two_gate_guard.zip": {
+    "historical_sha256": "574a6bd30d0b7258eca117a586104fa5efa3a17957b01263330507d17c3c8108",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/trajectory_v4/early_panic.zip": {
+    "historical_sha256": "e6253637182cf533468a0b2f294efbfe623d132af96539d9e475d44caae1e6f2",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/trajectory_v4/early_smooth.zip": {
+    "historical_sha256": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/trajectory_v4/exit_approach.zip": {
+    "historical_sha256": "1233ed545f0d14d3b579dfd2c915da51c7f4121be44e1114e21611c9e91bd343",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/trajectory_v4/exit_only.zip": {
+    "historical_sha256": "cb2c1d474dc5aa36155ef598668a5ab32be3edade02175539408b93606a5b97a",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/trajectory_v4/exit_support.zip": {
+    "historical_sha256": "9e94fafcdb1f47c5699be50a776deec50a9f025f70b011b0347bb42b426b21d4",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/trajectory_v4/turn_preview.zip": {
+    "historical_sha256": "c71240f6c57ddd4719924a36cbfd53b0c77432b546db16ad469bacf7378a8162",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/ultra/angular_smooth.zip": {
+    "historical_sha256": "94ed4ae1156455a0cca85088ac726acde658914c28719885e788845dc5ebcd71",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/ultra/panic_gate.zip": {
+    "historical_sha256": "8f976e14dfb185295ef25218aa2d140f03d9319d4989fdfa57d6d19589fdfb9d",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/ultra/wall_panic.zip": {
+    "historical_sha256": "3d64cfa99936d7ae0ca9ff4fafbfeef18cdc878bafe990d11f661e4a69310a5a",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "artifacts/ultra/wall_panic_fast.zip": {
+    "historical_sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5",
+    "source": "Generate with scripts/build_ppo.sh"
+  },
+  "upstream/train_test/best_global_model.zip": {
+    "historical_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+    "source": "Upstream checkout"
+  }
+}

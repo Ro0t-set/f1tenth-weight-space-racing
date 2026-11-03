@@ -1,0 +1,193 @@
+{
+  "previous": {
+    "completed": {
+      "episodes": 95,
+      "completed": 95,
+      "collisions": 0,
+      "saved_frames": 439332,
+      "minimum_body_clearance_m": 0.0,
+      "contact_or_overlap_episodes": 6,
+      "contact_or_overlap_frames": 13,
+      "frame_fraction_below_10cm": 0.002474210847377382,
+      "frame_fraction_below_20cm": 0.007479537115438893,
+      "mean_episode_clearance_p05_m": 0.41130270132693864,
+      "contact_or_overlap_cases": [
+        {
+          "map": "Budapest",
+          "seed": 60505,
+          "success": true,
+          "frames": 2,
+          "initial_clearance_m": 0.7342103139072971
+        },
+        {
+          "map": "Monza",
+          "seed": 60101,
+          "success": true,
+          "frames": 3,
+          "initial_clearance_m": 0.4947352945014766
+        },
+        {
+          "map": "Monza",
+          "seed": 60404,
+          "success": true,
+          "frames": 3,
+          "initial_clearance_m": 0.018055007335582074
+        },
+        {
+          "map": "Monza",
+          "seed": 60505,
+          "success": true,
+          "frames": 3,
+          "initial_clearance_m": 0.22730328296892985
+        },
+        {
+          "map": "Oschersleben",
+          "seed": 60101,
+          "success": true,
+          "frames": 1,
+          "initial_clearance_m": 0.13466944221888774
+        },
+        {
+          "map": "Oschersleben",
+          "seed": 60303,
+          "success": true,
+          "frames": 1,
+          "initial_clearance_m": 0.06516765979373909
+        }
+      ]
+    },
+    "crashed": {
+      "episodes": 10,
+      "completed": 0,
+      "collisions": 10,
+      "saved_frames": 8542,
+      "minimum_body_clearance_m": 0.0,
+      "contact_or_overlap_episodes": 6,
+      "contact_or_overlap_frames": 23,
+      "frame_fraction_below_10cm": 0.024116132053383282,
+      "frame_fraction_below_20cm": 0.042847108405525636,
+      "mean_episode_clearance_p05_m": 0.12799509944244314,
+      "contact_or_overlap_cases": [
+        {
+          "map": "IMS",
+          "seed": 60505,
+          "success": false,
+          "frames": 13,
+          "initial_clearance_m": 0.0
+        },
+        {
+          "map": "Oschersleben",
+          "seed": 60404,
+          "success": false,
+          "frames": 3,
+          "initial_clearance_m": 0.0
+        },
+        {
+          "map": "Oschersleben",
+          "seed": 60505,
+          "success": false,
+          "frames": 3,
+          "initial_clearance_m": 0.0
+        },
+        {
+          "map": "Sochi",
+          "seed": 60202,
+          "success": false,
+          "frames": 1,
+          "initial_clearance_m": 0.07563994138077565
+        },
+        {
+          "map": "Sochi",
+          "seed": 60303,
+          "success": false,
+          "frames": 2,
+          "initial_clearance_m": 0.5685327406444621
+        },
+        {
+          "map": "Sochi",
+          "seed": 60505,
+          "success": false,
+          "frames": 1,
+          "initial_clearance_m": 0.10480018066456734
+        }
+      ]
+    },
+    "timed_out": {
+      "episodes": 0,
+      "completed": 0,
+      "collisions": 0,
+      "saved_frames": 0,
+      "minimum_body_clearance_m": null,
+      "contact_or_overlap_episodes": 0,
+      "contact_or_overlap_frames": 0,
+      "frame_fraction_below_10cm": null,
+      "frame_fraction_below_20cm": null,
+      "mean_episode_clearance_p05_m": null,
+      "contact_or_overlap_cases": []
+    }
+  },
+  "candidate": {
+    "completed": {
+      "episodes": 98,
+      "completed": 98,
+      "collisions": 0,
+      "saved_frames": 495310,
+      "minimum_body_clearance_m": 0.025587007091999896,
+      "contact_or_overlap_episodes": 0,
+      "contact_or_overlap_frames": 0,
+      "frame_fraction_below_10cm": 0.04869677575659688,
+      "frame_fraction_below_20cm": 0.26363691425571867,
+      "mean_episode_clearance_p05_m": 0.10383804138773385,
+      "contact_or_overlap_cases": []
+    },
+    "crashed": {
+      "episodes": 0,
+      "completed": 0,
+      "collisions": 0,
+      "saved_frames": 0,
+      "minimum_body_clearance_m": null,
+      "contact_or_overlap_episodes": 0,
+      "contact_or_overlap_frames": 0,
+      "frame_fraction_below_10cm": null,
+      "frame_fraction_below_20cm": null,
+      "mean_episode_clearance_p05_m": null,
+      "contact_or_overlap_cases": []
+    },
+    "timed_out": {
+      "episodes": 7,
+      "completed": 0,
+      "collisions": 0,
+      "saved_frames": 140000,
+      "minimum_body_clearance_m": 0.0,
+      "contact_or_overlap_episodes": 3,
+      "contact_or_overlap_frames": 60000,
+      "frame_fraction_below_10cm": 1.0,
+      "frame_fraction_below_20cm": 1.0,
+      "mean_episode_clearance_p05_m": 0.009767255394449536,
+      "contact_or_overlap_cases": [
+        {
+          "map": "IMS",
+          "seed": 60505,
+          "success": false,
+          "frames": 20000,
+          "initial_clearance_m": 0.0
+        },
+        {
+          "map": "Oschersleben",
+          "seed": 60404,
+          "success": false,
+          "frames": 20000,
+          "initial_clearance_m": 0.0
+        },
+        {
+          "map": "Oschersleben",
+          "seed": 60505,
+          "success": false,
+          "frames": 20000,
+          "initial_clearance_m": 0.0
+        }
+      ]
+    }
+  },
+  "scope": "All105paired episodes per model; split by original evaluation success/collision/timeout, no exclusions"
+}

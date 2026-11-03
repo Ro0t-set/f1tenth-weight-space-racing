@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Misurare l’intera carrozzeria in curva · Tommaso Patriti</title>
+<meta name="description" content="Anticipare l’intervento vicino al muro e attenuare i picchi angolari porta i completamenti da 179 a 188. Il candidato recupera dieci episodi e ne perde uno. Il tempo cambia di −0,0077% su 178 coppie completate.…">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Misurare l’intera carrozzeria in curva">
+<meta property="og:description" content="Anticipare l’intervento vicino al muro e attenuare i picchi angolari porta i completamenti da 179 a 188. Il candidato recupera dieci episodi e ne perde uno. Il tempo cambia di −0,0077% su 178 coppie completate.…">
+<meta property="og:url" content="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase4/">
+<link rel="canonical" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase4/">
+<link rel="alternate" hreflang="it" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase4/">
+<link rel="alternate" hreflang="en" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase4/">
+<link rel="alternate" hreflang="x-default" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase4/">
+<link rel="stylesheet" href="../../assets/study.css">
+</head>
+<body><a class="skip" href="#content">Vai al contenuto</a>
+<header class="mast"><div class="wrap mast-row">
+<a class="signature" rel="home" href="https://tommasopatriti.me/"><b aria-hidden="true">TP</b> Tommaso Patriti</a>
+<nav class="languages" aria-label="Lingua"><a href="./" lang="it" hreflang="it" aria-label="Italiano" aria-current="page">IT</a><a href="../../en/phase4/" lang="en" hreflang="en" aria-label="English">EN</a></nav>
+</div></header>
+<main id="content" class="wrap">
+<header class="hero">
+<div class="eyeline"><a href="../../">Ricerca</a>
+<span>F1TENTH</span><span>Guida autonoma</span></div>
+<div class="folio"><b>Fase 04 / 06</b> <span><time datetime="2026-11-03">3 novembre 2026</time></span></div>
+<h1>Misurare l’intera carrozzeria in curva</h1>
+<div class="intro"><p>Anticipare l’intervento vicino al muro e attenuare i picchi angolari porta i completamenti da 179 a 188. Il candidato recupera dieci episodi e ne perde uno. Il tempo cambia di −0,0077% su 178 coppie completate. L’intervallo bootstrap descrittivo delle medie per pista, da −0,0297% a +0,0318%, comprende lo zero.</p>
+</div>
+</header>
+<div class="reading-grid">
+<nav class="study-index" id="study-index" aria-label="Indice dello studio">
+<h2>Indice dello studio</h2><ol><li><a href="../"><span aria-hidden="true">↳</span>Articolo</a></li><li><a href="../phase1/"><span aria-hidden="true">01</span>Modifiche alla PPO</a></li><li><a href="../phase2/"><span aria-hidden="true">02</span>Velocità e drift</a></li><li><a href="../phase3/"><span aria-hidden="true">03</span>Correzione su circuito</a></li><li><a href="./" aria-current="page"><span aria-hidden="true">04</span>Contatti e traiettorie</a></li><li><a href="../phase5/"><span aria-hidden="true">05</span>Rete geometrica</a></li><li><a href="../phase6/"><span aria-hidden="true">06</span>Velocità e partenze</a></li><li><a href="../methods/"><span aria-hidden="true">§</span>Metodi e dati</a></li></ol></nav>
+<article class="prose"><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Modello</th>
+<th align="right">Giri completati</th>
+<th align="right">Collisioni</th>
+<th align="right">Tempo appaiato</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Veloce precedente</td>
+<td align="right">179/210</td>
+<td align="right">31</td>
+<td align="right">riferimento</td>
+</tr>
+<tr>
+<td>Nuovi pesi</td>
+<td align="right">188/210</td>
+<td align="right">22</td>
+<td align="right">-0.0077%</td>
+</tr>
+</tbody></table></div>
+<p><img loading="lazy" decoding="async" src="../../assets/results/trajectory_v4/final_comparison.png" alt="Completamenti e tempi con early_smooth"></p>
+<h2>Due modifiche ai pesi</h2>
+<p>La soglia della parete sinistra passa da 0,4 a 0,6 m. Nelle sole righe 1, 14, 41 e 61 del primo strato viene incorporato un filtro gaussiano con ampiezza di due raggi, circa 0,5°. Cambiano 4.321 scalari rispetto al candidato precedente. Gli strati condivisi influiscono anche sulla velocità. Su 9.319 osservazioni di sviluppo la variazione assoluta media comandata è 0,01046 m/s.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ipotesi</th>
+<th align="right">Completamenti, precedente 12/21</th>
+<th align="right">Tempo appaiato</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>early_panic</code></td>
+<td align="right">14/21</td>
+<td align="right">+0.012%</td>
+</tr>
+<tr>
+<td><code>exit_support</code></td>
+<td align="right">0/21</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td><code>exit_only</code></td>
+<td align="right">0/21</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td><code>exit_approach</code></td>
+<td align="right">14/21</td>
+<td align="right">+0.313%</td>
+</tr>
+<tr>
+<td><code>early_smooth</code></td>
+<td align="right">15/21</td>
+<td align="right">+0.109%</td>
+</tr>
+<tr>
+<td><code>turn_preview</code></td>
+<td align="right">12/21</td>
+<td align="right">-0.894%</td>
+</tr>
+</tbody></table></div>
+<p>Le correzioni generiche all’uscita di curva portano a zero completamenti. Anticipare le curve destre accelera alcuni giri ma perde successi. Nei 210 casi della fase precedente, già osservati, sia <code>early_panic</code> sia <code>early_smooth</code> completano 184 giri contro 180. Il secondo conserva meglio il tempo e viene congelato per le dieci nuove partenze da 50101 a 51010 su ciascuna pista.</p>
+<h2>Il muro visto dal corpo del veicolo</h2>
+<p>Il rilevatore del simulatore usa una lunghezza di 0,3302 m e trascura la deriva nella proiezione della velocità. Un controllo separato confronta il rettangolo orientato della carrozzeria di 0,58 × 0,31 m con i pixel occupati della mappa ogni 0,01 s. Sui 420 episodi, per 1.774.769 pose, emergono contatti in sette giri completati precedenti e undici del candidato. I completamenti senza contatti campionati passano da 172 a 177. Sulle 170 coppie pulite la differenza di tempo è −0,0037%.</p>
+<p>Nella coorte prefissata con seed 50101, 17 piste hanno una coppia completata. In media la lunghezza cresce dello 0,0072%, il quinto percentile del margine migliora di 0,403 cm e il 95º percentile dello scarto dalla raceline scende di 0,602 cm. La risoluzione della mappa e il moto fra due pose limitano queste misure. Budapest, Monza e Spa erano state scelte per le figure prima del test.</p>
+<p>Ogni episodio dura al massimo 200 secondi simulati. Per completare il giro occorre visitare almeno il 99% dei waypoint in ordine e attraversare la linea di partenza senza una collisione segnalata. Partenze e rumore LiDAR sono appaiati. I tempi si confrontano sulle stesse partenze completate dai modelli indicati. Un valore negativo indica un giro più rapido.</p>
+<h2>Come leggere il margine raster</h2>
+<p>Per ciascuna posa l’audit ruota il rettangolo della carrozzeria e rappresenta ogni pixel con intensità ≤128 come un quadrato occupato. Un indice spaziale seleziona le celle vicine, poi la distanza euclidea tra poligoni misura la separazione. Lo zero indica contatto o sovrapposizione. Lo scarto dalla raceline si misura rispetto al segmento più vicino, la lunghezza percorsa lungo la polilinea dei centri salvati. Le tracce esplorative a 0,1 s precedono la registrazione finale a 0,01 s.</p>
+<p>A YasMarina 2202, il centro dista 3,91 cm dal muro alla partenza, ma il corpo già lo interseca. Su tutti gli esiti finali, gli episodi con almeno un contatto raster scendono da 30 a 23 e i campioni con contatto da 123 a 98. Degli undici giri completati con contatto dal candidato, sette sono a Monza, tre a Oschersleben e uno a YasMarina. A Monza un controllo indipendente trova un vertice del veicolo guidato da <code>wall_panic_fast</code> dentro una cella occupata a 36,33 s, seed 50101. La mappa ha risoluzione 9,585 cm/pixel.</p>
+<h2>Completamenti e tempi per pista</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pista</th>
+<th align="right">Precedente</th>
+<th align="right">Candidato</th>
+<th align="right">Tempo appaiato</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Austin</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">+0.090%</td>
+</tr>
+<tr>
+<td>BrandsHatch</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.010%</td>
+</tr>
+<tr>
+<td>Budapest</td>
+<td align="right">9/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.014%</td>
+</tr>
+<tr>
+<td>Catalunya</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.010%</td>
+</tr>
+<tr>
+<td>Hockenheim</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.029%</td>
+</tr>
+<tr>
+<td>IMS</td>
+<td align="right">8/10</td>
+<td align="right">8/10</td>
+<td align="right">+0.000%</td>
+</tr>
+<tr>
+<td>Melbourne</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.024%</td>
+</tr>
+<tr>
+<td>MexicoCity</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.031%</td>
+</tr>
+<tr>
+<td>Monza</td>
+<td align="right">3/10</td>
+<td align="right">7/10</td>
+<td align="right">+0.101%</td>
+</tr>
+<tr>
+<td>MoscowRaceway</td>
+<td align="right">9/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.181%</td>
+</tr>
+<tr>
+<td>Nuerburgring</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.031%</td>
+</tr>
+<tr>
+<td>Oschersleben</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">-0.019%</td>
+</tr>
+<tr>
+<td>Sakhir</td>
+<td align="right">9/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.072%</td>
+</tr>
+<tr>
+<td>SaoPaulo</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.012%</td>
+</tr>
+<tr>
+<td>Sepang</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.020%</td>
+</tr>
+<tr>
+<td>Silverstone</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.013%</td>
+</tr>
+<tr>
+<td>Sochi</td>
+<td align="right">0/10</td>
+<td align="right">0/10</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>Spa</td>
+<td align="right">8/10</td>
+<td align="right">10/10</td>
+<td align="right">+0.050%</td>
+</tr>
+<tr>
+<td>Spielberg</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.062%</td>
+</tr>
+<tr>
+<td>YasMarina</td>
+<td align="right">5/10</td>
+<td align="right">5/10</td>
+<td align="right">+0.164%</td>
+</tr>
+<tr>
+<td>Zandvoort</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-0.053%</td>
+</tr>
+</tbody></table></div>
+<h2>Dati e riproduzione</h2>
+<ul>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/experiments/trajectory_audit.py">Calcolo dei margini e delle traiettorie</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/trajectory_v4/final_geometry_seed50101.json">Coorte di traiettorie fissata in anticipo</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/trajectory_v4/final_all_footprints.json">Audit di tutte le pose</a></li>
+</ul>
+
+
+<footer class="sources"><h2>Fonti e materiali</h2><div><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/TRAJECTORY_RESULTS.md">Report della fase</a>
+<a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Codice e dati</a>
+<a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/tree/9381a13eec6b182ff38e4fba55a105cf94219da6">Progetto originale</a></div></footer>
+</article></div></main>
+<footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+<a href="#study-index">Torna all’indice ↑</a></footer>
+</body></html>

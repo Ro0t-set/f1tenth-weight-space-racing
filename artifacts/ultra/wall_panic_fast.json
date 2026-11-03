@@ -1,0 +1,17 @@
+{
+  "name": "wall_panic_fast",
+  "hypothesis": "Retain the specific near-left-wall panic correction; test a smaller .2m/s longitudinal bias increase without the global steering gain that previously regressed. No other tensors changed relative to wall_panic.",
+  "source_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+  "sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5",
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 1080,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changed_total": 1276,
+  "method": "direct analytic edits, no fitting/training/search",
+  "inference_only": true
+}

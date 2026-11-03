@@ -1,0 +1,316 @@
+{
+  "artifact": "artifacts/from_scratch/arc_mode.pt",
+  "artifact_sha256": "5185c4980a77f000c312fa1838dba8d883c5618018c715ef7f5c02787bdcba9f",
+  "source_sha256": "1c85d64e64c929dd8a2a0cad9e156d8d0be864fe1e6ecbf8ca408209ecf25f6f",
+  "explicit_origin": "All stored tensors are analytically generated in compiler; no learned PPO tensors, optimizer, training, fitting or random initialization are used.",
+  "size": {
+    "registered_parameter_elements": 0,
+    "registered_buffer_elements": 28427,
+    "dense_stored_elements": 28427,
+    "nonzero_stored_elements": 19850,
+    "stored_tensor_bytes": 113708,
+    "unique_storage_bytes": 113708,
+    "storage_aliases": [],
+    "script_file_bytes": 122214,
+    "ppo_actor_mean_elements": 73474,
+    "ppo_log_std_elements": 2,
+    "ppo_full_checkpoint_tensor_elements": 146885,
+    "ppo_zip_file_bytes": 1818640,
+    "interpretation": "Zero trainable parameters does not mean zero weights: coefficients are persistent buffers. Stored elements, nonzeros and independent design constants are distinct. Formula construction ties geometric coefficients; no claim of 28427 independent learned degrees of freedom. No fully expanded dense1080-to-geometry matrix is stored.",
+    "uncounted_architecture_literals": [
+      "LiDAR/action normalization constants",
+      "pool6/stride6",
+      "feasibility width0.04",
+      "softmax temperature0.15",
+      "mode-local boolean and argmax tie convention"
+    ]
+  },
+  "tensors": [
+    {
+      "name": "envelope",
+      "shape": [
+        17,
+        9,
+        180
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 27540,
+      "nonzero_elements": 19260,
+      "bytes": 110160
+    },
+    {
+      "name": "valid",
+      "shape": [
+        17,
+        9
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 153,
+      "nonzero_elements": 107,
+      "bytes": 612
+    },
+    {
+      "name": "delta_h",
+      "shape": [
+        9
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 9,
+      "nonzero_elements": 9,
+      "bytes": 36
+    },
+    {
+      "name": "prior",
+      "shape": [
+        17
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 17,
+      "nonzero_elements": 16,
+      "bytes": 68
+    },
+    {
+      "name": "knots",
+      "shape": [
+        11
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 11,
+      "nonzero_elements": 10,
+      "bytes": 44
+    },
+    {
+      "name": "speed_slopes",
+      "shape": [
+        17,
+        11
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 187,
+      "nonzero_elements": 104,
+      "bytes": 748
+    },
+    {
+      "name": "steer_slopes",
+      "shape": [
+        17,
+        11
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 187,
+      "nonzero_elements": 88,
+      "bytes": 748
+    },
+    {
+      "name": "speed_base",
+      "shape": [
+        17
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 17,
+      "nonzero_elements": 0,
+      "bytes": 68
+    },
+    {
+      "name": "steer_base",
+      "shape": [
+        17
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 17,
+      "nonzero_elements": 16,
+      "bytes": 68
+    },
+    {
+      "name": "mode_mask",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "torch.float32",
+      "dense_elements": 289,
+      "nonzero_elements": 240,
+      "bytes": 1156
+    }
+  ],
+  "equivalence": {
+    "observations": 479,
+    "max_eager_script_difference": 0.0,
+    "max_script_adapter_difference": 0.0,
+    "max_batch_single_difference": 0.0
+  },
+  "synthetic_mirror": [
+    {
+      "case": "free",
+      "action": [
+        0.0,
+        0.19999992847442627
+      ],
+      "mirrored_action": [
+        0.0,
+        0.19999992847442627
+      ],
+      "steering_residual": 0.0,
+      "speed_residual": 0.0,
+      "passes_tolerance_2e_6": true
+    },
+    {
+      "case": "symmetric_1m_front30m",
+      "action": [
+        0.0,
+        0.1999998539686203
+      ],
+      "mirrored_action": [
+        0.0,
+        0.1999998539686203
+      ],
+      "steering_residual": 0.0,
+      "speed_residual": 0.0,
+      "passes_tolerance_2e_6": true
+    },
+    {
+      "case": "symmetric_1m_front5m",
+      "action": [
+        0.0,
+        -0.028685759752988815
+      ],
+      "mirrored_action": [
+        0.0,
+        -0.028685759752988815
+      ],
+      "steering_residual": 0.0,
+      "speed_residual": 0.0,
+      "passes_tolerance_2e_6": true
+    },
+    {
+      "case": "offset_035_165_front30m",
+      "action": [
+        -0.0311285387724638,
+        0.06452995538711548
+      ],
+      "mirrored_action": [
+        0.0311285387724638,
+        0.06452995538711548
+      ],
+      "steering_residual": 0.0,
+      "speed_residual": 0.0,
+      "passes_tolerance_2e_6": true
+    },
+    {
+      "case": "offset_07_13_front5m",
+      "action": [
+        -0.028138142079114914,
+        -0.028688354417681694
+      ],
+      "mirrored_action": [
+        0.028138142079114914,
+        -0.02868831716477871
+      ],
+      "steering_residual": 0.0,
+      "speed_residual": 3.725290298461914e-08,
+      "passes_tolerance_2e_6": true
+    },
+    {
+      "case": "offcenter_obstacle",
+      "action": [
+        0.0,
+        0.1999998539686203
+      ],
+      "mirrored_action": [
+        0.0,
+        0.1999998539686203
+      ],
+      "steering_residual": 0.0,
+      "speed_residual": 0.0,
+      "passes_tolerance_2e_6": true
+    },
+    {
+      "case": "tie_stress_symmetric_10m_front5m",
+      "action": [
+        -0.2830422520637512,
+        -0.21355770528316498
+      ],
+      "mirrored_action": [
+        -0.2830422520637512,
+        -0.21355770528316498
+      ],
+      "steering_residual": 0.5660845041275024,
+      "speed_residual": 0.0,
+      "passes_tolerance_2e_6": false
+    },
+    {
+      "case": "tie_stress_symmetric_3m_front3m",
+      "action": [
+        -0.3565475046634674,
+        -0.25845959782600403
+      ],
+      "mirrored_action": [
+        -0.3565475046634674,
+        -0.25845959782600403
+      ],
+      "steering_residual": 0.7130950093269348,
+      "speed_residual": 0.0,
+      "passes_tolerance_2e_6": false
+    }
+  ],
+  "latency": {
+    "arc_predict": {
+      "calls": 5000,
+      "warmup": 128,
+      "p50_us": 47.625,
+      "p95_us": 51.294050000000006,
+      "block_median_us": [
+        48.125,
+        47.75,
+        47.417,
+        46.5625,
+        47.708
+      ]
+    },
+    "ppo_predict": {
+      "calls": 5000,
+      "warmup": 128,
+      "p50_us": 56.833,
+      "p95_us": 62.294050000000006,
+      "block_median_us": [
+        56.542,
+        56.625,
+        56.833,
+        57.25,
+        56.542
+      ]
+    },
+    "arc_raw": {
+      "calls": 5000,
+      "warmup": 128,
+      "p50_us": 44.791,
+      "p95_us": 55.125,
+      "block_median_us": [
+        44.584,
+        44.917,
+        45.208,
+        44.9795,
+        44.5
+      ]
+    },
+    "ppo_raw_actor": {
+      "calls": 5000,
+      "warmup": 128,
+      "p50_us": 31.584,
+      "p95_us": 33.375,
+      "block_median_us": [
+        31.708,
+        31.625,
+        31.583,
+        31.583,
+        31.541
+      ]
+    }
+  },
+  "findings": [
+    "arc_mode argmax resolves exact ties toward the lowest index; symmetric scenes can produce a nonzero negative steering action. Global mirror symmetry therefore does not hold.",
+    "A smaller coefficient count is not itself a guarantee of lower latency: 17x9x180 envelope comparisons/reductions are evaluated each call.",
+    "Current velocity/slip are absent from observation; compiled steady-state steering and braking schedules are approximations, not dynamic guarantees.",
+    "Runtime is a tensor geometric controller with analytically compiled coefficients, not a newly trained RL model."
+  ]
+}

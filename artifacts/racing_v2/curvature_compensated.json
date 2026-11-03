@@ -1,0 +1,18 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "sha256": "f165ebf088b8bfdc383838acd0b3460efba6ef4e3cac584fdf2bfeaca4709efe",
+  "specification": {
+    "formula": "steer_new=gain*steer_original; v_new=v_original+0.3m/s (before action clipping)",
+    "steering_gain": 1.02721087931901,
+    "nominal_speed_mps": 8.5,
+    "rationale": "Large throttle edits destabilized load-transfer transients. Preserve learned throttle modulation and compensate the single-track steady-state curvature loss from a small speed increase. Gain derived from vehicle equations, not fitted."
+  },
+  "changed": {
+    "action_net.weight": 64,
+    "action_net.bias": 2
+  },
+  "changed_total": 66,
+  "method": "reasoned analytic edits; no training, fitting, gradient or automated search",
+  "observation": "original single 1080-ray lidar; no velocity, slip, yaw rate or memory",
+  "inference_only": true
+}

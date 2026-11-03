@@ -1,0 +1,77 @@
+{
+  "frozen_at_utc": "2026-11-03T00:47:35.243648+00:00",
+  "checkpoints": {
+    "previous": {
+      "path": "artifacts/trajectory_v4/early_smooth.zip",
+      "sha256": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604"
+    },
+    "candidate": {
+      "path": "artifacts/from_scratch/arc_dynamic.pt",
+      "sha256": "170a0695f0613b7d6f42ae39a7afcac14032c79fffcf386c6e9478c1d508eeda"
+    }
+  },
+  "source_sha256": {
+    "experiments/from_scratch.py": "a130930797eb0ab11d1db97613d05cfb64c29400fbb572ba31a22ca33181892c",
+    "experiments/evaluate.py": "5156079591e82d8a24be899755def5191a5552f26c74e989214e48521f1db6f7",
+    "requirements-lock.txt": "f97030448cefb8fb2f424adaee307fb4e92c10caba8c6bb508e5f8e3f49da9be"
+  },
+  "maps": [
+    "Austin",
+    "BrandsHatch",
+    "Budapest",
+    "Catalunya",
+    "Hockenheim",
+    "IMS",
+    "Melbourne",
+    "MexicoCity",
+    "Monza",
+    "MoscowRaceway",
+    "Nuerburgring",
+    "Oschersleben",
+    "Sakhir",
+    "SaoPaulo",
+    "Sepang",
+    "Silverstone",
+    "Sochi",
+    "Spa",
+    "Spielberg",
+    "YasMarina",
+    "Zandvoort"
+  ],
+  "seeds": [
+    60101,
+    60202,
+    60303,
+    60404,
+    60505
+  ],
+  "development_maps": [
+    "BrandsHatch",
+    "YasMarina",
+    "Monza",
+    "Spa",
+    "Sochi",
+    "Budapest",
+    "Oschersleben"
+  ],
+  "maps_not_used_for_new_network_development_rollouts": [
+    "Austin",
+    "Catalunya",
+    "Hockenheim",
+    "IMS",
+    "Melbourne",
+    "MexicoCity",
+    "MoscowRaceway",
+    "Nuerburgring",
+    "Sakhir",
+    "SaoPaulo",
+    "Sepang",
+    "Silverstone",
+    "Spielberg",
+    "Zandvoort"
+  ],
+  "primary": "candidate",
+  "selection": "arc_dynamic:18/21 dev vs15 reference, gains3Sochi, no lost; pace variant15/21 losesBudapest2202/3303andSpa1101; safety/completion preferred over aggressive pace",
+  "geometry": "all210episodes every .01s pre-action fullfootprint, failures/timeouts included; illustrative Sochi60101 selected before outcomes",
+  "no_post_holdout_weight_changes": true
+}

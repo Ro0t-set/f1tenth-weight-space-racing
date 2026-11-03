@@ -1,0 +1,186 @@
+{
+  "episodes": 85,
+  "maps": 17,
+  "baseline_success": 67,
+  "edited_success": 66,
+  "baseline_collisions": 18,
+  "edited_collisions": 19,
+  "baseline_timeouts": 0,
+  "edited_timeouts": 0,
+  "gained": [
+    [
+      "Budapest",
+      2202
+    ],
+    [
+      "Oschersleben",
+      3303
+    ],
+    [
+      "Spa",
+      5505
+    ]
+  ],
+  "lost": [
+    [
+      "Monza",
+      2202
+    ],
+    [
+      "Monza",
+      5505
+    ],
+    [
+      "Spa",
+      1101
+    ],
+    [
+      "Spa",
+      3303
+    ]
+  ],
+  "paired_success": 63,
+  "mean_paired_lap_change_pct": -1.9120798328268558,
+  "map_mean_change_bootstrap95": [
+    -2.259381422490429,
+    -1.7017424692996783
+  ],
+  "per_map": [
+    {
+      "map": "Austin",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -1.644820132173208
+    },
+    {
+      "map": "Budapest",
+      "episodes": 5,
+      "baseline_success": 0,
+      "edited_success": 1,
+      "paired_success": 0,
+      "paired_lap_change_pct": null
+    },
+    {
+      "map": "Hockenheim",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -1.524207909972506
+    },
+    {
+      "map": "IMS",
+      "episodes": 5,
+      "baseline_success": 4,
+      "edited_success": 4,
+      "paired_success": 4,
+      "paired_lap_change_pct": -2.9456687303304694
+    },
+    {
+      "map": "MexicoCity",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -2.219133786969547
+    },
+    {
+      "map": "Monza",
+      "episodes": 5,
+      "baseline_success": 4,
+      "edited_success": 2,
+      "paired_success": 2,
+      "paired_lap_change_pct": -2.932207022310973
+    },
+    {
+      "map": "MoscowRaceway",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -1.6165794122725496
+    },
+    {
+      "map": "Nuerburgring",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -1.687595718052437
+    },
+    {
+      "map": "Oschersleben",
+      "episodes": 5,
+      "baseline_success": 0,
+      "edited_success": 1,
+      "paired_success": 0,
+      "paired_lap_change_pct": null
+    },
+    {
+      "map": "Sakhir",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -2.347105185725016
+    },
+    {
+      "map": "SaoPaulo",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -1.5534280561891278
+    },
+    {
+      "map": "Sepang",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -2.24715130238188
+    },
+    {
+      "map": "Silverstone",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -1.5716011387453777
+    },
+    {
+      "map": "Sochi",
+      "episodes": 5,
+      "baseline_success": 0,
+      "edited_success": 0,
+      "paired_success": 0,
+      "paired_lap_change_pct": null
+    },
+    {
+      "map": "Spa",
+      "episodes": 5,
+      "baseline_success": 4,
+      "edited_success": 3,
+      "paired_success": 2,
+      "paired_lap_change_pct": -1.997677419045396
+    },
+    {
+      "map": "Spielberg",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -2.3243718332424934
+    },
+    {
+      "map": "Zandvoort",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": -1.02772265708732
+    }
+  ]
+}

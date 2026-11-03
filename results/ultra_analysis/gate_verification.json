@@ -1,0 +1,74 @@
+{
+  "panic_gate": {
+    "checkpoint_sha256": "8f976e14dfb185295ef25218aa2d140f03d9319d4989fdfa57d6d19589fdfb9d",
+    "samples": 6889,
+    "changed": {
+      "mlp_extractor.policy_net.2.weight": 64,
+      "mlp_extractor.policy_net.2.bias": 1,
+      "action_net.weight": 2,
+      "action_net.bias": 2
+    },
+    "exact_formula_max_error_normalized": [
+      4.76837158203125e-07,
+      2.9802322387695312e-08
+    ],
+    "max_deviation_from_ideal_steering_correction": 6.774067878723145e-05,
+    "max_speed_change_mps": 0.0016242265701293945,
+    "reclaimed_h2_original_range": [
+      -0.9991591572761536,
+      -0.9954623579978943
+    ],
+    "reclaimed_h1_original_range": null,
+    "activation_count_gt_point1": 26,
+    "ideal_correction_range": [
+      -0.6997228860855103,
+      -0.0
+    ],
+    "sb3_predict_exact_match": true,
+    "critic_and_log_std_identical": true,
+    "non_policy_zip_entries_identical": true
+  },
+  "wall_panic": {
+    "checkpoint_sha256": "3d64cfa99936d7ae0ca9ff4fafbfeef18cdc878bafe990d11f661e4a69310a5a",
+    "samples": 6889,
+    "changed": {
+      "mlp_extractor.policy_net.0.weight": 1080,
+      "mlp_extractor.policy_net.0.bias": 1,
+      "mlp_extractor.policy_net.2.weight": 127,
+      "mlp_extractor.policy_net.2.bias": 64,
+      "action_net.weight": 2,
+      "action_net.bias": 2
+    },
+    "exact_formula_max_error_normalized": [
+      8.642673492431641e-07,
+      8.940696716308594e-08
+    ],
+    "max_deviation_from_ideal_steering_correction": 6.771087646484375e-05,
+    "max_speed_change_mps": 0.0016242265701293945,
+    "reclaimed_h2_original_range": [
+      -0.9991591572761536,
+      -0.9954623579978943
+    ],
+    "reclaimed_h1_original_range": [
+      0.9999980926513672,
+      1.0
+    ],
+    "activation_count_gt_point1": 5,
+    "ideal_correction_range": [
+      -0.6996835470199585,
+      -0.0
+    ],
+    "sb3_predict_exact_match": true,
+    "critic_and_log_std_identical": true,
+    "non_policy_zip_entries_identical": true
+  },
+  "reflection_diagnostic": {
+    "samples": 6889,
+    "original_positive_gt_point8": 44,
+    "original_negative_lt_minus_point8": 0,
+    "mirrored_positive_gt_point8": 733,
+    "mirrored_negative_lt_minus_point8": 0,
+    "median_abs_odd_symmetry_error": 0.16808214783668518,
+    "caution": "Asymmetry is not proof of a bug; mirrored scans are off the original state distribution. Use only a bounded local correction with independent paired rollouts, not a wholesale symmetry rewrite."
+  }
+}

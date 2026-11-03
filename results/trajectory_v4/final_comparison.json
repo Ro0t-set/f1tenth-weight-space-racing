@@ -1,0 +1,234 @@
+{
+  "episodes": 210,
+  "maps": 21,
+  "baseline_success": 179,
+  "edited_success": 188,
+  "baseline_collisions": 31,
+  "edited_collisions": 22,
+  "baseline_timeouts": 0,
+  "edited_timeouts": 0,
+  "gained": [
+    [
+      "Budapest",
+      51010
+    ],
+    [
+      "Monza",
+      50404
+    ],
+    [
+      "Monza",
+      50505
+    ],
+    [
+      "Monza",
+      50606
+    ],
+    [
+      "Monza",
+      50808
+    ],
+    [
+      "Monza",
+      51010
+    ],
+    [
+      "MoscowRaceway",
+      50808
+    ],
+    [
+      "Sakhir",
+      50303
+    ],
+    [
+      "Spa",
+      50404
+    ],
+    [
+      "Spa",
+      51010
+    ]
+  ],
+  "lost": [
+    [
+      "Monza",
+      50101
+    ]
+  ],
+  "paired_success": 178,
+  "mean_paired_lap_change_pct": -0.0077179029111195604,
+  "map_mean_change_bootstrap95": [
+    -0.029697472226226863,
+    0.03183634736530739
+  ],
+  "per_map": [
+    {
+      "map": "Austin",
+      "episodes": 10,
+      "baseline_success": 9,
+      "edited_success": 9,
+      "paired_success": 9,
+      "paired_lap_change_pct": 0.08986365158050304
+    },
+    {
+      "map": "BrandsHatch",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": -0.009973135110028508
+    },
+    {
+      "map": "Budapest",
+      "episodes": 10,
+      "baseline_success": 9,
+      "edited_success": 10,
+      "paired_success": 9,
+      "paired_lap_change_pct": 0.014446171866342204
+    },
+    {
+      "map": "Catalunya",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": 0.010471674476861814
+    },
+    {
+      "map": "Hockenheim",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": 0.029057869511938117
+    },
+    {
+      "map": "IMS",
+      "episodes": 10,
+      "baseline_success": 8,
+      "edited_success": 8,
+      "paired_success": 8,
+      "paired_lap_change_pct": 4.729362027000583e-06
+    },
+    {
+      "map": "Melbourne",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": -0.024250602394897403
+    },
+    {
+      "map": "MexicoCity",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": 0.03144155189423903
+    },
+    {
+      "map": "Monza",
+      "episodes": 10,
+      "baseline_success": 3,
+      "edited_success": 7,
+      "paired_success": 2,
+      "paired_lap_change_pct": 0.10056284978678387
+    },
+    {
+      "map": "MoscowRaceway",
+      "episodes": 10,
+      "baseline_success": 9,
+      "edited_success": 10,
+      "paired_success": 9,
+      "paired_lap_change_pct": -0.1808084178522641
+    },
+    {
+      "map": "Nuerburgring",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": -0.03122906914996726
+    },
+    {
+      "map": "Oschersleben",
+      "episodes": 10,
+      "baseline_success": 9,
+      "edited_success": 9,
+      "paired_success": 9,
+      "paired_lap_change_pct": -0.01894568347910155
+    },
+    {
+      "map": "Sakhir",
+      "episodes": 10,
+      "baseline_success": 9,
+      "edited_success": 10,
+      "paired_success": 9,
+      "paired_lap_change_pct": -0.07238311686029236
+    },
+    {
+      "map": "SaoPaulo",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": -0.012421719063755443
+    },
+    {
+      "map": "Sepang",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": -0.01976916533242501
+    },
+    {
+      "map": "Silverstone",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": 0.013266552998902892
+    },
+    {
+      "map": "Sochi",
+      "episodes": 10,
+      "baseline_success": 0,
+      "edited_success": 0,
+      "paired_success": 0,
+      "paired_lap_change_pct": null
+    },
+    {
+      "map": "Spa",
+      "episodes": 10,
+      "baseline_success": 8,
+      "edited_success": 10,
+      "paired_success": 8,
+      "paired_lap_change_pct": 0.049527693820480834
+    },
+    {
+      "map": "Spielberg",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": -0.06164186838117591
+    },
+    {
+      "map": "YasMarina",
+      "episodes": 10,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": 0.1641112407962586
+    },
+    {
+      "map": "Zandvoort",
+      "episodes": 10,
+      "baseline_success": 10,
+      "edited_success": 10,
+      "paired_success": 10,
+      "paired_lap_change_pct": -0.05308023489878133
+    }
+  ]
+}

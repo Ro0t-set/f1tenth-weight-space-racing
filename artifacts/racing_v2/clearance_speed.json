@@ -1,0 +1,24 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "sha256": "bdbd767d86533930098747672ed7758a5fb4178c9ef572a8fea392d6372f4319",
+  "specification": {
+    "formula": "v_command=8.25+4.25*tanh(tanh((mean(d[520:560])-8)/5))/tanh(1)",
+    "rationale": "Earlier substantial braking in tight corners, larger speed increase on open straights; original steering retained.",
+    "bounds_mps": [
+      4.0,
+      12.5
+    ]
+  },
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 1080,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 65,
+    "action_net.bias": 2
+  },
+  "changed_total": 1339,
+  "method": "reasoned analytic edits; no training, fitting, gradient or automated search",
+  "observation": "original single 1080-ray lidar; no velocity, slip, yaw rate or memory",
+  "inference_only": true
+}

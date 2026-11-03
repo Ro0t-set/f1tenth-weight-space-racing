@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Correggere una sterzata vicino al muro · Tommaso Patriti</title>
+<meta name="description" content="Sul test finale il circuito veloce recupera 16 episodi e ne perde tre rispetto alla PPO originale. Il tempo medio sulle 164 coppie completate scende del 2,01%. La riparazione senza accelerazione permette di isolare…">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Correggere una sterzata vicino al muro">
+<meta property="og:description" content="Sul test finale il circuito veloce recupera 16 episodi e ne perde tre rispetto alla PPO originale. Il tempo medio sulle 164 coppie completate scende del 2,01%. La riparazione senza accelerazione permette di isolare…">
+<meta property="og:url" content="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase3/">
+<link rel="canonical" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase3/">
+<link rel="alternate" hreflang="it" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase3/">
+<link rel="alternate" hreflang="en" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase3/">
+<link rel="alternate" hreflang="x-default" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase3/">
+<link rel="stylesheet" href="../../assets/study.css">
+</head>
+<body><a class="skip" href="#content">Vai al contenuto</a>
+<header class="mast"><div class="wrap mast-row">
+<a class="signature" rel="home" href="https://tommasopatriti.me/"><b aria-hidden="true">TP</b> Tommaso Patriti</a>
+<nav class="languages" aria-label="Lingua"><a href="./" lang="it" hreflang="it" aria-label="Italiano" aria-current="page">IT</a><a href="../../en/phase3/" lang="en" hreflang="en" aria-label="English">EN</a></nav>
+</div></header>
+<main id="content" class="wrap">
+<header class="hero">
+<div class="eyeline"><a href="../../">Ricerca</a>
+<span>F1TENTH</span><span>Guida autonoma</span></div>
+<div class="folio"><b>Fase 03 / 06</b> <span><time datetime="2026-11-03">3 novembre 2026</time></span></div>
+<h1>Correggere una sterzata vicino al muro</h1>
+<div class="intro"><p>Sul test finale il circuito veloce recupera 16 episodi e ne perde tre rispetto alla PPO originale. Il tempo medio sulle 164 coppie completate scende del 2,01%. La riparazione senza accelerazione permette di isolare l’effetto sullo sterzo. Il prudente della prima fase conserva il maggior numero di completamenti.</p>
+</div>
+</header>
+<div class="reading-grid">
+<nav class="study-index" id="study-index" aria-label="Indice dello studio">
+<h2>Indice dello studio</h2><ol><li><a href="../"><span aria-hidden="true">↳</span>Articolo</a></li><li><a href="../phase1/"><span aria-hidden="true">01</span>Modifiche alla PPO</a></li><li><a href="../phase2/"><span aria-hidden="true">02</span>Velocità e drift</a></li><li><a href="./" aria-current="page"><span aria-hidden="true">03</span>Correzione su circuito</a></li><li><a href="../phase4/"><span aria-hidden="true">04</span>Contatti e traiettorie</a></li><li><a href="../phase5/"><span aria-hidden="true">05</span>Rete geometrica</a></li><li><a href="../phase6/"><span aria-hidden="true">06</span>Velocità e partenze</a></li><li><a href="../methods/"><span aria-hidden="true">§</span>Metodi e dati</a></li></ol></nav>
+<article class="prose"><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Modello</th>
+<th align="right">Completamenti</th>
+<th align="right">Collisioni</th>
+<th align="right">Tempo appaiato rispetto all’originale</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Originale</td>
+<td align="right">167/210</td>
+<td align="right">43</td>
+<td align="right">riferimento</td>
+</tr>
+<tr>
+<td>Prudente precedente</td>
+<td align="right">184/210</td>
+<td align="right">26</td>
+<td align="right">+3.78%</td>
+</tr>
+<tr>
+<td>Riparazione, velocità invariata</td>
+<td align="right">179/210</td>
+<td align="right">31</td>
+<td align="right">-0.00%</td>
+</tr>
+<tr>
+<td>Riparazione +0,2 m/s, candidato primario</td>
+<td align="right">180/210</td>
+<td align="right">30</td>
+<td align="right">-2.01%</td>
+</tr>
+</tbody></table></div>
+<p><img loading="lazy" decoding="async" src="../../assets/results/ultra/comparison.png" alt="Completamenti e tempi con la riparazione dello sterzo"></p>
+<h2>Come distinguere un errore da un tornante</h2>
+<p>I neuroni 41 e 61 del primo strato contribuiscono a sterzate positive estreme, anche in tornanti completati. Nei campioni terminali problematici la parete sinistra dista 0,26–0,32 m. Nei campioni riusciti con forte sterzata il minimo osservato è 0,441 m. Il nuovo circuito combina l’attivazione interna con un secondo segnale, la distanza media letta dai raggi 880–919 sul lato sinistro.</p>
+<p>Con una soglia di 0,4 m, la combinazione di muro vicino, h41 positivo e h61 negativo attenua il comando di sterzo. Due neuroni quasi costanti ospitano il circuito. In tutto cambiano 1.276 scalari. La versione accelerata modifica un solo bias rispetto alla riparazione, equivalente a +0,2 m/s. Su 6.889 osservazioni, la formula prevista e i tensori differiscono al massimo di 8,7 × 10⁻⁷ in unità normalizzate.</p>
+<h2>Sviluppo e confronto</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Intervento</th>
+<th align="right">Successi (originale 10/21)</th>
+<th align="right">Tempo appaiato</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>angular_smooth</code></td>
+<td align="right">11/21</td>
+<td align="right">-0.063%</td>
+</tr>
+<tr>
+<td><code>panic_gate</code></td>
+<td align="right">12/21</td>
+<td align="right">+0.067%</td>
+</tr>
+<tr>
+<td><code>wall_panic</code></td>
+<td align="right">13/21</td>
+<td align="right">-0.053%</td>
+</tr>
+<tr>
+<td><code>wall_panic_fast</code></td>
+<td align="right">12/21</td>
+<td align="right">-2.030%</td>
+</tr>
+</tbody></table></div>
+<p>Dimezzare la temperatura di quattro neuroni induce un bias a sinistra. Trapiantare una testa di sterzo storica amplifica i picchi. Queste ipotesi vengono scartate prima dei rollout. Le quattro varianti in tabella totalizzano 84 episodi sulle sette piste di sviluppo. I quattro checkpoint finali sono identificati tramite hash prima di eseguire 840 episodi, dieci nuovi seed da 40101 a 41010 su ciascuna pista.</p>
+<p>Ogni episodio dura al massimo 200 secondi simulati. Per completare il giro occorre visitare almeno il 99% dei waypoint in ordine e attraversare la linea di partenza senza una collisione segnalata. Partenze e rumore LiDAR sono appaiati. I tempi si confrontano sulle stesse partenze completate dai modelli indicati. Un valore negativo indica un giro più rapido.</p>
+<p>Sia l’originale sia il candidato principale collidono 13 volte entro 0,10 s. Nei giri completati il controsterzo con deriva ≥5° e velocità ≥3 m/s dura al massimo 0,14 s, sotto la soglia di 0,5 s. Il rilevatore di collisione proietta la velocità lungo i raggi ignorando β, mentre il moto include l’angolo di deriva. Questo limita l’interpretazione degli eventi in forte sbandata.</p>
+<h2>Audit indipendente del banco di prova</h2>
+<p>Il valutatore ripristina la raceline, i contatori e il buffer dello sterzo a ogni episodio. Il seed controlla sia la partenza sia il rumore LiDAR. Gli orientamenti iniziali sono coerenti con la tangente della raceline su tutte le 21 piste, con 95º percentile dell’errore assoluto sotto 0,03 radianti. La telemetria riproduce i risultati di 15 episodi di controllo. Ogni modello è valutato in un processo separato perché il simulatore LiDAR condivide la mappa a livello di classe.</p>
+<p>Nel test originale della fase due, 12 delle 45 collisioni avvenivano entro 0,10 s e 16 entro 1 s. Una collisione precoce può dipendere dalla posa iniziale, ma la sua inevitabilità va verificata caso per caso. Gli hash del manifest distinguono la riparazione veloce principale dal confronto con sola sterzata prima del test.</p>
+<h2>Completamenti e tempi per pista</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pista</th>
+<th align="right">Originale</th>
+<th align="right">Prudente</th>
+<th align="right">Circuito</th>
+<th align="right">Circuito veloce</th>
+<th align="right">Tempo veloce/originale</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Austin</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">-2.00%</td>
+</tr>
+<tr>
+<td>BrandsHatch</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.01%</td>
+</tr>
+<tr>
+<td>Budapest</td>
+<td align="right">2/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.16%</td>
+</tr>
+<tr>
+<td>Catalunya</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-1.99%</td>
+</tr>
+<tr>
+<td>Hockenheim</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.10%</td>
+</tr>
+<tr>
+<td>IMS</td>
+<td align="right">4/10</td>
+<td align="right">4/10</td>
+<td align="right">4/10</td>
+<td align="right">4/10</td>
+<td align="right">-2.05%</td>
+</tr>
+<tr>
+<td>Melbourne</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.00%</td>
+</tr>
+<tr>
+<td>MexicoCity</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-1.97%</td>
+</tr>
+<tr>
+<td>Monza</td>
+<td align="right">7/10</td>
+<td align="right">8/10</td>
+<td align="right">5/10</td>
+<td align="right">6/10</td>
+<td align="right">-1.84%</td>
+</tr>
+<tr>
+<td>MoscowRaceway</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">9/10</td>
+<td align="right">-2.12%</td>
+</tr>
+<tr>
+<td>Nuerburgring</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.03%</td>
+</tr>
+<tr>
+<td>Oschersleben</td>
+<td align="right">2/10</td>
+<td align="right">7/10</td>
+<td align="right">7/10</td>
+<td align="right">7/10</td>
+<td align="right">-2.53%</td>
+</tr>
+<tr>
+<td>Sakhir</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.04%</td>
+</tr>
+<tr>
+<td>SaoPaulo</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.00%</td>
+</tr>
+<tr>
+<td>Sepang</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-2.00%</td>
+</tr>
+<tr>
+<td>Silverstone</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-1.99%</td>
+</tr>
+<tr>
+<td>Sochi</td>
+<td align="right">0/10</td>
+<td align="right">0/10</td>
+<td align="right">0/10</td>
+<td align="right">0/10</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>Spa</td>
+<td align="right">6/10</td>
+<td align="right">9/10</td>
+<td align="right">7/10</td>
+<td align="right">8/10</td>
+<td align="right">-1.93%</td>
+</tr>
+<tr>
+<td>Spielberg</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-1.98%</td>
+</tr>
+<tr>
+<td>YasMarina</td>
+<td align="right">7/10</td>
+<td align="right">7/10</td>
+<td align="right">7/10</td>
+<td align="right">7/10</td>
+<td align="right">-2.01%</td>
+</tr>
+<tr>
+<td>Zandvoort</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">-1.93%</td>
+</tr>
+</tbody></table></div>
+<h2>Dati e riproduzione</h2>
+<ul>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/experiments/ultra_weights.py">Circuiti implementati</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/ultra/holdout_manifest.json">Manifest delle prove</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/ultra/comparison_fast.json">Esiti del candidato principale</a></li>
+</ul>
+
+
+<footer class="sources"><h2>Fonti e materiali</h2><div><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/ULTRA_RESULTS.md">Report della fase</a>
+<a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Codice e dati</a>
+<a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/tree/9381a13eec6b182ff38e4fba55a105cf94219da6">Progetto originale</a></div></footer>
+</article></div></main>
+<footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+<a href="#study-index">Torna all’indice ↑</a></footer>
+</body></html>

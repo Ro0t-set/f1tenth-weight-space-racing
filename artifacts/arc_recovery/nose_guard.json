@@ -1,0 +1,10 @@
+{
+  "parent": "launch_guard.pt",
+  "sha256": "1d03ce491244658645ebc6df5255be17a5d3148f715d3c1f11ae47ee4876bc95",
+  "changed_envelope_scalars": 414,
+  "horizons_m": [
+    0.5,
+    1.0
+  ],
+  "forward_graph_unchanged": true
+}

@@ -1,0 +1,52 @@
+{
+  "episodes": 20,
+  "maps": 4,
+  "baseline_success": 17,
+  "edited_success": 17,
+  "baseline_collisions": 3,
+  "edited_collisions": 3,
+  "baseline_timeouts": 0,
+  "edited_timeouts": 0,
+  "gained": [],
+  "lost": [],
+  "paired_success": 17,
+  "mean_paired_lap_change_pct": 3.8656319356583033,
+  "map_mean_change_bootstrap95": [
+    3.692515009568449,
+    4.203248776841623
+  ],
+  "per_map": [
+    {
+      "map": "BrandsHatch",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": 4.022794664122209
+    },
+    {
+      "map": "Catalunya",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": 3.798065872523062
+    },
+    {
+      "map": "Melbourne",
+      "episodes": 5,
+      "baseline_success": 5,
+      "edited_success": 5,
+      "paired_success": 5,
+      "paired_lap_change_pct": 3.5869641466138362
+    },
+    {
+      "map": "YasMarina",
+      "episodes": 5,
+      "baseline_success": 2,
+      "edited_success": 2,
+      "paired_success": 2,
+      "paired_lap_change_pct": 4.338309744947811
+    }
+  ]
+}

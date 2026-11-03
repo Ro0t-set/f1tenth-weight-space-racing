@@ -1,0 +1,54 @@
+{
+  "name": "arc_dynamic",
+  "method": "all tensors constructed analytically from scratch; no training/fitting/optimizer or imported learned weights",
+  "input": "original 1080 instantaneous normalized LiDAR rays",
+  "architecture": "minpool1080->180; 17 curvature x9 horizon envelope neurons; ReLU/maxpool; piecewise ReLU heads; maxout and local softmax",
+  "envelope_dynamics": "nested sweeps with steady-state slip computed from original vehicle equations",
+  "curvature": [
+    -1.2,
+    -0.9,
+    -0.65,
+    -0.45,
+    -0.3,
+    -0.18,
+    -0.1,
+    -0.05,
+    0.0,
+    0.05,
+    0.1,
+    0.18,
+    0.3,
+    0.45,
+    0.65,
+    0.9,
+    1.2
+  ],
+  "horizons": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    4.5,
+    6.0,
+    8.0,
+    11.0
+  ],
+  "margin_m": 0.05,
+  "footprint_m": [
+    0.58,
+    0.31
+  ],
+  "sector_pool": 6,
+  "horizon_heading_limit_rad": 1.8,
+  "tensor_scalars": 28427,
+  "nonzero_scalars": 28130,
+  "sha256": "170a0695f0613b7d6f42ae39a7afcac14032c79fffcf386c6e9478c1d508eeda",
+  "bytes": 122271,
+  "limitations": [
+    "Static visibility of constant-curvature arcs, not a proof of dynamic safety.",
+    "Only instantaneous LiDAR: current speed/slip are not observable.",
+    "Soft interpolation can still invalidate clearance between discrete arcs.",
+    "No claim of global racing-line optimality."
+  ]
+}

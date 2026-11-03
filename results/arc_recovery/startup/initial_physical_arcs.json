@@ -1,0 +1,758 @@
+[
+  {
+    "map": "Austin",
+    "seed": 60404,
+    "sweeps": [
+      {
+        "k": -1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.41567859793237605
+      },
+      {
+        "k": -0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.301798122246831
+      },
+      {
+        "k": -0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.30182950414550347
+      },
+      {
+        "k": -0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.18294617959578752
+      },
+      {
+        "k": -0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.17655635285617555
+      },
+      {
+        "k": -0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.1466561306893519
+      },
+      {
+        "k": -0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.1102293392368463
+      },
+      {
+        "k": -0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.05096222080699053
+      },
+      {
+        "k": 0.0,
+        "swept_true_min_m": 0.0006627060190273204,
+        "true_clearance_at_0p5_m": 0.0006627060190424194,
+        "min_LiDAR_clearance_nominal_sweep": -0.004415061173250856
+      },
+      {
+        "k": 0.05,
+        "swept_true_min_m": 0.004491236018012962,
+        "true_clearance_at_0p5_m": 0.00951983113406954,
+        "min_LiDAR_clearance_nominal_sweep": 0.026379748453221108
+      },
+      {
+        "k": 0.1,
+        "swept_true_min_m": 0.002620680341976628,
+        "true_clearance_at_0p5_m": 0.018272183788446084,
+        "min_LiDAR_clearance_nominal_sweep": 0.04370999797437358
+      },
+      {
+        "k": 0.18,
+        "swept_true_min_m": 3.006094453089636e-05,
+        "true_clearance_at_0p5_m": 0.026551816154841097,
+        "min_LiDAR_clearance_nominal_sweep": 0.04370999797437358
+      },
+      {
+        "k": 0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.03361315868263232,
+        "min_LiDAR_clearance_nominal_sweep": 0.04370999797437358
+      },
+      {
+        "k": 0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.038945124890402805,
+        "min_LiDAR_clearance_nominal_sweep": 0.03990391633831286
+      },
+      {
+        "k": 0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.039825547835535324,
+        "min_LiDAR_clearance_nominal_sweep": 0.036927167329101535
+      },
+      {
+        "k": 0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.03760817335533437,
+        "min_LiDAR_clearance_nominal_sweep": 0.0277390212234509
+      },
+      {
+        "k": 1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.03806863336340341,
+        "min_LiDAR_clearance_nominal_sweep": 0.020751034782002492
+      }
+    ]
+  },
+  {
+    "map": "IMS",
+    "seed": 60404,
+    "sweeps": [
+      {
+        "k": -1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.042451595611894585,
+        "min_LiDAR_clearance_nominal_sweep": -0.012061559079205614
+      },
+      {
+        "k": -0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.046578093834673706,
+        "min_LiDAR_clearance_nominal_sweep": -0.00014999855557545905
+      },
+      {
+        "k": -0.65,
+        "swept_true_min_m": 0.005295592712811881,
+        "true_clearance_at_0p5_m": 0.047140372043083884,
+        "min_LiDAR_clearance_nominal_sweep": 0.0034138110769378616
+      },
+      {
+        "k": -0.45,
+        "swept_true_min_m": 0.012012428506068595,
+        "true_clearance_at_0p5_m": 0.04485238444557199,
+        "min_LiDAR_clearance_nominal_sweep": 0.010724354154610566
+      },
+      {
+        "k": -0.3,
+        "swept_true_min_m": 0.01719155858059493,
+        "true_clearance_at_0p5_m": 0.04163320626043426,
+        "min_LiDAR_clearance_nominal_sweep": 0.015468423629573153
+      },
+      {
+        "k": -0.18,
+        "swept_true_min_m": 0.02194673764543863,
+        "true_clearance_at_0p5_m": 0.03818245420475841,
+        "min_LiDAR_clearance_nominal_sweep": 0.01706427543805794
+      },
+      {
+        "k": -0.1,
+        "swept_true_min_m": 0.024895495711473703,
+        "true_clearance_at_0p5_m": 0.035470681479127325,
+        "min_LiDAR_clearance_nominal_sweep": 0.020130734926054245
+      },
+      {
+        "k": -0.05,
+        "swept_true_min_m": 0.026923357865768244,
+        "true_clearance_at_0p5_m": 0.03361520606355317,
+        "min_LiDAR_clearance_nominal_sweep": 0.022011034221512682
+      },
+      {
+        "k": 0.0,
+        "swept_true_min_m": 0.028901321926053852,
+        "true_clearance_at_0p5_m": 0.031639899362320506,
+        "min_LiDAR_clearance_nominal_sweep": 0.02386555686482697
+      },
+      {
+        "k": 0.05,
+        "swept_true_min_m": 0.022978353754550207,
+        "true_clearance_at_0p5_m": 0.022978353754550207,
+        "min_LiDAR_clearance_nominal_sweep": 0.022889655818413346
+      },
+      {
+        "k": 0.1,
+        "swept_true_min_m": 0.010099664236286582,
+        "true_clearance_at_0p5_m": 0.010099664236286582,
+        "min_LiDAR_clearance_nominal_sweep": 0.021877335689720306
+      },
+      {
+        "k": 0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.04569030967836318
+      },
+      {
+        "k": 0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.17394900727512086
+      },
+      {
+        "k": 0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.18543526956160783
+      },
+      {
+        "k": 0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.29247205175292357
+      },
+      {
+        "k": 0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.3252032458834555
+      },
+      {
+        "k": 1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.3723500356906484
+      }
+    ]
+  },
+  {
+    "map": "IMS",
+    "seed": 60505,
+    "sweeps": [
+      {
+        "k": -1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.03822902770401185,
+        "min_LiDAR_clearance_nominal_sweep": -0.02755567937816908
+      },
+      {
+        "k": -0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.032039402956919594,
+        "min_LiDAR_clearance_nominal_sweep": -0.01714739504975407
+      },
+      {
+        "k": -0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.011212282468108958,
+        "min_LiDAR_clearance_nominal_sweep": -0.013811816761589546
+      },
+      {
+        "k": -0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.006529056984316689,
+        "min_LiDAR_clearance_nominal_sweep": -0.006121139943728593
+      },
+      {
+        "k": -0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.008550388052534524,
+        "min_LiDAR_clearance_nominal_sweep": -0.0006552740515409217
+      },
+      {
+        "k": -0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.00942741679941192,
+        "min_LiDAR_clearance_nominal_sweep": 0.0035496174890134458
+      },
+      {
+        "k": -0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.009659301491315025,
+        "min_LiDAR_clearance_nominal_sweep": 0.0054099280169337405
+      },
+      {
+        "k": -0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.00605309120301889,
+        "min_LiDAR_clearance_nominal_sweep": 0.007518226067943085
+      },
+      {
+        "k": 0.0,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": 0.009604952558862262
+      },
+      {
+        "k": 0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.029100190777693657
+      },
+      {
+        "k": 0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.08836730920754943
+      },
+      {
+        "k": 0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.12363067947460182
+      },
+      {
+        "k": 0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.2420709173703357
+      },
+      {
+        "k": 0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.25302979775985
+      },
+      {
+        "k": 0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.3275386563671814
+      },
+      {
+        "k": 0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.41022903323697113
+      },
+      {
+        "k": 1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.4131523146682159
+      }
+    ]
+  },
+  {
+    "map": "Monza",
+    "seed": 60404,
+    "sweeps": [
+      {
+        "k": -1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.06038895712075675,
+        "min_LiDAR_clearance_nominal_sweep": 0.022291147714757598
+      },
+      {
+        "k": -0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.06210559095521905,
+        "min_LiDAR_clearance_nominal_sweep": 0.024360572826125887
+      },
+      {
+        "k": -0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.061588313232718156,
+        "min_LiDAR_clearance_nominal_sweep": 0.0307115275670089
+      },
+      {
+        "k": -0.45,
+        "swept_true_min_m": 0.005169451745624637,
+        "true_clearance_at_0p5_m": 0.04751993815370509,
+        "min_LiDAR_clearance_nominal_sweep": 0.038065369573685975
+      },
+      {
+        "k": -0.3,
+        "swept_true_min_m": 0.009254358298512455,
+        "true_clearance_at_0p5_m": 0.035441519982005204,
+        "min_LiDAR_clearance_nominal_sweep": 0.03725501423661476
+      },
+      {
+        "k": -0.18,
+        "swept_true_min_m": 0.0125822305441802,
+        "true_clearance_at_0p5_m": 0.024926053961591754,
+        "min_LiDAR_clearance_nominal_sweep": 0.027616719751870744
+      },
+      {
+        "k": -0.1,
+        "swept_true_min_m": 0.01373654520453435,
+        "true_clearance_at_0p5_m": 0.017529413373303826,
+        "min_LiDAR_clearance_nominal_sweep": 0.016631441789497436
+      },
+      {
+        "k": -0.05,
+        "swept_true_min_m": 0.00963206838260744,
+        "true_clearance_at_0p5_m": 0.010164502261768738,
+        "min_LiDAR_clearance_nominal_sweep": 0.009198183661551063
+      },
+      {
+        "k": 0.0,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": 0.0014335758099487395
+      },
+      {
+        "k": 0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.01376019142177054
+      },
+      {
+        "k": 0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.06089576684915099
+      },
+      {
+        "k": 0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.09615913711620339
+      },
+      {
+        "k": 0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.15263455355518107
+      },
+      {
+        "k": 0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.3279189808042836
+      },
+      {
+        "k": 0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.3283316543788881
+      },
+      {
+        "k": 0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.32133917951058466
+      },
+      {
+        "k": 1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.39633303739963277
+      }
+    ]
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 60404,
+    "sweeps": [
+      {
+        "k": -1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.02090365122030685,
+        "min_LiDAR_clearance_nominal_sweep": -0.047345800735931864
+      },
+      {
+        "k": -0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.02203323666061488,
+        "min_LiDAR_clearance_nominal_sweep": -0.042799589292850715
+      },
+      {
+        "k": -0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.018964043065753555,
+        "min_LiDAR_clearance_nominal_sweep": -0.03277727435183139
+      },
+      {
+        "k": -0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.014084953071061918,
+        "min_LiDAR_clearance_nominal_sweep": -0.025391558884990978
+      },
+      {
+        "k": -0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.009122888554441072,
+        "min_LiDAR_clearance_nominal_sweep": -0.022487684607825686
+      },
+      {
+        "k": -0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.004408996269202353,
+        "min_LiDAR_clearance_nominal_sweep": -0.017698921529550965
+      },
+      {
+        "k": -0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0009223939303846795,
+        "min_LiDAR_clearance_nominal_sweep": -0.014459468264705594
+      },
+      {
+        "k": -0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.0180995892434046
+      },
+      {
+        "k": 0.0,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.021829439179971155
+      },
+      {
+        "k": 0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.05381360164535942
+      },
+      {
+        "k": 0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.09831890069924865
+      },
+      {
+        "k": 0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.19173631562587534
+      },
+      {
+        "k": 0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.21981406617404664
+      },
+      {
+        "k": 0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.2917690021665883
+      },
+      {
+        "k": 0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.41578977025878294
+      },
+      {
+        "k": 0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.40724214639174205
+      },
+      {
+        "k": 1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.4681020751052276
+      }
+    ]
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 60505,
+    "sweeps": [
+      {
+        "k": -1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.43008098745874324
+      },
+      {
+        "k": -0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.41336185336636566
+      },
+      {
+        "k": -0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.37897794164550347
+      },
+      {
+        "k": -0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.32043454476912736
+      },
+      {
+        "k": -0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.24195173809441284
+      },
+      {
+        "k": -0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.16656217469569956
+      },
+      {
+        "k": -0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.12141982017047204
+      },
+      {
+        "k": -0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.12272450117665201
+      },
+      {
+        "k": 0.0,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.05865097822165477
+      },
+      {
+        "k": 0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.017995661854256606
+      },
+      {
+        "k": 0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.002678487289385162,
+        "min_LiDAR_clearance_nominal_sweep": -0.018090097217545953
+      },
+      {
+        "k": 0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.010861537259367643,
+        "min_LiDAR_clearance_nominal_sweep": -0.021200062431505712
+      },
+      {
+        "k": 0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.02259840222590284,
+        "min_LiDAR_clearance_nominal_sweep": -0.02604196185532745
+      },
+      {
+        "k": 0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.027720919916691365,
+        "min_LiDAR_clearance_nominal_sweep": -0.03158270187129669
+      },
+      {
+        "k": 0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.02517726472396,
+        "min_LiDAR_clearance_nominal_sweep": -0.035273744528822676
+      },
+      {
+        "k": 0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.024600756779909937,
+        "min_LiDAR_clearance_nominal_sweep": -0.04467097376662943
+      },
+      {
+        "k": 1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.028052677847212458,
+        "min_LiDAR_clearance_nominal_sweep": -0.05470367713206001
+      }
+    ]
+  },
+  {
+    "map": "YasMarina",
+    "seed": 60404,
+    "sweeps": [
+      {
+        "k": -1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.48144207144311824
+      },
+      {
+        "k": -0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.3321893528986294
+      },
+      {
+        "k": -0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.3402129880322222
+      },
+      {
+        "k": -0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.2770452243955922
+      },
+      {
+        "k": -0.3,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.12112021851779664
+      },
+      {
+        "k": -0.18,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.10022118746374387
+      },
+      {
+        "k": -0.1,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.10469809470660485
+      },
+      {
+        "k": -0.05,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.10600277571278482
+      },
+      {
+        "k": 0.0,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.0,
+        "min_LiDAR_clearance_nominal_sweep": -0.04192925275778758
+      },
+      {
+        "k": 0.05,
+        "swept_true_min_m": 0.008265485193486188,
+        "true_clearance_at_0p5_m": 0.009901449630260573,
+        "min_LiDAR_clearance_nominal_sweep": 0.0042351174811564585
+      },
+      {
+        "k": 0.1,
+        "swept_true_min_m": 0.009842622623973202,
+        "true_clearance_at_0p5_m": 0.009855265676745079,
+        "min_LiDAR_clearance_nominal_sweep": 0.0035693586152606427
+      },
+      {
+        "k": 0.18,
+        "swept_true_min_m": 0.008174297320005297,
+        "true_clearance_at_0p5_m": 0.009558172399966647,
+        "min_LiDAR_clearance_nominal_sweep": 0.0014250286192105666
+      },
+      {
+        "k": 0.3,
+        "swept_true_min_m": 0.0036440011472075426,
+        "true_clearance_at_0p5_m": 0.008582971257310335,
+        "min_LiDAR_clearance_nominal_sweep": 0.0014495667199349582
+      },
+      {
+        "k": 0.45,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.006438801253798504,
+        "min_LiDAR_clearance_nominal_sweep": -0.0020437335163120407
+      },
+      {
+        "k": 0.65,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.012915076984474833,
+        "min_LiDAR_clearance_nominal_sweep": -0.007815361672354915
+      },
+      {
+        "k": 0.9,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.03589785396652889,
+        "min_LiDAR_clearance_nominal_sweep": -0.007715933700966793
+      },
+      {
+        "k": 1.2,
+        "swept_true_min_m": 0.0,
+        "true_clearance_at_0p5_m": 0.06362488677599609,
+        "min_LiDAR_clearance_nominal_sweep": -0.006996741771419457
+      }
+    ]
+  }
+]

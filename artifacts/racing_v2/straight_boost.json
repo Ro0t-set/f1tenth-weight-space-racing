@@ -1,0 +1,25 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "sha256": "4bae618d9258e7c4d1951f364decc2d1576369b7a2b5eb321e469de76e46d9c2",
+  "specification": {
+    "parent": "clearance_cautious",
+    "formula": "v_original + .6 + 1.2*g; g=tanh(2*tanh((front_distance-15)/3))/tanh(2)",
+    "rationale": "Uniform speed increase plus steering compensation failed safety. Preserve cautious corner endpoint and unchanged steering, allocate the entire speed increase to open straights.",
+    "correction_bounds_mps": [
+      -0.6,
+      1.8
+    ]
+  },
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 1080,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changed_total": 1276,
+  "method": "reasoned analytic edits; no training, fitting, gradient or automated search",
+  "observation": "original single 1080-ray lidar; no velocity, slip, yaw rate or memory",
+  "inference_only": true
+}

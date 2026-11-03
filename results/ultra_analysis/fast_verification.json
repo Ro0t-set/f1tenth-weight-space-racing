@@ -1,0 +1,38 @@
+{
+  "checkpoint_sha256": "c769ef7435c259c208a21154a8941f18b23274439d5dfaa81613f0a4cdb022c5",
+  "samples": 6889,
+  "changes_vs_original": {
+    "mlp_extractor.policy_net.0.weight": 1080,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changes_vs_wall_panic": {
+    "action_net.bias": 1
+  },
+  "added_normalized_speed_bias": 0.01600000075995922,
+  "exact_formula_max_error_normalized": [
+    8.642673492431641e-07,
+    8.940696716308594e-08
+  ],
+  "exact_wall_plus_bias_error_normalized": [
+    0.0,
+    7.450580596923828e-08
+  ],
+  "raw_speed_increase_vs_wall_mps_range": [
+    0.19999919831752777,
+    0.20000097155570984
+  ],
+  "raw_speed_increase_vs_original_mps_range": [
+    0.19837580621242523,
+    0.19969940185546875
+  ],
+  "steering_identical_to_wall_panic_on_all_samples": true,
+  "critic_and_log_std_identical": true,
+  "non_policy_zip_entries_identical": true,
+  "sb3_prediction_exact_match_on_all_samples": true,
+  "original_architecture_and_observation_shapes_preserved": true,
+  "caveat": "Speed increment is exact before original action clipping. Tiny difference from +.2 relative to ORIGINAL is the already-audited near-constant-neuron compensation, not an external controller."
+}

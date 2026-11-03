@@ -1,0 +1,8 @@
+{
+  "episodes": 13,
+  "completed": 0,
+  "collisions": 0,
+  "timeouts": 13,
+  "initially_disjoint_new_contact_episodes": 0,
+  "scope": "Development diagnostics. All outcomes retained, including initially overlapping states."
+}

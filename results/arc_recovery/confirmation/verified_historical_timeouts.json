@@ -1,0 +1,236 @@
+{
+  "cohort": "Seven previously observed timeouts, separate from the new-seed evaluation.",
+  "rows": [
+    {
+      "map": "Austin",
+      "seed": 60404,
+      "initial_overlap": false,
+      "candidate": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.005408062930186824
+      },
+      "previous": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.005408062930186824
+      },
+      "ppo": {
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "seconds": 0.1,
+        "progress": 0.004424778761061947
+      },
+      "previous_contact_frames": 0,
+      "ppo_contact_frames": 0,
+      "candidate_contact_frames": 0,
+      "first_clear_step": 0,
+      "contact_frames_after_first_clear": 0,
+      "clean_completion": false,
+      "trace_sha256": "a0016f5cce9b01d0ab9370bf886ffe02eecf1462a8da79d62491bd78f5ab35e2"
+    },
+    {
+      "map": "IMS",
+      "seed": 60404,
+      "initial_overlap": false,
+      "candidate": {
+        "success": true,
+        "collision": false,
+        "timeout": false,
+        "seconds": 29.05,
+        "progress": 1.0
+      },
+      "previous": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.007580978635423846
+      },
+      "ppo": {
+        "success": true,
+        "collision": false,
+        "timeout": false,
+        "seconds": 32.52,
+        "progress": 1.0
+      },
+      "previous_contact_frames": 0,
+      "ppo_contact_frames": 0,
+      "candidate_contact_frames": 0,
+      "first_clear_step": 0,
+      "contact_frames_after_first_clear": 0,
+      "clean_completion": true,
+      "trace_sha256": "96862ad9f0e3d2362c08d7333f823c148a570f89d1f1200a3af87a360af25406"
+    },
+    {
+      "map": "IMS",
+      "seed": 60505,
+      "initial_overlap": true,
+      "candidate": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.007580978635423846
+      },
+      "previous": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.007580978635423846
+      },
+      "ppo": {
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "seconds": 0.13,
+        "progress": 0.007580978635423846
+      },
+      "previous_contact_frames": 20000,
+      "ppo_contact_frames": 13,
+      "candidate_contact_frames": 20000,
+      "first_clear_step": null,
+      "contact_frames_after_first_clear": null,
+      "clean_completion": false,
+      "trace_sha256": "006683acfa8a2551bc9b542ccbca571b45808eeb7227ba08b71f6d3e7e873211"
+    },
+    {
+      "map": "Monza",
+      "seed": 60404,
+      "initial_overlap": false,
+      "candidate": {
+        "success": true,
+        "collision": false,
+        "timeout": false,
+        "seconds": 46.33,
+        "progress": 1.0
+      },
+      "previous": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.005006827492034593
+      },
+      "ppo": {
+        "success": true,
+        "collision": false,
+        "timeout": false,
+        "seconds": 49.94,
+        "progress": 1.0
+      },
+      "previous_contact_frames": 0,
+      "ppo_contact_frames": 3,
+      "candidate_contact_frames": 0,
+      "first_clear_step": 0,
+      "contact_frames_after_first_clear": 0,
+      "clean_completion": true,
+      "trace_sha256": "57bdc2caa4347688905dfbb3fbdb803f056b00e651b8d38815090d68305a4f37"
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60404,
+      "initial_overlap": true,
+      "candidate": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.008778930566640064
+      },
+      "previous": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.008778930566640064
+      },
+      "ppo": {
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "seconds": 0.03,
+        "progress": 0.0015961691939345571
+      },
+      "previous_contact_frames": 20000,
+      "ppo_contact_frames": 3,
+      "candidate_contact_frames": 20000,
+      "first_clear_step": null,
+      "contact_frames_after_first_clear": null,
+      "clean_completion": false,
+      "trace_sha256": "53ab3f3e0b130c3c9e774cdc9b078d1efe0c07b3c007cfaf8a66cc3f0e7c7f20"
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60505,
+      "initial_overlap": true,
+      "candidate": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.008778930566640064
+      },
+      "previous": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.008778930566640064
+      },
+      "ppo": {
+        "success": false,
+        "collision": true,
+        "timeout": false,
+        "seconds": 0.03,
+        "progress": 0.0015961691939345571
+      },
+      "previous_contact_frames": 20000,
+      "ppo_contact_frames": 3,
+      "candidate_contact_frames": 20000,
+      "first_clear_step": null,
+      "contact_frames_after_first_clear": null,
+      "clean_completion": false,
+      "trace_sha256": "0175d10f6312b7a1b645cc431767e0355473d301a9ec76362754231ad06ebeee"
+    },
+    {
+      "map": "YasMarina",
+      "seed": 60404,
+      "initial_overlap": false,
+      "candidate": {
+        "success": true,
+        "collision": false,
+        "timeout": false,
+        "seconds": 49.24,
+        "progress": 1.0
+      },
+      "previous": {
+        "success": false,
+        "collision": false,
+        "timeout": true,
+        "seconds": 200.0,
+        "progress": 0.005732152162584679
+      },
+      "ppo": {
+        "success": true,
+        "collision": false,
+        "timeout": false,
+        "seconds": 47.83,
+        "progress": 1.0
+      },
+      "previous_contact_frames": 0,
+      "ppo_contact_frames": 0,
+      "candidate_contact_frames": 0,
+      "first_clear_step": 0,
+      "contact_frames_after_first_clear": 0,
+      "clean_completion": true,
+      "trace_sha256": "d34269455834d1029bbe1e939397c99844acaaba19a5339917fa425c5f292dfc"
+    }
+  ]
+}

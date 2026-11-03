@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frenare quando lo spazio davanti si riduce · Tommaso Patriti</title>
+<meta name="description" content="La prima modifica accelera sui rettilinei. Sulle 17 piste di verifica fa risparmiare l’1,91% di tempo nelle coppie completate, ma perde un giro nel saldo complessivo. La seconda modifica usa la stessa misura di…">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Frenare quando lo spazio davanti si riduce">
+<meta property="og:description" content="La prima modifica accelera sui rettilinei. Sulle 17 piste di verifica fa risparmiare l’1,91% di tempo nelle coppie completate, ma perde un giro nel saldo complessivo. La seconda modifica usa la stessa misura di…">
+<meta property="og:url" content="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase1/">
+<link rel="canonical" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase1/">
+<link rel="alternate" hreflang="it" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase1/">
+<link rel="alternate" hreflang="en" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase1/">
+<link rel="alternate" hreflang="x-default" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase1/">
+<link rel="stylesheet" href="../../assets/study.css">
+</head>
+<body><a class="skip" href="#content">Vai al contenuto</a>
+<header class="mast"><div class="wrap mast-row">
+<a class="signature" rel="home" href="https://tommasopatriti.me/"><b aria-hidden="true">TP</b> Tommaso Patriti</a>
+<nav class="languages" aria-label="Lingua"><a href="./" lang="it" hreflang="it" aria-label="Italiano" aria-current="page">IT</a><a href="../../en/phase1/" lang="en" hreflang="en" aria-label="English">EN</a></nav>
+</div></header>
+<main id="content" class="wrap">
+<header class="hero">
+<div class="eyeline"><a href="../../">Ricerca</a>
+<span>F1TENTH</span><span>Guida autonoma</span></div>
+<div class="folio"><b>Fase 01 / 06</b> <span><time datetime="2026-11-03">3 novembre 2026</time></span></div>
+<h1>Frenare quando lo spazio davanti si riduce</h1>
+<div class="intro"><p>La prima modifica accelera sui rettilinei. Sulle 17 piste di verifica fa risparmiare l’1,91% di tempo nelle coppie completate, ma perde un giro nel saldo complessivo. La seconda modifica usa la stessa misura di spazio libero per rallentare negli stretti. Nel test finale recupera 17 episodi falliti dalla PPO originale e ne perde uno. Le collisioni scendono da 42 a 26, con zero timeout. Sulle 167 coppie completate il costo medio è +3,77%.</p>
+</div>
+</header>
+<div class="reading-grid">
+<nav class="study-index" id="study-index" aria-label="Indice dello studio">
+<h2>Indice dello studio</h2><ol><li><a href="../"><span aria-hidden="true">↳</span>Articolo</a></li><li><a href="./" aria-current="page"><span aria-hidden="true">01</span>Modifiche alla PPO</a></li><li><a href="../phase2/"><span aria-hidden="true">02</span>Velocità e drift</a></li><li><a href="../phase3/"><span aria-hidden="true">03</span>Correzione su circuito</a></li><li><a href="../phase4/"><span aria-hidden="true">04</span>Contatti e traiettorie</a></li><li><a href="../phase5/"><span aria-hidden="true">05</span>Rete geometrica</a></li><li><a href="../phase6/"><span aria-hidden="true">06</span>Velocità e partenze</a></li><li><a href="../methods/"><span aria-hidden="true">§</span>Metodi e dati</a></li></ol></nav>
+<article class="prose"><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Confronto</th>
+<th align="right">Originale</th>
+<th align="right">Modificato</th>
+<th align="right">Tempo sulle coppie completate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Primo candidato, sviluppo</td>
+<td align="right">17/20</td>
+<td align="right">17/20</td>
+<td align="right">-1.68%</td>
+</tr>
+<tr>
+<td>Primo candidato, 17 altre piste</td>
+<td align="right">67/85</td>
+<td align="right">66/85</td>
+<td align="right">-1.91%</td>
+</tr>
+<tr>
+<td>Candidato prudente, sviluppo</td>
+<td align="right">17/20</td>
+<td align="right">17/20</td>
+<td align="right">+3.87%</td>
+</tr>
+<tr>
+<td><strong>Candidato prudente, verifica finale</strong></td>
+<td align="right"><strong>168/210</strong></td>
+<td align="right"><strong>184/210</strong></td>
+<td align="right"><strong>+3.77%</strong></td>
+</tr>
+</tbody></table></div>
+<p><img loading="lazy" decoding="async" src="../../assets/results/comparison.png" alt="Completamenti e tempi del prudente per pista"></p>
+<h2>Due neuroni per leggere lo spazio libero</h2>
+<p>L’attore appreso riceve 1.080 raggi LiDAR e calcola sterzo e velocità attraverso due strati di 64 neuroni tanh. Su 8.190 osservazioni di sviluppo, il neurone 15 del primo strato e il neurone 1 del secondo sono quasi costanti. I bias successivi assorbono il loro contributo precedente. I due neuroni possono così trasformare la media dei raggi frontali 520–559 in una correzione della velocità.</p>
+<p>Il primo circuito aggiunge fino a 0,60 m/s. Il secondo sottrae fino a 0,60 m/s quando la strada è chiusa e aggiunge fino a 0,30 m/s quando è libera. Ogni candidato modifica 1.276 scalari su 73.474 nell’attore e 146.885 nel checkpoint complessivo. La deviazione massima dello sterzo sulla serie di sviluppo è 0,0000597 in coordinate normalizzate.</p>
+<h2>Partenze e controlli</h2>
+<p>Lo sviluppo usa cinque partenze su quattro piste, la prima verifica cinque su ciascuna delle altre 17. Dopo la revisione prudente, il test finale usa dieci nuovi seed per ciascuna delle 21 piste, da 7001 a 16010. L’ambiente storico usava 19 piste e versioni software diverse. Il banco locale misura l’effetto dell’intervento sulle mappe disponibili.</p>
+<p>Ogni episodio dura al massimo 200 secondi simulati. Per completare il giro occorre visitare almeno il 99% dei waypoint in ordine e attraversare la linea di partenza senza una collisione segnalata. Partenze e rumore LiDAR sono appaiati. I tempi si confrontano sulle stesse partenze completate dai modelli indicati. Un valore negativo indica un giro più rapido.</p>
+<p>Il caricamento PPO riproduce esattamente le azioni del valutatore su 128 osservazioni per checkpoint. La ripetizione di due episodi originali restituisce gli stessi esiti. Le dieci partenze su ciascuna pista condividono la geometria del circuito.</p>
+<h2>Completamenti e tempi per pista</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pista</th>
+<th align="right">Originale</th>
+<th align="right">Prudente</th>
+<th align="right">Variazione tempo appaiata</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Austin</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.71%</td>
+</tr>
+<tr>
+<td>BrandsHatch</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.93%</td>
+</tr>
+<tr>
+<td>Budapest</td>
+<td align="right">4/10</td>
+<td align="right">9/10</td>
+<td align="right">+4.02%</td>
+</tr>
+<tr>
+<td>Catalunya</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.86%</td>
+</tr>
+<tr>
+<td>Hockenheim</td>
+<td align="right">10/10</td>
+<td align="right">9/10</td>
+<td align="right">+4.56%</td>
+</tr>
+<tr>
+<td>IMS</td>
+<td align="right">7/10</td>
+<td align="right">7/10</td>
+<td align="right">+2.06%</td>
+</tr>
+<tr>
+<td>Melbourne</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.66%</td>
+</tr>
+<tr>
+<td>MexicoCity</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.23%</td>
+</tr>
+<tr>
+<td>Monza</td>
+<td align="right">5/10</td>
+<td align="right">8/10</td>
+<td align="right">+1.83%</td>
+</tr>
+<tr>
+<td>MoscowRaceway</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.44%</td>
+</tr>
+<tr>
+<td>Nuerburgring</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.03%</td>
+</tr>
+<tr>
+<td>Oschersleben</td>
+<td align="right">1/10</td>
+<td align="right">7/10</td>
+<td align="right">+4.12%</td>
+</tr>
+<tr>
+<td>Sakhir</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+2.99%</td>
+</tr>
+<tr>
+<td>SaoPaulo</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.26%</td>
+</tr>
+<tr>
+<td>Sepang</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.24%</td>
+</tr>
+<tr>
+<td>Silverstone</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">+3.88%</td>
+</tr>
+<tr>
+<td>Sochi</td>
+<td align="right">0/10</td>
+<td align="right">0/10</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>Spa</td>
+<td align="right">7/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.55%</td>
+</tr>
+<tr>
+<td>Spielberg</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.04%</td>
+</tr>
+<tr>
+<td>YasMarina</td>
+<td align="right">5/10</td>
+<td align="right">5/10</td>
+<td align="right">+4.28%</td>
+</tr>
+<tr>
+<td>Zandvoort</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.94%</td>
+</tr>
+</tbody></table></div>
+<h2>Dati e riproduzione</h2>
+<ul>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/experiments/edit_weights.py">Generatore dei pesi</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/final_comparison.json">Confronto finale appaiato</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/artifacts/clearance_cautious.json">Formula e verifiche del checkpoint</a></li>
+</ul>
+
+
+<footer class="sources"><h2>Fonti e materiali</h2><div><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/RESULTS.md">Report della fase</a>
+<a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Codice e dati</a>
+<a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/tree/9381a13eec6b182ff38e4fba55a105cf94219da6">Progetto originale</a></div></footer>
+</article></div></main>
+<footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+<a href="#study-index">Torna all’indice ↑</a></footer>
+</body></html>

@@ -1,0 +1,742 @@
+{
+  "checkpoint_sha256": "ad81bb7e53c93df1dab015d4ad1a4725660871c91cb56984596d3675e008d02c",
+  "completed_clean": 98,
+  "completed_with_contact": 0,
+  "rows": [
+    {
+      "map": "Austin",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.03396254640306984,
+      "contact_frames": 0
+    },
+    {
+      "map": "Austin",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.03479673468525554,
+      "contact_frames": 0
+    },
+    {
+      "map": "Austin",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.02950387218530759,
+      "contact_frames": 0
+    },
+    {
+      "map": "Austin",
+      "seed": 60404,
+      "success": false,
+      "min_clearance_m": 0.0063066217281316506,
+      "contact_frames": 0
+    },
+    {
+      "map": "Austin",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.028126605206074823,
+      "contact_frames": 0
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.06643542695606891,
+      "contact_frames": 0
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.06286051997685507,
+      "contact_frames": 0
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.061622256306015026,
+      "contact_frames": 0
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.0739773482954355,
+      "contact_frames": 0
+    },
+    {
+      "map": "BrandsHatch",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.056589588758727855,
+      "contact_frames": 0
+    },
+    {
+      "map": "Budapest",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.04073759078054026,
+      "contact_frames": 0
+    },
+    {
+      "map": "Budapest",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.03923279672493418,
+      "contact_frames": 0
+    },
+    {
+      "map": "Budapest",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.05283384944789671,
+      "contact_frames": 0
+    },
+    {
+      "map": "Budapest",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.05753600602284081,
+      "contact_frames": 0
+    },
+    {
+      "map": "Budapest",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.05688476048538066,
+      "contact_frames": 0
+    },
+    {
+      "map": "Catalunya",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.04098140839183315,
+      "contact_frames": 0
+    },
+    {
+      "map": "Catalunya",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.05226188963104291,
+      "contact_frames": 0
+    },
+    {
+      "map": "Catalunya",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.0395882550756087,
+      "contact_frames": 0
+    },
+    {
+      "map": "Catalunya",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.05443142945887791,
+      "contact_frames": 0
+    },
+    {
+      "map": "Catalunya",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.06282870968434487,
+      "contact_frames": 0
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.03866435953845135,
+      "contact_frames": 0
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.03506260908667594,
+      "contact_frames": 0
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.03426597336504761,
+      "contact_frames": 0
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.04938850897561148,
+      "contact_frames": 0
+    },
+    {
+      "map": "Hockenheim",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.049812784948705224,
+      "contact_frames": 0
+    },
+    {
+      "map": "IMS",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.042442306526177254,
+      "contact_frames": 0
+    },
+    {
+      "map": "IMS",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.10506987661883985,
+      "contact_frames": 0
+    },
+    {
+      "map": "IMS",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.11288456047684386,
+      "contact_frames": 0
+    },
+    {
+      "map": "IMS",
+      "seed": 60404,
+      "success": false,
+      "min_clearance_m": 0.028901264512458474,
+      "contact_frames": 0
+    },
+    {
+      "map": "IMS",
+      "seed": 60505,
+      "success": false,
+      "min_clearance_m": 0.0,
+      "contact_frames": 20000
+    },
+    {
+      "map": "Melbourne",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.04097492109130643,
+      "contact_frames": 0
+    },
+    {
+      "map": "Melbourne",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.037160565212239316,
+      "contact_frames": 0
+    },
+    {
+      "map": "Melbourne",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.039284703107914376,
+      "contact_frames": 0
+    },
+    {
+      "map": "Melbourne",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.05608555877535287,
+      "contact_frames": 0
+    },
+    {
+      "map": "Melbourne",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.04426029211757537,
+      "contact_frames": 0
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.05789157403632919,
+      "contact_frames": 0
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.03929911986021961,
+      "contact_frames": 0
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.0361321350495695,
+      "contact_frames": 0
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.05425915052563751,
+      "contact_frames": 0
+    },
+    {
+      "map": "MexicoCity",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.02050717289295831,
+      "contact_frames": 0
+    },
+    {
+      "map": "Monza",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.04014804867324262,
+      "contact_frames": 0
+    },
+    {
+      "map": "Monza",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.039419800637829044,
+      "contact_frames": 0
+    },
+    {
+      "map": "Monza",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.025587007091999896,
+      "contact_frames": 0
+    },
+    {
+      "map": "Monza",
+      "seed": 60404,
+      "success": false,
+      "min_clearance_m": 0.01805500732548851,
+      "contact_frames": 0
+    },
+    {
+      "map": "Monza",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.03916298712137539,
+      "contact_frames": 0
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.05406766208922137,
+      "contact_frames": 0
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.05407833546430907,
+      "contact_frames": 0
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.06116714833115064,
+      "contact_frames": 0
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.06171228055285924,
+      "contact_frames": 0
+    },
+    {
+      "map": "MoscowRaceway",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.06942440050859361,
+      "contact_frames": 0
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.025442487955642745,
+      "contact_frames": 0
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.03935568526963784,
+      "contact_frames": 0
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.017852746495342325,
+      "contact_frames": 0
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.025152253032341837,
+      "contact_frames": 0
+    },
+    {
+      "map": "Nuerburgring",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.03645565432710665,
+      "contact_frames": 0
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.050053575985621684,
+      "contact_frames": 0
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.05491615682657358,
+      "contact_frames": 0
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.06004855420432714,
+      "contact_frames": 0
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60404,
+      "success": false,
+      "min_clearance_m": 0.0,
+      "contact_frames": 20000
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60505,
+      "success": false,
+      "min_clearance_m": 0.0,
+      "contact_frames": 20000
+    },
+    {
+      "map": "Sakhir",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.06799255085311101,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sakhir",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.07789137613505456,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sakhir",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.0763898207181033,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sakhir",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.08052291917674595,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sakhir",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.06967560603180448,
+      "contact_frames": 0
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.06217640943243635,
+      "contact_frames": 0
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.04904906093706696,
+      "contact_frames": 0
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.058093708978801756,
+      "contact_frames": 0
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.06321435261237568,
+      "contact_frames": 0
+    },
+    {
+      "map": "SaoPaulo",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.06573231038054184,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sepang",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.05996736664830438,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sepang",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.049488327133889454,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sepang",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.058188274827222664,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sepang",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.0556054871307575,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sepang",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.055513181830476266,
+      "contact_frames": 0
+    },
+    {
+      "map": "Silverstone",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.045188574194905906,
+      "contact_frames": 0
+    },
+    {
+      "map": "Silverstone",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.04751647871844858,
+      "contact_frames": 0
+    },
+    {
+      "map": "Silverstone",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.045794884627652244,
+      "contact_frames": 0
+    },
+    {
+      "map": "Silverstone",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.05517381369106859,
+      "contact_frames": 0
+    },
+    {
+      "map": "Silverstone",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.05914776706196165,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sochi",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.04259601983188541,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sochi",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.04488630180202918,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sochi",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.037084837448379454,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sochi",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.021258078905420474,
+      "contact_frames": 0
+    },
+    {
+      "map": "Sochi",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.039322722575885184,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spa",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.013013123372014546,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spa",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.04630243511307555,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spa",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.041065366530156994,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spa",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.03710102313410224,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spa",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.035475340089957536,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spielberg",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.07244942273238833,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spielberg",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.07298010424617224,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spielberg",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.07142794948475145,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spielberg",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.07464856477418746,
+      "contact_frames": 0
+    },
+    {
+      "map": "Spielberg",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.0794538611586354,
+      "contact_frames": 0
+    },
+    {
+      "map": "YasMarina",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.05444517219898909,
+      "contact_frames": 0
+    },
+    {
+      "map": "YasMarina",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.0346102254445971,
+      "contact_frames": 0
+    },
+    {
+      "map": "YasMarina",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.04228347527982862,
+      "contact_frames": 0
+    },
+    {
+      "map": "YasMarina",
+      "seed": 60404,
+      "success": false,
+      "min_clearance_m": 0.009842622623963265,
+      "contact_frames": 0
+    },
+    {
+      "map": "YasMarina",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.053917424692538046,
+      "contact_frames": 0
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 60101,
+      "success": true,
+      "min_clearance_m": 0.07175114177119427,
+      "contact_frames": 0
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 60202,
+      "success": true,
+      "min_clearance_m": 0.05710791884771177,
+      "contact_frames": 0
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 60303,
+      "success": true,
+      "min_clearance_m": 0.0515316094106065,
+      "contact_frames": 0
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 60404,
+      "success": true,
+      "min_clearance_m": 0.07369575312688778,
+      "contact_frames": 0
+    },
+    {
+      "map": "Zandvoort",
+      "seed": 60505,
+      "success": true,
+      "min_clearance_m": 0.05054531108332891,
+      "contact_frames": 0
+    }
+  ]
+}

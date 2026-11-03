@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slowing down when forward clearance shrinks · Tommaso Patriti</title>
+<meta name="description" content="The first edit adds speed on open straights. Across 17 validation tracks, it saves 1.91% on paired finishes but loses one completion overall. The second edit uses the same clearance signal to slow down in tight…">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Slowing down when forward clearance shrinks">
+<meta property="og:description" content="The first edit adds speed on open straights. Across 17 validation tracks, it saves 1.91% on paired finishes but loses one completion overall. The second edit uses the same clearance signal to slow down in tight…">
+<meta property="og:url" content="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase1/">
+<link rel="canonical" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase1/">
+<link rel="alternate" hreflang="it" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/phase1/">
+<link rel="alternate" hreflang="en" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase1/">
+<link rel="alternate" hreflang="x-default" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/phase1/">
+<link rel="stylesheet" href="../../assets/study.css">
+</head>
+<body><a class="skip" href="#content">Skip to content</a>
+<header class="mast"><div class="wrap mast-row">
+<a class="signature" rel="home" href="https://tommasopatriti.me/"><b aria-hidden="true">TP</b> Tommaso Patriti</a>
+<nav class="languages" aria-label="Language"><a href="../../it/phase1/" lang="it" hreflang="it" aria-label="Italiano">IT</a><a href="./" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a></nav>
+</div></header>
+<main id="content" class="wrap">
+<header class="hero">
+<div class="eyeline"><a href="../../">Research</a>
+<span>F1TENTH</span><span>Autonomous driving</span></div>
+<div class="folio"><b>Phase 01 / 06</b> <span><time datetime="2026-11-03">3 November 2026</time></span></div>
+<h1>Slowing down when forward clearance shrinks</h1>
+<div class="intro"><p>The first edit adds speed on open straights. Across 17 validation tracks, it saves 1.91% on paired finishes but loses one completion overall. The second edit uses the same clearance signal to slow down in tight spaces. In the final test it recovers 17 episodes the original PPO failed and loses one earlier success. Collisions fall from 42 to 26 with zero timeouts. On the 167 paired finishes, the time cost averages +3.77%.</p>
+</div>
+</header>
+<div class="reading-grid">
+<nav class="study-index" id="study-index" aria-label="Study contents">
+<h2>Study contents</h2><ol><li><a href="../"><span aria-hidden="true">↳</span>Article</a></li><li><a href="./" aria-current="page"><span aria-hidden="true">01</span>Editing the PPO</a></li><li><a href="../phase2/"><span aria-hidden="true">02</span>Speed and drift</a></li><li><a href="../phase3/"><span aria-hidden="true">03</span>Circuit-specific repair</a></li><li><a href="../phase4/"><span aria-hidden="true">04</span>Contact and trajectories</a></li><li><a href="../phase5/"><span aria-hidden="true">05</span>Geometric network</a></li><li><a href="../phase6/"><span aria-hidden="true">06</span>Pace and starts</a></li><li><a href="../methods/"><span aria-hidden="true">§</span>Methods and data</a></li></ol></nav>
+<article class="prose"><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Comparison</th>
+<th align="right">Original</th>
+<th align="right">Edited</th>
+<th align="right">Paired lap time</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>First candidate, development</td>
+<td align="right">17/20</td>
+<td align="right">17/20</td>
+<td align="right">-1.68%</td>
+</tr>
+<tr>
+<td>First candidate, 17 other tracks</td>
+<td align="right">67/85</td>
+<td align="right">66/85</td>
+<td align="right">-1.91%</td>
+</tr>
+<tr>
+<td>Cautious candidate, development</td>
+<td align="right">17/20</td>
+<td align="right">17/20</td>
+<td align="right">+3.87%</td>
+</tr>
+<tr>
+<td><strong>Cautious candidate, final test</strong></td>
+<td align="right"><strong>168/210</strong></td>
+<td align="right"><strong>184/210</strong></td>
+<td align="right"><strong>+3.77%</strong></td>
+</tr>
+</tbody></table></div>
+<p><img loading="lazy" decoding="async" src="../../assets/results/comparison.png" alt="Cautious model finishes and times by track"></p>
+<h2>Two neurons measure forward clearance</h2>
+<p>The learned actor takes 1,080 LiDAR rays and computes steering and speed through two hidden layers of 64 tanh neurons. Across 8,190 development observations, neuron 15 in the first layer and neuron 1 in the second are nearly constant. Downstream biases absorb their former contributions, freeing the units to convert the mean of forward rays 520–559 into a speed adjustment.</p>
+<p>The first circuit adds up to 0.60 m/s. The second subtracts up to 0.60 m/s when clearance is low and adds up to 0.30 m/s in open space. Each candidate changes 1,276 of the actor’s 73,474 scalars, out of 146,885 in the full checkpoint. The largest steering deviation on the development observations is 0.0000597 in normalized units.</p>
+<h2>Starts and verification</h2>
+<p>Development uses five starts on four tracks. Initial validation uses five on each of the other 17. After the cautious revision, final testing uses ten fresh seeds per track on all 21 tracks, from 7001 to 16010. The historical environment used 19 tracks and different software versions. The local benchmark measures the effect of the edit on the available maps.</p>
+<p>Each episode lasts up to 200 simulated seconds. Finishing requires visiting at least 99% of the waypoints in order and crossing the start line without a simulator collision. Models share starting poses and LiDAR noise. Times compare laps completed from the same starts by the specified models. A negative value means a faster lap.</p>
+<p>Loading each checkpoint through PPO reproduces the evaluator’s actions exactly on 128 observations. Repeating two original episodes also reproduces their outcomes. The ten trials on a track share its geometry.</p>
+<h2>Finishes and times by track</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Track</th>
+<th align="right">Original</th>
+<th align="right">Cautious</th>
+<th align="right">Paired lap time</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Austin</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.71%</td>
+</tr>
+<tr>
+<td>BrandsHatch</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.93%</td>
+</tr>
+<tr>
+<td>Budapest</td>
+<td align="right">4/10</td>
+<td align="right">9/10</td>
+<td align="right">+4.02%</td>
+</tr>
+<tr>
+<td>Catalunya</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.86%</td>
+</tr>
+<tr>
+<td>Hockenheim</td>
+<td align="right">10/10</td>
+<td align="right">9/10</td>
+<td align="right">+4.56%</td>
+</tr>
+<tr>
+<td>IMS</td>
+<td align="right">7/10</td>
+<td align="right">7/10</td>
+<td align="right">+2.06%</td>
+</tr>
+<tr>
+<td>Melbourne</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.66%</td>
+</tr>
+<tr>
+<td>MexicoCity</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.23%</td>
+</tr>
+<tr>
+<td>Monza</td>
+<td align="right">5/10</td>
+<td align="right">8/10</td>
+<td align="right">+1.83%</td>
+</tr>
+<tr>
+<td>MoscowRaceway</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.44%</td>
+</tr>
+<tr>
+<td>Nuerburgring</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.03%</td>
+</tr>
+<tr>
+<td>Oschersleben</td>
+<td align="right">1/10</td>
+<td align="right">7/10</td>
+<td align="right">+4.12%</td>
+</tr>
+<tr>
+<td>Sakhir</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+2.99%</td>
+</tr>
+<tr>
+<td>SaoPaulo</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.26%</td>
+</tr>
+<tr>
+<td>Sepang</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.24%</td>
+</tr>
+<tr>
+<td>Silverstone</td>
+<td align="right">9/10</td>
+<td align="right">9/10</td>
+<td align="right">+3.88%</td>
+</tr>
+<tr>
+<td>Sochi</td>
+<td align="right">0/10</td>
+<td align="right">0/10</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>Spa</td>
+<td align="right">7/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.55%</td>
+</tr>
+<tr>
+<td>Spielberg</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+3.04%</td>
+</tr>
+<tr>
+<td>YasMarina</td>
+<td align="right">5/10</td>
+<td align="right">5/10</td>
+<td align="right">+4.28%</td>
+</tr>
+<tr>
+<td>Zandvoort</td>
+<td align="right">10/10</td>
+<td align="right">10/10</td>
+<td align="right">+4.94%</td>
+</tr>
+</tbody></table></div>
+<h2>Data and reproduction</h2>
+<ul>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/experiments/edit_weights.py">Weight generator</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/results/final_comparison.json">Final paired comparison</a></li>
+<li><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/artifacts/clearance_cautious.json">Checkpoint formula and checks</a></li>
+</ul>
+
+
+<footer class="sources"><h2>Sources and materials</h2><div><a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing/blob/main/RESULTS.md">Phase report</a>
+<a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Code and data</a>
+<a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/tree/9381a13eec6b182ff38e4fba55a105cf94219da6">Original project</a></div></footer>
+</article></div></main>
+<footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+<a href="#study-index">Back to the index ↑</a></footer>
+</body></html>

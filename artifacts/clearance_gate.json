@@ -1,0 +1,20 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "source_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+  "output_sha256": "475297b347acebbd2d63e22e2509bb55b6907177bcd2f99c73abaa3faf42a2f9",
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 1080,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changed_total": 1276,
+  "total_parameters": 146885,
+  "validation_samples": 8190,
+  "max_unclipped_steering_delta": 5.9604644775390625e-05,
+  "max_speed_formula_error_mps": 0.001427826238796115,
+  "method": "analytic clearance gate, no gradients, fitting, or automated search",
+  "caveat": "Near-constant neuron assumption checked on development only. Optimizer state is original: inference artifact, reset optimizer before training."
+}

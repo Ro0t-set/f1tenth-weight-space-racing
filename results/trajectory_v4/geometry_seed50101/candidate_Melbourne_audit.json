@@ -1,0 +1,32 @@
+{
+  "trace": "results/trajectory_v4/final_candidate_Melbourne_50101_trace.npz",
+  "saved_frames": 5359,
+  "frame_interval_max_s": 0.01,
+  "sampled_duration_s": 53.58,
+  "sampled_path_length_m": 466.5215056864756,
+  "raceline_loop_length_m": 464.65523539642516,
+  "sampled_absolute_body_yaw_change_rad": 32.26830081336026,
+  "body_clearance_min_m": 0.1859066935831266,
+  "body_clearance_p05_m": 0.3608541668153674,
+  "body_clearance_median_m": 0.794447787768778,
+  "center_clearance_min_m": 0.3409691011019536,
+  "occupied_or_outside_body_frames": 0,
+  "body_frames_below_10cm": 0,
+  "body_frames_below_20cm": 31,
+  "raceline_cross_track_abs_median_m": 0.4689837747202311,
+  "raceline_cross_track_abs_p95_m": 0.924543925544992,
+  "minimum_clearance_time_s": 0.0,
+  "map_resolution_m": 0.09009,
+  "limitations": [
+    "Saved poses only: excursions between frames and final collision pose may be absent.",
+    "Closed occupied pixel squares; real wall position is uncertain at map resolution.",
+    "Zero separation means footprint contact/overlap, not signed penetration depth.",
+    "Raceline is a geometric reference, not a demonstrated absolute optimum.",
+    "Polyline length omits sub-frame motion and is not comparable across unequal progress.",
+    "Upstream TTC ignores slip beta; this geometry audit does not redefine collision outcomes."
+  ],
+  "success": true,
+  "collision": false,
+  "progress": 1.0,
+  "episode_seconds": 53.59
+}

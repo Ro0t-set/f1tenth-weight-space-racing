@@ -1,0 +1,52 @@
+{
+  "checkpoint": "upstream/train_test/best_global_model.zip",
+  "sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+  "protocol": "one lap: >=99% ordered waypoints AND >=1 start crossing; no collision",
+  "max_steps": 20000,
+  "rows": [
+    {
+      "map": "BrandsHatch",
+      "seed": 101,
+      "start": [
+        40.8958204,
+        -44.8111848,
+        5.6864312
+      ],
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "steps": 4081,
+      "seconds": 40.81,
+      "progress": 1.0,
+      "reward": 221.6300000000119,
+      "mean_speed": 8.606596892609518,
+      "mean_speed_command": 8.819742266429213,
+      "speed_command_p95": 9.623370952904224,
+      "steer_abs_p95": 0.2439209222793579,
+      "front_min": 2.9933763248635263,
+      "wall_seconds": 0.7874155420577154
+    },
+    {
+      "map": "YasMarina",
+      "seed": 101,
+      "start": [
+        -12.8583858,
+        9.8534035,
+        4.3674846
+      ],
+      "success": true,
+      "collision": false,
+      "timeout": false,
+      "steps": 4870,
+      "seconds": 48.7,
+      "progress": 1.0,
+      "reward": 262.7200000000177,
+      "mean_speed": 8.037757551625258,
+      "mean_speed_command": 8.366105140184933,
+      "speed_command_p95": 9.678537445142865,
+      "steer_abs_p95": 0.49775856733322155,
+      "front_min": 1.0693959397117059,
+      "wall_seconds": 0.8705645420122892
+    }
+  ]
+}

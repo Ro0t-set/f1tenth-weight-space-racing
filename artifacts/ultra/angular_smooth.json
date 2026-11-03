@@ -1,0 +1,12 @@
+{
+  "name": "angular_smooth",
+  "hypothesis": "Bake a 0.5-degree angular Gaussian low-pass into first-layer weights. Preserve DC sums and reject unstructured high-frequency beam sensitivity; no external sensor preprocessing.",
+  "source_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+  "sha256": "94ed4ae1156455a0cca85088ac726acde658914c28719885e788845dc5ebcd71",
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 69120
+  },
+  "changed_total": 69120,
+  "method": "direct analytic edits, no fitting/training/search",
+  "inference_only": true
+}

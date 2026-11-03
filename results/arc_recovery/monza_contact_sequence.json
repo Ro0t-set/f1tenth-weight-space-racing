@@ -1,0 +1,26 @@
+[
+  {
+    "map": "Monza",
+    "seed": 71404,
+    "initial_contact_frames": 7,
+    "first_clear_time_s": 0.07,
+    "last_contact_time_s": 0.06,
+    "any_recontact_after_first_clear": false,
+    "moving_frames_gt_0p02mps": 4632,
+    "max_displacement_m": 111.34705174706667,
+    "final_speed_mps": 11.822398079836068,
+    "saved_frames": 4633
+  },
+  {
+    "map": "Monza",
+    "seed": 71101,
+    "initial_contact_frames": 20,
+    "first_clear_time_s": 0.2,
+    "last_contact_time_s": 0.19,
+    "any_recontact_after_first_clear": false,
+    "moving_frames_gt_0p02mps": 49,
+    "max_displacement_m": 0.2456689341934977,
+    "final_speed_mps": -2.9802322387695244e-07,
+    "saved_frames": 20000
+  }
+]

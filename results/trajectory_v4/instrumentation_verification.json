@@ -1,0 +1,15 @@
+{
+  "episodes": 3,
+  "exact_fields": [
+    "success",
+    "collision",
+    "steps",
+    "seconds",
+    "progress",
+    "reward",
+    "mean_speed",
+    "mean_speed_command",
+    "max_abs_beta_deg"
+  ],
+  "dense_frames_valid": true
+}

@@ -1,0 +1,22 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "sha256": "f20c0e49412e99c4108f13946ccde2449dfb7826b626d8060921bb2281b729f3",
+  "specification": {
+    "parent": "two_gate",
+    "formula": "g_side=tanh(3*(front_open-side_far-1)); steer+=.06*(g_right-g_left); v-=.25*(2+g_right+g_left)",
+    "rationale": "Unconditional diagonal guard opposed intended corner entry. Restrict small correction to open-front, near-side-wall exits; leave ordinary corners to learned steering.",
+    "steering_correction_bound_normalized": 0.12
+  },
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 5400,
+    "mlp_extractor.policy_net.0.bias": 5,
+    "mlp_extractor.policy_net.2.weight": 556,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 8,
+    "action_net.bias": 2
+  },
+  "changed_total": 6035,
+  "method": "reasoned analytic edits; no training, fitting, gradient or automated search",
+  "observation": "original single 1080-ray lidar; no velocity, slip, yaw rate or memory",
+  "inference_only": true
+}

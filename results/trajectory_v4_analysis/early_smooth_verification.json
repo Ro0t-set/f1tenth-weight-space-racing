@@ -1,0 +1,298 @@
+{
+  "checkpoint_sha256": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604",
+  "samples": 9319,
+  "frozen_hashes_match": true,
+  "changed_from_parent": {
+    "mlp_extractor.policy_net.0.weight": 4320,
+    "mlp_extractor.policy_net.0.bias": 1
+  },
+  "changed_from_original": {
+    "mlp_extractor.policy_net.0.weight": 5400,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "total_changed_from_parent": 4321,
+  "total_changed_from_original": 5596,
+  "independent_gaussian_max_error": 0.0,
+  "sigma_rays": 2.0,
+  "radius_rays": 8,
+  "edge_mode": "half-sample symmetric reflect",
+  "gaussian_rows": [
+    1,
+    14,
+    41,
+    61
+  ],
+  "other_changed_parameter": "first layer bias15 = -288, left wall threshold .6m",
+  "programmed_wall_weights_unchanged": true,
+  "critic_logstd_unchanged": true,
+  "nonpolicy_zip_entries_unchanged": true,
+  "PPO_predictions_exactly_match_evaluator": true,
+  "raw_same_observation_steering_delta_normalized": {
+    "min": -0.7038688659667969,
+    "max": 0.041135795414447784,
+    "mean": -0.0011206037597730756,
+    "mean_abs": 0.0022986631374806166,
+    "absolute_quantiles_p50_p95_p99_max": [
+      0.0007098177447915077,
+      0.006162650510668756,
+      0.01238242998719214,
+      0.7038688659667969
+    ]
+  },
+  "raw_same_observation_speed_command_delta_mps": {
+    "min": -0.20467695593833923,
+    "max": 0.31929346919059753,
+    "mean": -0.0017656706040725112,
+    "mean_abs": 0.010463958606123924,
+    "absolute_quantiles_p50_p95_p99_max": [
+      0.004863180220127106,
+      0.03896012902259829,
+      0.08262835562229141,
+      0.31929346919059753
+    ]
+  },
+  "clipped_same_observation_speed_command_delta_mps": {
+    "min": -0.20467695593833923,
+    "max": 0.31929346919059753,
+    "mean": -0.0017656706040725112,
+    "mean_abs": 0.010463958606123924,
+    "absolute_quantiles_p50_p95_p99_max": [
+      0.004863180220127106,
+      0.03896012902259829,
+      0.08262835562229141,
+      0.31929346919059753
+    ]
+  },
+  "row_DC_sum_errors": [
+    7.807102520018816e-09,
+    1.7279035091632977e-08,
+    2.333854354219511e-08,
+    7.255130185512826e-08
+  ],
+  "development_candidates": {
+    "early_panic": {
+      "episodes": 21,
+      "successes": 14,
+      "collisions": 7,
+      "sha256_recorded": "e6253637182cf533468a0b2f294efbfe623d132af96539d9e475d44caae1e6f2",
+      "gained": [
+        [
+          "Monza",
+          1101
+        ],
+        [
+          "Monza",
+          3303
+        ],
+        [
+          "Spa",
+          1101
+        ]
+      ],
+      "lost": [
+        [
+          "Monza",
+          2202
+        ]
+      ],
+      "mean_paired_lap_change_pct": 0.012115788552933472
+    },
+    "exit_support": {
+      "episodes": 21,
+      "successes": 0,
+      "collisions": 21,
+      "sha256_recorded": "9e94fafcdb1f47c5699be50a776deec50a9f025f70b011b0347bb42b426b21d4",
+      "gained": [],
+      "lost": [
+        [
+          "BrandsHatch",
+          1101
+        ],
+        [
+          "BrandsHatch",
+          2202
+        ],
+        [
+          "BrandsHatch",
+          3303
+        ],
+        [
+          "Budapest",
+          1101
+        ],
+        [
+          "Budapest",
+          2202
+        ],
+        [
+          "Budapest",
+          3303
+        ],
+        [
+          "Monza",
+          2202
+        ],
+        [
+          "Oschersleben",
+          2202
+        ],
+        [
+          "Oschersleben",
+          3303
+        ],
+        [
+          "Spa",
+          2202
+        ],
+        [
+          "Spa",
+          3303
+        ],
+        [
+          "YasMarina",
+          1101
+        ]
+      ],
+      "mean_paired_lap_change_pct": null
+    },
+    "exit_only": {
+      "episodes": 21,
+      "successes": 0,
+      "collisions": 21,
+      "sha256_recorded": "cb2c1d474dc5aa36155ef598668a5ab32be3edade02175539408b93606a5b97a",
+      "gained": [],
+      "lost": [
+        [
+          "BrandsHatch",
+          1101
+        ],
+        [
+          "BrandsHatch",
+          2202
+        ],
+        [
+          "BrandsHatch",
+          3303
+        ],
+        [
+          "Budapest",
+          1101
+        ],
+        [
+          "Budapest",
+          2202
+        ],
+        [
+          "Budapest",
+          3303
+        ],
+        [
+          "Monza",
+          2202
+        ],
+        [
+          "Oschersleben",
+          2202
+        ],
+        [
+          "Oschersleben",
+          3303
+        ],
+        [
+          "Spa",
+          2202
+        ],
+        [
+          "Spa",
+          3303
+        ],
+        [
+          "YasMarina",
+          1101
+        ]
+      ],
+      "mean_paired_lap_change_pct": null
+    },
+    "exit_approach": {
+      "episodes": 21,
+      "successes": 14,
+      "collisions": 7,
+      "sha256_recorded": "1233ed545f0d14d3b579dfd2c915da51c7f4121be44e1114e21611c9e91bd343",
+      "gained": [
+        [
+          "Monza",
+          1101
+        ],
+        [
+          "Monza",
+          3303
+        ],
+        [
+          "Spa",
+          1101
+        ]
+      ],
+      "lost": [
+        [
+          "Oschersleben",
+          2202
+        ]
+      ],
+      "mean_paired_lap_change_pct": 0.3130818522517943
+    },
+    "early_smooth": {
+      "episodes": 21,
+      "successes": 15,
+      "collisions": 6,
+      "sha256_recorded": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604",
+      "gained": [
+        [
+          "Monza",
+          1101
+        ],
+        [
+          "Monza",
+          3303
+        ],
+        [
+          "Spa",
+          1101
+        ]
+      ],
+      "lost": [],
+      "mean_paired_lap_change_pct": 0.10899538109985692
+    },
+    "turn_preview": {
+      "episodes": 21,
+      "successes": 12,
+      "collisions": 9,
+      "sha256_recorded": "c71240f6c57ddd4719924a36cbfd53b0c77432b546db16ad469bacf7378a8162",
+      "gained": [
+        [
+          "Monza",
+          1101
+        ],
+        [
+          "Spa",
+          1101
+        ]
+      ],
+      "lost": [
+        [
+          "Budapest",
+          3303
+        ],
+        [
+          "YasMarina",
+          1101
+        ]
+      ],
+      "mean_paired_lap_change_pct": -0.8939933899412665
+    }
+  },
+  "caveat": "Speed-head tensors unchanged but smoothing shared hidden features changes both outputs. These development observations are not holdout performance evidence."
+}

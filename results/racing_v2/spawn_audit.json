@@ -1,0 +1,16 @@
+[
+  {
+    "map": "YasMarina",
+    "seed": 2202,
+    "failure_seconds": 0.03,
+    "occupied_footprint_samples_fraction": 0.20784313725490197,
+    "sample_count": 510
+  },
+  {
+    "map": "Oschersleben",
+    "seed": 1101,
+    "failure_seconds": 0.05,
+    "occupied_footprint_samples_fraction": 0.0,
+    "sample_count": 510
+  }
+]

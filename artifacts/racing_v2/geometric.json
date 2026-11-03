@@ -1,0 +1,25 @@
+{
+  "source": "upstream/train_test/best_global_model.zip",
+  "sha256": "1d84dfcbc18a7e2e40434fc73b73c8844ab8de656be5c947f66bfd40ed56fbd8",
+  "specification": {
+    "formula": "steer=.6*tanh(tanh((d_left30-d_right30)/6)); v=7.5+3*tanh(tanh((d_front-6)/4))/tanh(1)",
+    "rationale": "Diagnostic from-scratch neural program: equalize wall distances at a forward lookahead; no PPO throttle/steering coadaptation remains.",
+    "bounds_mps": [
+      4.5,
+      10.5
+    ],
+    "full_actor_rewrite": true
+  },
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 69120,
+    "mlp_extractor.policy_net.0.bias": 64,
+    "mlp_extractor.policy_net.2.weight": 4096,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 128,
+    "action_net.bias": 2
+  },
+  "changed_total": 73474,
+  "method": "reasoned analytic edits; no training, fitting, gradient or automated search",
+  "observation": "original single 1080-ray lidar; no velocity, slip, yaw rate or memory",
+  "inference_only": true
+}

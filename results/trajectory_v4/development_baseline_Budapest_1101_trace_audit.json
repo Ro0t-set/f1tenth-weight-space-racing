@@ -1,0 +1,28 @@
+{
+  "trace": "results/racing_v2/development_baseline_Budapest_1101_trace.npz",
+  "saved_frames": 65,
+  "frame_interval_max_s": 0.1,
+  "sampled_duration_s": 6.4,
+  "sampled_path_length_m": 48.86278085823288,
+  "raceline_loop_length_m": 390.76693497835777,
+  "sampled_absolute_body_yaw_change_rad": 5.369438589395367,
+  "body_clearance_min_m": 0.05842895772574319,
+  "body_clearance_p05_m": 0.2449830516352872,
+  "body_clearance_median_m": 0.8618855418436827,
+  "center_clearance_min_m": 0.23011021038761997,
+  "occupied_or_outside_body_frames": 0,
+  "body_frames_below_10cm": 2,
+  "body_frames_below_20cm": 3,
+  "raceline_cross_track_abs_median_m": 0.3453751460086391,
+  "raceline_cross_track_abs_p95_m": 0.745172135558655,
+  "minimum_clearance_time_s": 6.1000000000000005,
+  "map_resolution_m": 0.06446,
+  "limitations": [
+    "Saved poses only: excursions between frames and final collision pose may be absent.",
+    "Closed occupied pixel squares; real wall position is uncertain at map resolution.",
+    "Zero separation means footprint contact/overlap, not signed penetration depth.",
+    "Raceline is a geometric reference, not a demonstrated absolute optimum.",
+    "Polyline length omits sub-frame motion and is not comparable across unequal progress.",
+    "Upstream TTC ignores slip beta; this geometry audit does not redefine collision outcomes."
+  ]
+}

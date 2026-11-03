@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programmare i pesi per correre in F1TENTH · Tommaso Patriti</title>
+<meta name="description" content="Una rete geometrica con 28.427 coefficienti ha completato 95 giri su 105 senza collisioni segnalate, con 10 timeout. Sulle 86 partenze completate anche dai due riferimenti, il tempo sul giro è sceso del 9,91%…">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Programmare i pesi per correre in F1TENTH">
+<meta property="og:description" content="Una rete geometrica con 28.427 coefficienti ha completato 95 giri su 105 senza collisioni segnalate, con 10 timeout. Sulle 86 partenze completate anche dai due riferimenti, il tempo sul giro è sceso del 9,91%…">
+<meta property="og:url" content="https://tommasopatriti.me/research/f1tenth-weight-space/it/">
+<link rel="canonical" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/">
+<link rel="alternate" hreflang="it" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/">
+<link rel="alternate" hreflang="en" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/">
+<link rel="alternate" hreflang="x-default" href="https://tommasopatriti.me/research/f1tenth-weight-space/">
+<link rel="stylesheet" href="../assets/study.css">
+</head>
+<body><a class="skip" href="#content">Vai al contenuto</a>
+<header class="mast"><div class="wrap mast-row">
+<a class="signature" rel="home" href="https://tommasopatriti.me/"><b aria-hidden="true">TP</b> Tommaso Patriti</a>
+<nav class="languages" aria-label="Lingua"><a href="./" lang="it" hreflang="it" aria-label="Italiano" aria-current="page">IT</a><a href="../en/" lang="en" hreflang="en" aria-label="English">EN</a></nav>
+</div></header>
+<main id="content" class="wrap">
+<header class="hero">
+<div class="eyeline"><a href="../">Ricerca</a>
+<span>F1TENTH</span><span>Guida autonoma</span></div>
+<div class="folio"><b>Articolo</b> <span>Tommaso Patriti · Nota sperimentale · 3 novembre 2026</span></div>
+<h1>Programmare i pesi per correre in F1TENTH</h1>
+<div class="intro"><p><strong>Una rete geometrica con 28.427 coefficienti ha completato 95 giri su 105 senza collisioni segnalate, con 10 timeout.</strong> Sulle 86 partenze completate anche dai due riferimenti, il tempo sul giro è sceso del 9,91% rispetto alla rete geometrica precedente e dell’1,73% rispetto alla PPO già modificata.</p>
+</div>
+</header>
+<div class="reading-grid">
+<nav class="study-index" id="study-index" aria-label="Indice dello studio">
+<h2>Indice dello studio</h2><ol><li><a href="./" aria-current="page"><span aria-hidden="true">↳</span>Articolo</a></li><li><a href="phase1/"><span aria-hidden="true">01</span>Modifiche alla PPO</a></li><li><a href="phase2/"><span aria-hidden="true">02</span>Velocità e drift</a></li><li><a href="phase3/"><span aria-hidden="true">03</span>Correzione su circuito</a></li><li><a href="phase4/"><span aria-hidden="true">04</span>Contatti e traiettorie</a></li><li><a href="phase5/"><span aria-hidden="true">05</span>Rete geometrica</a></li><li><a href="phase6/"><span aria-hidden="true">06</span>Velocità e partenze</a></li><li><a href="methods/"><span aria-hidden="true">§</span>Metodi e dati</a></li></ol></nav>
+<article class="prose"><p>Con Codex e GPT-6 Astra abbiamo programmato direttamente i tensori di una rete che riceve 1.080 raggi LiDAR. I pesi descrivono lo spazio occupato dall’auto lungo 17 curvature e la velocità compatibile con la pista visibile. Abbiamo rivisto le formule dopo le simulazioni e congelato i pesi prima del confronto finale. L’esperimento riprende il progetto dell’Università di Bologna e il metodo di <em>weight-space programming</em> di Takehi e colleghi. <a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym">Progetto F1TENTH originale</a> · <a href="https://rikiyat.github.io/blog/weight-space-programming/">Takehi et al., 2026</a></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Test finale su 21 piste × 5 nuove partenze</th>
+<th align="right">Giri completati</th>
+<th align="right">Collisioni</th>
+<th align="right">Timeout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PPO modificata</td>
+<td align="right">88</td>
+<td align="right">17</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Rete geometrica precedente</td>
+<td align="right">93</td>
+<td align="right">0</td>
+<td align="right">12</td>
+</tr>
+<tr>
+<td>Rete geometrica finale</td>
+<td align="right">95</td>
+<td align="right">0</td>
+<td align="right">10</td>
+</tr>
+</tbody></table></div>
+<p>Nei 95 giri del modello finale, l’ingombro completo dell’auto è rimasto separato dai muri della mappa in ogni posa controllata a intervalli di 0,01 s. La nuova manovra ha recuperato due dei sette timeout storici. Il test misura la guida simulata su un giro, con partenze e rumore nuovi su piste note. <a href="phase6/">Risultati finali e tentativi scartati</a> · <a href="methods/">Prompt e protocollo</a> · <a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Codice, pesi e dati</a></p>
+
+
+<footer class="sources"><h2>Fonti e materiali</h2><div>
+<a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Codice e dati</a>
+<a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/tree/9381a13eec6b182ff38e4fba55a105cf94219da6">Progetto originale</a></div></footer>
+</article></div></main>
+<footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+<a href="#study-index">Torna all’indice ↑</a></footer>
+</body></html>

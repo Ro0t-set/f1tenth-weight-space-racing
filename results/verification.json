@@ -1,0 +1,5 @@
+{
+  "sb3_prediction_equivalence": "Exact, 128 observations for each checkpoint",
+  "edit_scope": "Only policy.pth changed; critic and log_std unchanged; 1276 scalar edits",
+  "repeatability": "Two independently repeated episodes exactly match, except wall time"
+}

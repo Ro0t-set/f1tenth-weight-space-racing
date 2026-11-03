@@ -1,0 +1,6 @@
+{
+  "source_sha256": "7d3c960f8e26589b746c45962994b33ba74763467e3767954f2f263b389bc400",
+  "sha256": "1c9960d8ec1492b4ce946ebb13eb33c6fdeec3dabfcc6cd86ef91e8c1ffed3ff",
+  "changed_envelope_scalars": 8268,
+  "guard": "front TTC radius + 3cm noise + 3m/s * (20ms actuation delay + 5ms TTC) * cos(theta); all horizons, 4cm complete fade"
+}

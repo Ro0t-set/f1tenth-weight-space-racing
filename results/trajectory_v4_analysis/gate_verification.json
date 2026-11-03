@@ -1,0 +1,387 @@
+{
+  "samples": 9319,
+  "original_h1_0_range": [
+    0.9999979734420776,
+    1.0
+  ],
+  "original_h2_14_range": [
+    -0.9963003993034363,
+    -0.9855891466140747
+  ],
+  "variants": {
+    "early_panic": {
+      "formula_max_error": [
+        1.3589859008789062e-05,
+        1.341104507446289e-07
+      ],
+      "compensation_steering_error_range": [
+        0.0,
+        0.0
+      ],
+      "compensation_speed_error_mps_range": [
+        0.0,
+        0.0
+      ],
+      "speed_change_total_range_mps": [
+        0.0,
+        0.0
+      ],
+      "sha256": "e6253637182cf533468a0b2f294efbfe623d132af96539d9e475d44caae1e6f2",
+      "critic_logstd_zip_metadata_unchanged": true,
+      "PPO_load_exact_predictions": true,
+      "changed_tensors": {
+        "mlp_extractor.policy_net.0.bias": 1
+      }
+    },
+    "exit_support": {
+      "formula_max_error": [
+        1.3589859008789062e-05,
+        1.341104507446289e-07
+      ],
+      "compensation_steering_error_range": [
+        2.8133392333984375e-05,
+        0.00010971724987030029
+      ],
+      "compensation_speed_error_mps_range": [
+        -0.0034693628549575806,
+        -0.0008908100426197052
+      ],
+      "speed_change_total_range_mps": [
+        -0.0034697353839874268,
+        -0.0008910894393920898
+      ],
+      "sha256": "9e94fafcdb1f47c5699be50a776deec50a9f025f70b011b0347bb42b426b21d4",
+      "critic_logstd_zip_metadata_unchanged": true,
+      "PPO_load_exact_predictions": true,
+      "changed_tensors": {
+        "mlp_extractor.policy_net.0.weight": 1080,
+        "mlp_extractor.policy_net.0.bias": 2,
+        "mlp_extractor.policy_net.2.weight": 125,
+        "mlp_extractor.policy_net.2.bias": 63,
+        "action_net.weight": 2,
+        "action_net.bias": 2
+      }
+    },
+    "exit_only": {
+      "formula_max_error": [
+        4.887580871582031e-06,
+        1.341104507446289e-07
+      ],
+      "compensation_steering_error_range": [
+        2.8133392333984375e-05,
+        0.00010971724987030029
+      ],
+      "compensation_speed_error_mps_range": [
+        -0.0034693628549575806,
+        -0.0008908100426197052
+      ],
+      "speed_change_total_range_mps": [
+        -0.0034697353839874268,
+        -0.0008910894393920898
+      ],
+      "sha256": "cb2c1d474dc5aa36155ef598668a5ab32be3edade02175539408b93606a5b97a",
+      "critic_logstd_zip_metadata_unchanged": true,
+      "PPO_load_exact_predictions": true,
+      "changed_tensors": {
+        "mlp_extractor.policy_net.0.weight": 1080,
+        "mlp_extractor.policy_net.0.bias": 1,
+        "mlp_extractor.policy_net.2.weight": 125,
+        "mlp_extractor.policy_net.2.bias": 63,
+        "action_net.weight": 2,
+        "action_net.bias": 2
+      }
+    }
+  },
+  "interference": {
+    "development_baseline_BrandsHatch_1101_trace": {
+      "samples": 409,
+      "correction_gt_02": 68,
+      "correction_gt_08": 55,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 0,
+      "max_correction": 0.15991806983947754,
+      "projection_min": 0.5689282417297363,
+      "time_integrated_correction_normalized": 0.8768983840942384
+    },
+    "development_baseline_BrandsHatch_2202_trace": {
+      "samples": 409,
+      "correction_gt_02": 61,
+      "correction_gt_08": 45,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 0,
+      "max_correction": 0.15987680852413177,
+      "projection_min": 0.5858088731765747,
+      "time_integrated_correction_normalized": 0.7491669654846191
+    },
+    "development_baseline_BrandsHatch_3303_trace": {
+      "samples": 408,
+      "correction_gt_02": 62,
+      "correction_gt_08": 49,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 0,
+      "max_correction": 0.15992170572280884,
+      "projection_min": 0.5874468684196472,
+      "time_integrated_correction_normalized": 0.7806015491485596
+    },
+    "development_baseline_Budapest_1101_trace": {
+      "samples": 65,
+      "correction_gt_02": 14,
+      "correction_gt_08": 13,
+      "correction_gt_08_while_h1_1_negative": 2,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.1599425971508026,
+      "projection_min": 0.25751128792762756,
+      "time_integrated_correction_normalized": 0.19703930616378784
+    },
+    "development_baseline_Budapest_2202_trace": {
+      "samples": 160,
+      "correction_gt_02": 28,
+      "correction_gt_08": 21,
+      "correction_gt_08_while_h1_1_negative": 3,
+      "correction_gt_08_while_parent_right_gt_02": 3,
+      "max_correction": 0.15994225442409515,
+      "projection_min": 0.33429208397865295,
+      "time_integrated_correction_normalized": 0.32401218414306643
+    },
+    "development_baseline_Budapest_3303_trace": {
+      "samples": 205,
+      "correction_gt_02": 38,
+      "correction_gt_08": 27,
+      "correction_gt_08_while_h1_1_negative": 2,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.15994177758693695,
+      "projection_min": 0.33119064569473267,
+      "time_integrated_correction_normalized": 0.46439676284790044
+    },
+    "development_baseline_Monza_1101_trace": {
+      "samples": 509,
+      "correction_gt_02": 300,
+      "correction_gt_08": 265,
+      "correction_gt_08_while_h1_1_negative": 1,
+      "correction_gt_08_while_parent_right_gt_02": 1,
+      "max_correction": 0.15994533896446228,
+      "projection_min": 0.2984945476055145,
+      "time_integrated_correction_normalized": 4.22778205871582
+    },
+    "development_baseline_Monza_2202_trace": {
+      "samples": 509,
+      "correction_gt_02": 292,
+      "correction_gt_08": 252,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 1,
+      "max_correction": 0.15994277596473694,
+      "projection_min": 0.30414432287216187,
+      "time_integrated_correction_normalized": 4.079584121704102
+    },
+    "development_baseline_Monza_3303_trace": {
+      "samples": 509,
+      "correction_gt_02": 292,
+      "correction_gt_08": 262,
+      "correction_gt_08_while_h1_1_negative": 2,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.1599445343017578,
+      "projection_min": 0.33069437742233276,
+      "time_integrated_correction_normalized": 4.148039627075195
+    },
+    "development_baseline_Oschersleben_1101_trace": {
+      "samples": 1,
+      "correction_gt_02": 1,
+      "correction_gt_08": 1,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 0,
+      "max_correction": 0.15994557738304138,
+      "projection_min": 0.20160254836082458,
+      "time_integrated_correction_normalized": 0.01599455773830414
+    },
+    "development_baseline_Oschersleben_2202_trace": {
+      "samples": 68,
+      "correction_gt_02": 34,
+      "correction_gt_08": 26,
+      "correction_gt_08_while_h1_1_negative": 2,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.15990574657917023,
+      "projection_min": 0.3542064130306244,
+      "time_integrated_correction_normalized": 0.4388911724090576
+    },
+    "development_baseline_Oschersleben_3303_trace": {
+      "samples": 117,
+      "correction_gt_02": 56,
+      "correction_gt_08": 47,
+      "correction_gt_08_while_h1_1_negative": 5,
+      "correction_gt_08_while_parent_right_gt_02": 5,
+      "max_correction": 0.15993212163448334,
+      "projection_min": 0.32175296545028687,
+      "time_integrated_correction_normalized": 0.7308945178985596
+    },
+    "development_baseline_Sochi_1101_trace": {
+      "samples": 455,
+      "correction_gt_02": 199,
+      "correction_gt_08": 160,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 3,
+      "max_correction": 0.15994562208652496,
+      "projection_min": 0.26472434401512146,
+      "time_integrated_correction_normalized": 2.579977035522461
+    },
+    "development_baseline_Sochi_2202_trace": {
+      "samples": 501,
+      "correction_gt_02": 223,
+      "correction_gt_08": 192,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 5,
+      "max_correction": 0.15993976593017578,
+      "projection_min": 0.2845291495323181,
+      "time_integrated_correction_normalized": 2.955951690673828
+    },
+    "development_baseline_Sochi_3303_trace": {
+      "samples": 136,
+      "correction_gt_02": 78,
+      "correction_gt_08": 59,
+      "correction_gt_08_while_h1_1_negative": 3,
+      "correction_gt_08_while_parent_right_gt_02": 4,
+      "max_correction": 0.15994100272655487,
+      "projection_min": 0.2663348317146301,
+      "time_integrated_correction_normalized": 0.9632811546325684
+    },
+    "development_baseline_Spa_1101_trace": {
+      "samples": 646,
+      "correction_gt_02": 300,
+      "correction_gt_08": 242,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.15994545817375183,
+      "projection_min": 0.2501350939273834,
+      "time_integrated_correction_normalized": 3.9188533782958985
+    },
+    "development_baseline_Spa_2202_trace": {
+      "samples": 646,
+      "correction_gt_02": 296,
+      "correction_gt_08": 212,
+      "correction_gt_08_while_h1_1_negative": 1,
+      "correction_gt_08_while_parent_right_gt_02": 3,
+      "max_correction": 0.15994101762771606,
+      "projection_min": 0.3990674614906311,
+      "time_integrated_correction_normalized": 3.486723327636719
+    },
+    "development_baseline_Spa_3303_trace": {
+      "samples": 646,
+      "correction_gt_02": 276,
+      "correction_gt_08": 218,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.15993958711624146,
+      "projection_min": 0.4017677307128906,
+      "time_integrated_correction_normalized": 3.4026527404785156
+    },
+    "development_baseline_YasMarina_1101_trace": {
+      "samples": 487,
+      "correction_gt_02": 310,
+      "correction_gt_08": 277,
+      "correction_gt_08_while_h1_1_negative": 3,
+      "correction_gt_08_while_parent_right_gt_02": 9,
+      "max_correction": 0.1599423587322235,
+      "projection_min": 0.29217779636383057,
+      "time_integrated_correction_normalized": 4.477691650390625
+    },
+    "development_baseline_YasMarina_2202_trace": {
+      "samples": 1,
+      "correction_gt_02": 0,
+      "correction_gt_08": 0,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 0,
+      "max_correction": 0.0007360601448453963,
+      "projection_min": 0.1911696344614029,
+      "time_integrated_correction_normalized": 7.360601448453964e-05
+    },
+    "development_baseline_YasMarina_3303_trace": {
+      "samples": 2,
+      "correction_gt_02": 0,
+      "correction_gt_08": 0,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 0,
+      "max_correction": 0.0,
+      "projection_min": 1.7885822057724,
+      "time_integrated_correction_normalized": 0.0
+    },
+    "fast_sochi_monza_Monza_40505_trace": {
+      "samples": 185,
+      "correction_gt_02": 109,
+      "correction_gt_08": 88,
+      "correction_gt_08_while_h1_1_negative": 2,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.1597198247909546,
+      "projection_min": 0.24871735274791718,
+      "time_integrated_correction_normalized": 1.3906311035156251
+    },
+    "fast_sochi_monza_Monza_41010_trace": {
+      "samples": 223,
+      "correction_gt_02": 130,
+      "correction_gt_08": 119,
+      "correction_gt_08_while_h1_1_negative": 3,
+      "correction_gt_08_while_parent_right_gt_02": 3,
+      "max_correction": 0.15994344651699066,
+      "projection_min": 0.28072723746299744,
+      "time_integrated_correction_normalized": 1.908218574523926
+    },
+    "fast_sochi_monza_Sochi_40505_trace": {
+      "samples": 245,
+      "correction_gt_02": 128,
+      "correction_gt_08": 107,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.15993940830230713,
+      "projection_min": 0.30482539534568787,
+      "time_integrated_correction_normalized": 1.6812753677368164
+    },
+    "fast_sochi_monza_Sochi_41010_trace": {
+      "samples": 504,
+      "correction_gt_02": 229,
+      "correction_gt_08": 192,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 4,
+      "max_correction": 0.15993787348270416,
+      "projection_min": 0.3281899392604828,
+      "time_integrated_correction_normalized": 3.0092124938964844
+    },
+    "fast_spa_moscow_MoscowRaceway_40303_trace": {
+      "samples": 384,
+      "correction_gt_02": 170,
+      "correction_gt_08": 150,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 3,
+      "max_correction": 0.15993447601795197,
+      "projection_min": 0.4101877808570862,
+      "time_integrated_correction_normalized": 2.393162536621094
+    },
+    "fast_spa_moscow_MoscowRaceway_40808_trace": {
+      "samples": 221,
+      "correction_gt_02": 114,
+      "correction_gt_08": 101,
+      "correction_gt_08_while_h1_1_negative": 4,
+      "correction_gt_08_while_parent_right_gt_02": 4,
+      "max_correction": 0.1599399894475937,
+      "projection_min": 0.2357219159603119,
+      "time_integrated_correction_normalized": 1.5280233383178712
+    },
+    "fast_spa_moscow_Spa_40303_trace": {
+      "samples": 35,
+      "correction_gt_02": 23,
+      "correction_gt_08": 22,
+      "correction_gt_08_while_h1_1_negative": 2,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.15994513034820557,
+      "projection_min": 0.2520729899406433,
+      "time_integrated_correction_normalized": 0.34827814102172855
+    },
+    "fast_spa_moscow_Spa_40808_trace": {
+      "samples": 633,
+      "correction_gt_02": 283,
+      "correction_gt_08": 227,
+      "correction_gt_08_while_h1_1_negative": 0,
+      "correction_gt_08_while_parent_right_gt_02": 2,
+      "max_correction": 0.15994521975517273,
+      "projection_min": 0.30262789130210876,
+      "time_integrated_correction_normalized": 3.6759979248046877
+    }
+  }
+}

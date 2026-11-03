@@ -1,0 +1,23 @@
+{
+  "baseline": {
+    "completed_sustained_countersteer_proxy": 0,
+    "longest_countersteer_slip_s": 0.31,
+    "longest_completed_countersteer_slip_s": 0.12,
+    "max_abs_beta_deg": 42.68187455172292,
+    "median_completed_p95_abs_beta_deg": 11.488023159937732
+  },
+  "cautious": {
+    "completed_sustained_countersteer_proxy": 0,
+    "longest_countersteer_slip_s": 0.23,
+    "longest_completed_countersteer_slip_s": 0.16,
+    "max_abs_beta_deg": 31.77148738440419,
+    "median_completed_p95_abs_beta_deg": 9.257343340833838
+  },
+  "curvature": {
+    "completed_sustained_countersteer_proxy": 0,
+    "longest_countersteer_slip_s": 0.25,
+    "longest_completed_countersteer_slip_s": 0.13,
+    "max_abs_beta_deg": 58.624743643363495,
+    "median_completed_p95_abs_beta_deg": 12.771617941395297
+  }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protocollo, modello e prompt · Tommaso Patriti</title>
+<meta name="description" content="L’esperimento si è svolto il 3 novembre 2026, ora italiana. Tommaso Patriti ha assegnato gli obiettivi e i vincoli. Codex ha esaminato il codice, scritto i compilatori dei pesi, eseguito i rollout e preparato i…">
+<meta name="theme-color" content="#f6f4ef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Protocollo, modello e prompt">
+<meta property="og:description" content="L’esperimento si è svolto il 3 novembre 2026, ora italiana. Tommaso Patriti ha assegnato gli obiettivi e i vincoli. Codex ha esaminato il codice, scritto i compilatori dei pesi, eseguito i rollout e preparato i…">
+<meta property="og:url" content="https://tommasopatriti.me/research/f1tenth-weight-space/it/methods/">
+<link rel="canonical" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/methods/">
+<link rel="alternate" hreflang="it" href="https://tommasopatriti.me/research/f1tenth-weight-space/it/methods/">
+<link rel="alternate" hreflang="en" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/methods/">
+<link rel="alternate" hreflang="x-default" href="https://tommasopatriti.me/research/f1tenth-weight-space/en/methods/">
+<link rel="stylesheet" href="../../assets/study.css">
+</head>
+<body><a class="skip" href="#content">Vai al contenuto</a>
+<header class="mast"><div class="wrap mast-row">
+<a class="signature" rel="home" href="https://tommasopatriti.me/"><b aria-hidden="true">TP</b> Tommaso Patriti</a>
+<nav class="languages" aria-label="Lingua"><a href="./" lang="it" hreflang="it" aria-label="Italiano" aria-current="page">IT</a><a href="../../en/methods/" lang="en" hreflang="en" aria-label="English">EN</a></nav>
+</div></header>
+<main id="content" class="wrap">
+<header class="hero">
+<div class="eyeline"><a href="../../">Ricerca</a>
+<span>F1TENTH</span><span>Guida autonoma</span></div>
+<div class="folio"><b>Metodi e dati</b> <span><time datetime="2026-11-03">3 novembre 2026</time></span></div>
+<h1>Protocollo, modello e prompt</h1>
+<div class="intro"><p>L’esperimento si è svolto il 3 novembre 2026, ora italiana. Tommaso Patriti ha assegnato gli obiettivi e i vincoli. Codex ha esaminato il codice, scritto i compilatori dei pesi, eseguito i rollout e preparato i confronti. I metadati della sessione identificano il modello che ha coordinato il lavoro come <strong>GPT-6 Astra</strong> (<code>gpt-6-astra</code>), con ragionamento <code>high</code> nelle prime fasi e <code>ultra</code> nelle successive.</p>
+</div>
+</header>
+<div class="reading-grid">
+<nav class="study-index" id="study-index" aria-label="Indice dello studio">
+<h2>Indice dello studio</h2><ol><li><a href="../"><span aria-hidden="true">↳</span>Articolo</a></li><li><a href="../phase1/"><span aria-hidden="true">01</span>Modifiche alla PPO</a></li><li><a href="../phase2/"><span aria-hidden="true">02</span>Velocità e drift</a></li><li><a href="../phase3/"><span aria-hidden="true">03</span>Correzione su circuito</a></li><li><a href="../phase4/"><span aria-hidden="true">04</span>Contatti e traiettorie</a></li><li><a href="../phase5/"><span aria-hidden="true">05</span>Rete geometrica</a></li><li><a href="../phase6/"><span aria-hidden="true">06</span>Velocità e partenze</a></li><li><a href="./" aria-current="page"><span aria-hidden="true">§</span>Metodi e dati</a></li></ol></nav>
+<article class="prose"><h2>Richieste effettive</h2>
+<p>Estratti dei prompt originali, in ordine cronologico. Gli estratti mantengono la formulazione dell’utente.</p>
+<ol>
+<li>«Voglio vedere se sei in grado di migliorare il modello, modificando i pesi row, come nel lavoro allegato.»</li>
+<li>«voglio che vada più veloce, che non si schianti e che sappia driftare.»</li>
+<li>«Mantieni il progetto attuale: solo modifiche ai pesi»</li>
+<li>«Continua a migliorare i pesi: prova a ridurre ancora gli schianti senza perdere velocità»</li>
+<li>«sei in grado di generare una rete da 0? più generale e snella, scrivendo direttamente i pesi»</li>
+<li>«Continua sulla rete nuova: prova a recuperare l’8,2% di velocità e risolvere i 7 timeout senza aumentare gli schianti, sempre scrivendo direttamente i pesi, senza training»</li>
+</ol>
+<h2>Disegno sperimentale</h2>
+<p>La prima serie parte dal checkpoint PPO del progetto di Manuel Andruccioli, Tommaso Patriti e Giacomo Totaro. La seconda costruisce un attore geometrico da zero. I coefficienti provengono da formule sui raggi LiDAR, sull’ingombro del veicolo e sul modello dinamico. I rollout orientano la scelta e la revisione manuale delle formule. Il controllore risultante usa soltanto il LiDAR durante la guida. <a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/blob/9381a13eec6b182ff38e4fba55a105cf94219da6/report/index.tex">Relazione originale del progetto</a> · <a href="https://rikiyat.github.io/blog/weight-space-programming/">Metodo di riferimento</a></p>
+<p>Per ogni confronto, i controller condividono pista, posa iniziale e seed del rumore. Un successo richiede almeno il 99% dei waypoint in ordine e un attraversamento della partenza senza collisione. Il limite è 200 secondi simulati. La verifica conclusiva congela gli hash e usa cinque nuovi seed su ciascuna delle 21 piste. Due verifiche precedenti hanno respinto candidati dopo collisioni ad Austin. Il quarto modello dell’ultimo confronto isola la sola modifica della velocità. <a href="../phase6/">Tutti i confronti</a></p>
+<p>Il tempo riportato è la media di <code>100 × (tempo candidato / tempo riferimento − 1)</code> calcolata sugli stessi giri completati. Collisioni e timeout rimangono nel denominatore dei completamenti. Un audit separato confronta un rettangolo di 58 × 31 cm con i pixel occupati a ogni posa registrata prima dell’azione. La risoluzione della mappa, il passo di 0,01 s e la fisica degli pneumatici limitano le conclusioni su contatti reali e drift controllato. <a href="../phase4/">Audit delle traiettorie</a></p>
+
+
+<footer class="sources"><h2>Fonti e materiali</h2><div>
+<a href="https://github.com/Ro0t-set/f1tenth-weight-space-racing">Codice e dati</a>
+<a href="https://github.com/zucchero-sintattico/svs-f1tenth_gym/tree/9381a13eec6b182ff38e4fba55a105cf94219da6">Progetto originale</a></div></footer>
+</article></div></main>
+<footer class="end wrap"><span>Tommaso Patriti · F1TENTH</span>
+<a href="#study-index">Torna all’indice ↑</a></footer>
+</body></html>

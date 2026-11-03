@@ -1,0 +1,57 @@
+{
+  "status": "Prepared before inspecting the new network implementation or its outcomes",
+  "scope": "New small network, explicit weights from scratch, same 1080 LiDAR inputs and upstream simulator; no training, fitting or optimizer",
+  "development": {
+    "smoke_maps": ["BrandsHatch", "Monza", "Sochi"],
+    "smoke_seeds": [1101],
+    "expanded_maps": ["BrandsHatch", "YasMarina", "Monza", "Spa", "Sochi", "Budapest", "Oschersleben"],
+    "expanded_seeds": [1101, 2202, 3303],
+    "selection": "Mechanistic inspection and a small number of explicitly justified revisions; no automated threshold/weight sweeps. Do not count development outcomes as independent final evidence."
+  },
+  "final": {
+    "maps": "All 21 repository maps with racelines, sorted",
+    "seeds": [60101, 60202, 60303, 60404, 60505],
+    "reference_checkpoint": "artifacts/trajectory_v4/early_smooth.zip",
+    "reference_sha256": "74a607dfd8eca5058fb8e7ab3d1a2492b6c3cb7b39290a903460fb5700a45604",
+    "episodes_each": 105,
+    "before_run": "Freeze architecture source, weights/export, reference hash, evaluation code hash, seed/map list and primary candidate. No edits after seeing final outcomes.",
+    "evaluator": "Reuse existing evaluate() unchanged: one lap, >=99% ordered waypoint progress AND start crossing, no collision, max 200s. Pair map/seed/reset and include all failures.",
+    "report": [
+      "Completion, collisions, timeouts, gained/lost episodes against reference",
+      "Paired lap time changes only on jointly completed episodes, with denominator and per-map breakdown",
+      "Early failures retained; no filtering of problematic starts",
+      "If recording --state-trace, audit all recorded body footprints and report completed episodes with raster contact separately",
+      "No claim of new-track generalization: the maps are known; only seeds and starts/noise are new",
+      "No claim of controlled drift or guaranteed zero crashes from completion counts"
+    ]
+  },
+  "artifact_audit": {
+    "source": "Inspect constructor and forward plus exported graph: all coefficients explicit; no PPO tensors loaded/copied, no random initialization left active, no fit/gradient/training step, no hidden controller outside module except original normalization/clipping",
+    "sizes": [
+      "Dense parameter elements, dense buffer elements, nonzero elements of each, dtype and serialized bytes",
+      "Unique stored tensors/storage elements, aliases and tied/shared coefficients",
+      "Independent explicitly programmed coefficients versus logical expanded connections; disclose fixed architecture constants/literals",
+      "Compare against PPO actor-only 73474 scalars and full actor+critic/log_std checkpoint 146885 separately"
+    ],
+    "equivalence": "Compare eager module, export and adapter on existing observations and synthetic scans; same normalization, action order and clipping",
+    "latency": "Same CPU, one torch thread, batch1, inference/no_grad, warmup128 then1000 calls in5 blocks on fixed preloaded observations. Report complete predict adapter p50/p95 and raw network path separately; exclude loading, simulator and disk IO. Do not compare new actor only against PPO actor+critic training forward."
+  },
+  "synthetic_mirror_audit": {
+    "input": "1080 angles spanning original LiDAR field of view; analytic parallel corridor walls and optional front wall, clipped to30m, original normalization. Mirrored scan is exact reversed input vector.",
+    "cases": [
+      "All rays30m",
+      "Symmetric corridor left/right1m with front wall30m",
+      "Symmetric corridor left/right1m with front wall5m",
+      "Offset corridor left0.35m/right1.65m with front wall30m",
+      "Offset corridor left0.7m/right1.3m with front wall5m",
+      "Symmetric corridor with off-center bounded obstacle patch and its reflection"
+    ],
+    "expected_relation": "For intended mirror-symmetric design: steering(reverse(obs))=-steering(obs), speed(reverse(obs))=speed(obs), including exported module and adapter. Symmetric inputs imply zero steering. Report max absolute residual and dtype tolerance rather than fitting coefficients to cases.",
+    "limit": "A symmetry check validates a structural property, not obstacle avoidance or racing performance."
+  },
+  "known_physics_limits": [
+    "Original wall TTC uses longitudinal extent lf+lr=0.3302m, shorter than declared body length0.58m",
+    "Original TTC projects velocity without slip beta",
+    "Raster footprint audit has map-resolution uncertainty and sees pre-action saved poses, not continuous trajectories or final post-step state"
+  ]
+}

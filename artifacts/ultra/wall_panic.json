@@ -1,0 +1,17 @@
+{
+  "name": "wall_panic",
+  "hypothesis": "Constrain saturation attenuation to near-left-wall states: h41+,h61- AND mean left90deg clearance below .4m (half-width .155m plus .245m clearance). Preserve hard steering elsewhere. No fitting.",
+  "source_sha256": "1cab23c05d804aa4f15fca9e79960f18f6af91e2b8d458bb8e659b3592307d6b",
+  "sha256": "3d64cfa99936d7ae0ca9ff4fafbfeef18cdc878bafe990d11f661e4a69310a5a",
+  "changed": {
+    "mlp_extractor.policy_net.0.weight": 1080,
+    "mlp_extractor.policy_net.0.bias": 1,
+    "mlp_extractor.policy_net.2.weight": 127,
+    "mlp_extractor.policy_net.2.bias": 64,
+    "action_net.weight": 2,
+    "action_net.bias": 2
+  },
+  "changed_total": 1276,
+  "method": "direct analytic edits, no fitting/training/search",
+  "inference_only": true
+}

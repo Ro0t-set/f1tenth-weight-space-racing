@@ -1,0 +1,16 @@
+{
+  "parent": "arc_recovered.pt",
+  "parent_sha256": "871eb453f2a611e913ae05acdef6a729e9a556fffb4c76a74ee1668f15c6ba1c",
+  "sha256": "7d3c960f8e26589b746c45962994b33ba74763467e3767954f2f263b389bc400",
+  "changed_envelope_scalars": 1198,
+  "changed_horizons_m": [
+    0.5,
+    1.0
+  ],
+  "scan_noise_reserve_m": 0.02,
+  "ttc_window_s": 0.005,
+  "reference_velocity_mps": 0.5,
+  "width_m": 0.31,
+  "axle_length_m": 0.3302,
+  "source_sha256": "126b8595904c9e47edcf30b8fc4b174c130d0e86f8565dbd7869cf9db05ed245"
+}

@@ -1,0 +1,179 @@
+{
+  "status": "development_only",
+  "selected": "protected_core",
+  "comparator": "arc_dynamic timed out on all seven starts",
+  "selection_criterion": "Prefer completions on all initially clear starts with zero simulator collisions and no sampled footprint contacts. Initially overlapping starts remain counted.",
+  "iterations": {
+    "tapered": {
+      "checkpoint_sha256": "e605183ec52a6481f8f48ef583f29424bb817078942407c6bb600bca7fa64300",
+      "episodes": 7,
+      "completed": 1,
+      "collisions": 0,
+      "timeouts": 6,
+      "new_geometric_contacts_from_initially_clear_starts": 0,
+      "rollouts_and_dense_geometry_file": "startup_outcomes.json"
+    },
+    "body": {
+      "checkpoint_sha256": "0af6e1477b53e2911a35a64bd72d6a2473c936734323e94dada1d0dc1ee7323a",
+      "episodes": 7,
+      "completed": 3,
+      "collisions": 2,
+      "timeouts": 2,
+      "new_geometric_contacts_from_initially_clear_starts": 0,
+      "rollouts_and_dense_geometry_file": "body_only/startup_outcomes.json"
+    },
+    "meter_ttc": {
+      "checkpoint_sha256": "9394bd0cad15ab7cf2655b1612d3e1803dc727f61818a414fe03034eb8e1fce2",
+      "episodes": 7,
+      "completed": 1,
+      "collisions": 0,
+      "timeouts": 6,
+      "new_geometric_contacts_from_initially_clear_starts": 0,
+      "rollouts_and_dense_geometry_file": "escape/startup_outcomes.json"
+    },
+    "sensor_noise": {
+      "checkpoint_sha256": "401b74a8ac4ca76f9bb3b255448d00fabae0c21a7bdef69380901f74eed37659",
+      "episodes": 7,
+      "completed": 3,
+      "collisions": 1,
+      "timeouts": 3,
+      "new_geometric_contacts_from_initially_clear_starts": 0,
+      "rollouts_and_dense_geometry_file": "noise/startup_outcomes.json"
+    },
+    "front_side_noise": {
+      "checkpoint_sha256": "e9193750505ac5ded106c152c54becb3ed139708203431be0a4e0e152d126067",
+      "episodes": 7,
+      "completed": 2,
+      "collisions": 3,
+      "timeouts": 2,
+      "new_geometric_contacts_from_initially_clear_starts": 0,
+      "rollouts_and_dense_geometry_file": "shoulder/startup_outcomes.json"
+    },
+    "protected_core": {
+      "checkpoint_sha256": "d81b7e87fee9078339056c4ddeb81c2afd67be996c7086c46c704060b10bf699",
+      "episodes": 7,
+      "completed": 4,
+      "collisions": 0,
+      "timeouts": 3,
+      "new_geometric_contacts_from_initially_clear_starts": 0,
+      "rollouts_and_dense_geometry_file": "core/startup_outcomes.json"
+    }
+  },
+  "clear_starts_selected": [
+    {
+      "map": "Austin",
+      "seed": 60404,
+      "initial_clearance_m": 0.006306621733429718,
+      "minimum_clearance_m": 0.006306621733429718,
+      "first_1s_minimum_clearance_m": 0.006306621733429718,
+      "overlap_frames": 0,
+      "frames": 5682,
+      "initial_overlap": false,
+      "max_distance_from_start_m": 133.62187569087988,
+      "success": true,
+      "collision": false,
+      "timeout": false
+    },
+    {
+      "map": "IMS",
+      "seed": 60404,
+      "initial_clearance_m": 0.02890132192605846,
+      "minimum_clearance_m": 0.028901321926057932,
+      "first_1s_minimum_clearance_m": 0.028901321926057932,
+      "overlap_frames": 0,
+      "frames": 3221,
+      "initial_overlap": false,
+      "max_distance_from_start_m": 104.77945141137795,
+      "success": true,
+      "collision": false,
+      "timeout": false
+    },
+    {
+      "map": "Monza",
+      "seed": 60404,
+      "initial_clearance_m": 0.018055007335582074,
+      "minimum_clearance_m": 0.018055007335574164,
+      "first_1s_minimum_clearance_m": 0.018055007335574164,
+      "overlap_frames": 0,
+      "frames": 5130,
+      "initial_overlap": false,
+      "max_distance_from_start_m": 175.46940567424477,
+      "success": true,
+      "collision": false,
+      "timeout": false
+    },
+    {
+      "map": "YasMarina",
+      "seed": 60404,
+      "initial_clearance_m": 0.009842622623973202,
+      "minimum_clearance_m": 0.009842622623973146,
+      "first_1s_minimum_clearance_m": 0.009842622623973146,
+      "overlap_frames": 0,
+      "frames": 5418,
+      "initial_overlap": false,
+      "max_distance_from_start_m": 79.02040450809301,
+      "success": true,
+      "collision": false,
+      "timeout": false
+    }
+  ],
+  "overlapping_starts_selected": [
+    {
+      "map": "IMS",
+      "seed": 60505,
+      "initial_clearance_m": 0.0,
+      "minimum_clearance_m": 0.0,
+      "first_1s_minimum_clearance_m": 0.0,
+      "overlap_frames": 20000,
+      "frames": 20000,
+      "initial_overlap": true,
+      "max_distance_from_start_m": 0.00017135671257069803,
+      "success": false,
+      "collision": false,
+      "timeout": true
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60404,
+      "initial_clearance_m": 0.0,
+      "minimum_clearance_m": 0.0,
+      "first_1s_minimum_clearance_m": 0.0,
+      "overlap_frames": 20000,
+      "frames": 20000,
+      "initial_overlap": true,
+      "max_distance_from_start_m": 5.952482748603387e-05,
+      "success": false,
+      "collision": false,
+      "timeout": true
+    },
+    {
+      "map": "Oschersleben",
+      "seed": 60505,
+      "initial_clearance_m": 0.0,
+      "minimum_clearance_m": 0.0,
+      "first_1s_minimum_clearance_m": 0.0,
+      "overlap_frames": 20000,
+      "frames": 20000,
+      "initial_overlap": true,
+      "max_distance_from_start_m": 5.952478680527224e-05,
+      "success": false,
+      "collision": false,
+      "timeout": true
+    }
+  ],
+  "diagnostics": {
+    "initial_scans": "initial_geometry.json",
+    "ideal_half_metre_arcs": "initial_physical_arcs.json",
+    "overlap_departure_depth_proxy": "overlap_departure.json",
+    "observed_ttc_beams": "ttc_failure_beams.json"
+  },
+  "limitations": [
+    "Development starts informed the design. Test performance must be evaluated separately.",
+    "Geometric contacts cover pre-action poses sampled every 0.01 s. A TTC collision can occur between stored poses or ahead of sampled body contact.",
+    "From an initially overlapping pose every trajectory necessarily contains initial contact. Forward sequences that leave the overlap without a later simulator TTC are not excluded in principle.",
+    "Absence of a monotone sampled escape among the tested constant curvature arcs does not prove impossibility for other steering sequences."
+  ],
+  "compiler": "experiments/arc_launch_weights.py",
+  "checkpoint": "artifacts/arc_recovery/startup_core.pt",
+  "reproduction": "results/arc_recovery/startup/core/verify_published.py"
+}

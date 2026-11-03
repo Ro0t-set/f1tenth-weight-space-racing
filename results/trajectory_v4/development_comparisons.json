@@ -1,0 +1,617 @@
+{
+  "early_panic": {
+    "episodes": 21,
+    "maps": 7,
+    "baseline_success": 12,
+    "edited_success": 14,
+    "baseline_collisions": 9,
+    "edited_collisions": 7,
+    "baseline_timeouts": 0,
+    "edited_timeouts": 0,
+    "gained": [
+      [
+        "Monza",
+        1101
+      ],
+      [
+        "Monza",
+        3303
+      ],
+      [
+        "Spa",
+        1101
+      ]
+    ],
+    "lost": [
+      [
+        "Monza",
+        2202
+      ]
+    ],
+    "paired_success": 11,
+    "mean_paired_lap_change_pct": 0.012115788552933472,
+    "map_mean_change_bootstrap95": [
+      0.004201680672268893,
+      0.022329775583841045
+    ],
+    "per_map": [
+      {
+        "map": "BrandsHatch",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 3,
+        "paired_success": 3,
+        "paired_lap_change_pct": 0.0
+      },
+      {
+        "map": "Budapest",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 3,
+        "paired_success": 3,
+        "paired_lap_change_pct": 0.02162479616306297
+      },
+      {
+        "map": "Monza",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 2,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Oschersleben",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 2,
+        "paired_success": 2,
+        "paired_lap_change_pct": 0.0
+      },
+      {
+        "map": "Sochi",
+        "episodes": 3,
+        "baseline_success": 0,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Spa",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 3,
+        "paired_success": 2,
+        "paired_lap_change_pct": 0.02369544111586741
+      },
+      {
+        "map": "YasMarina",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 1,
+        "paired_success": 1,
+        "paired_lap_change_pct": 0.021008403361344463
+      }
+    ]
+  },
+  "exit_support": {
+    "episodes": 21,
+    "maps": 7,
+    "baseline_success": 12,
+    "edited_success": 0,
+    "baseline_collisions": 9,
+    "edited_collisions": 21,
+    "baseline_timeouts": 0,
+    "edited_timeouts": 0,
+    "gained": [],
+    "lost": [
+      [
+        "BrandsHatch",
+        1101
+      ],
+      [
+        "BrandsHatch",
+        2202
+      ],
+      [
+        "BrandsHatch",
+        3303
+      ],
+      [
+        "Budapest",
+        1101
+      ],
+      [
+        "Budapest",
+        2202
+      ],
+      [
+        "Budapest",
+        3303
+      ],
+      [
+        "Monza",
+        2202
+      ],
+      [
+        "Oschersleben",
+        2202
+      ],
+      [
+        "Oschersleben",
+        3303
+      ],
+      [
+        "Spa",
+        2202
+      ],
+      [
+        "Spa",
+        3303
+      ],
+      [
+        "YasMarina",
+        1101
+      ]
+    ],
+    "paired_success": 0,
+    "mean_paired_lap_change_pct": null,
+    "map_mean_change_bootstrap95": null,
+    "per_map": [
+      {
+        "map": "BrandsHatch",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Budapest",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Monza",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Oschersleben",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Sochi",
+        "episodes": 3,
+        "baseline_success": 0,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Spa",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "YasMarina",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      }
+    ]
+  },
+  "exit_only": {
+    "episodes": 21,
+    "maps": 7,
+    "baseline_success": 12,
+    "edited_success": 0,
+    "baseline_collisions": 9,
+    "edited_collisions": 21,
+    "baseline_timeouts": 0,
+    "edited_timeouts": 0,
+    "gained": [],
+    "lost": [
+      [
+        "BrandsHatch",
+        1101
+      ],
+      [
+        "BrandsHatch",
+        2202
+      ],
+      [
+        "BrandsHatch",
+        3303
+      ],
+      [
+        "Budapest",
+        1101
+      ],
+      [
+        "Budapest",
+        2202
+      ],
+      [
+        "Budapest",
+        3303
+      ],
+      [
+        "Monza",
+        2202
+      ],
+      [
+        "Oschersleben",
+        2202
+      ],
+      [
+        "Oschersleben",
+        3303
+      ],
+      [
+        "Spa",
+        2202
+      ],
+      [
+        "Spa",
+        3303
+      ],
+      [
+        "YasMarina",
+        1101
+      ]
+    ],
+    "paired_success": 0,
+    "mean_paired_lap_change_pct": null,
+    "map_mean_change_bootstrap95": null,
+    "per_map": [
+      {
+        "map": "BrandsHatch",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Budapest",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Monza",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Oschersleben",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Sochi",
+        "episodes": 3,
+        "baseline_success": 0,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Spa",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "YasMarina",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      }
+    ]
+  },
+  "exit_approach": {
+    "episodes": 21,
+    "maps": 7,
+    "baseline_success": 12,
+    "edited_success": 14,
+    "baseline_collisions": 9,
+    "edited_collisions": 7,
+    "baseline_timeouts": 0,
+    "edited_timeouts": 0,
+    "gained": [
+      [
+        "Monza",
+        1101
+      ],
+      [
+        "Monza",
+        3303
+      ],
+      [
+        "Spa",
+        1101
+      ]
+    ],
+    "lost": [
+      [
+        "Oschersleben",
+        2202
+      ]
+    ],
+    "paired_success": 11,
+    "mean_paired_lap_change_pct": 0.3130818522517943,
+    "map_mean_change_bootstrap95": [
+      0.19303352152650888,
+      0.5875380413716318
+    ],
+    "per_map": [
+      {
+        "map": "BrandsHatch",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 3,
+        "paired_success": 3,
+        "paired_lap_change_pct": 0.1583481258278896
+      },
+      {
+        "map": "Budapest",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 3,
+        "paired_success": 3,
+        "paired_lap_change_pct": 0.38934887415871994
+      },
+      {
+        "map": "Monza",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 3,
+        "paired_success": 1,
+        "paired_lap_change_pct": 0.3212206384260119
+      },
+      {
+        "map": "Oschersleben",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 1,
+        "paired_success": 1,
+        "paired_lap_change_pct": 0.7964319847085122
+      },
+      {
+        "map": "Sochi",
+        "episodes": 3,
+        "baseline_success": 0,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Spa",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 3,
+        "paired_success": 2,
+        "paired_lap_change_pct": 0.047460728778869754
+      },
+      {
+        "map": "YasMarina",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 1,
+        "paired_success": 1,
+        "paired_lap_change_pct": 0.588235294117645
+      }
+    ]
+  },
+  "early_smooth": {
+    "episodes": 21,
+    "maps": 7,
+    "baseline_success": 12,
+    "edited_success": 15,
+    "baseline_collisions": 9,
+    "edited_collisions": 6,
+    "baseline_timeouts": 0,
+    "edited_timeouts": 0,
+    "gained": [
+      [
+        "Monza",
+        1101
+      ],
+      [
+        "Monza",
+        3303
+      ],
+      [
+        "Spa",
+        1101
+      ]
+    ],
+    "lost": [],
+    "paired_success": 12,
+    "mean_paired_lap_change_pct": 0.10899538109985692,
+    "map_mean_change_bootstrap95": [
+      0.029922296508347018,
+      0.28116800369428885
+    ],
+    "per_map": [
+      {
+        "map": "BrandsHatch",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 3,
+        "paired_success": 3,
+        "paired_lap_change_pct": -0.04170427623504391
+      },
+      {
+        "map": "Budapest",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 3,
+        "paired_success": 3,
+        "paired_lap_change_pct": -0.01440822692007441
+      },
+      {
+        "map": "Monza",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 3,
+        "paired_success": 1,
+        "paired_lap_change_pct": 0.22083918891788734
+      },
+      {
+        "map": "Oschersleben",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 2,
+        "paired_success": 2,
+        "paired_lap_change_pct": 0.4305004766386067
+      },
+      {
+        "map": "Sochi",
+        "episodes": 3,
+        "baseline_success": 0,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Spa",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 3,
+        "paired_success": 2,
+        "paired_lap_change_pct": 0.10268315510821857
+      },
+      {
+        "map": "YasMarina",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 1,
+        "paired_success": 1,
+        "paired_lap_change_pct": 0.18907563025210017
+      }
+    ]
+  },
+  "turn_preview": {
+    "episodes": 21,
+    "maps": 7,
+    "baseline_success": 12,
+    "edited_success": 12,
+    "baseline_collisions": 9,
+    "edited_collisions": 9,
+    "baseline_timeouts": 0,
+    "edited_timeouts": 0,
+    "gained": [
+      [
+        "Monza",
+        1101
+      ],
+      [
+        "Spa",
+        1101
+      ]
+    ],
+    "lost": [
+      [
+        "Budapest",
+        3303
+      ],
+      [
+        "YasMarina",
+        1101
+      ]
+    ],
+    "paired_success": 10,
+    "mean_paired_lap_change_pct": -0.8939933899412665,
+    "map_mean_change_bootstrap95": [
+      -1.3194953408936183,
+      -0.4526235439620482
+    ],
+    "per_map": [
+      {
+        "map": "BrandsHatch",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 3,
+        "paired_success": 3,
+        "paired_lap_change_pct": -0.6501844089779089
+      },
+      {
+        "map": "Budapest",
+        "episodes": 3,
+        "baseline_success": 3,
+        "edited_success": 2,
+        "paired_success": 2,
+        "paired_lap_change_pct": -1.212116583840095
+      },
+      {
+        "map": "Monza",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 2,
+        "paired_success": 1,
+        "paired_lap_change_pct": -0.30114434852440697
+      },
+      {
+        "map": "Oschersleben",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 2,
+        "paired_success": 2,
+        "paired_lap_change_pct": -1.6266792712454126
+      },
+      {
+        "map": "Sochi",
+        "episodes": 3,
+        "baseline_success": 0,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      },
+      {
+        "map": "Spa",
+        "episodes": 3,
+        "baseline_success": 2,
+        "edited_success": 3,
+        "paired_success": 2,
+        "paired_lap_change_pct": -0.5053223068917589
+      },
+      {
+        "map": "YasMarina",
+        "episodes": 3,
+        "baseline_success": 1,
+        "edited_success": 0,
+        "paired_success": 0,
+        "paired_lap_change_pct": null
+      }
+    ]
+  }
+}
