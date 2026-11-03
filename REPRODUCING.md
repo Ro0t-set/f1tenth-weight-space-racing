@@ -79,3 +79,7 @@ Map data © contributors to the F1TENTH racetrack collection, revision `3f581789
 Run bash tools/build_original_report.sh to compile the pinned upstream LaTeX report using Tectonic. The result is output/pdf/original-f1tenth-report.pdf. Source hashes and the published PDF digest are recorded in the adjacent provenance JSON.
 
 Lo stesso comando compila la relazione LaTeX del progetto originale. Il PDF pubblicato è in inglese e conserva autori e contenuto del sorgente.
+
+The synchronized Sochi overlay is regenerated with python tools/article_overlay_video.py. It combines the original PPO, the edited PPO and the final network written from scratch, from the same starting pose and seed 73101. The original PPO trajectory was recorded as an illustrative replay for the video and is excluded from the published benchmark aggregates. The compact pose archive includes its checkpoint and trace digests. All native video players are configured for muted looping autoplay with controls.
+
+Il confronto Sochi sovrappone PPO originale, PPO modificata e rete finale scritta da zero. Il replay della PPO originale serve a illustrare la traiettoria e non entra nei conteggi dei test pubblicati. I video sono configurati con autoplay silenzioso in loop e controlli.

@@ -18,7 +18,7 @@ from matplotlib.patches import Polygon
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'results/article'
 DATA = OUT / 'trajectory-animation.json.gz'
-COLORS = {'original': '#bd473c', 'edited': '#167b72'}
+COLORS = {'original': '#bd473c', 'edited': '#167b72', 'scratch': '#315ec4'}
 
 
 def extract(workspace):
@@ -56,12 +56,13 @@ def render(data, lang, mode):
     local = mode=='corner'
     it = lang=='it'
     labels = {'original':'Prima · PPO originale' if it else 'Before · original PPO',
-              'edited':'Dopo · pesi modificati' if it else 'After · edited weights'}
-    image = np.flipud(np.asarray(Image.open(OUT/'trajectory-map.png')))
+              'edited':'PPO · pesi modificati' if it else 'PPO · edited weights',
+              'scratch':'Rete scritta da zero' if it else 'Network written from scratch'}
+    image = np.flipud(np.asarray(Image.open(OUT/data.get('map_file','trajectory-map.png'))))
     resolution = data['resolution']; origin = data['map_origin']
     extent = [origin[0],origin[0]+image.shape[1]*resolution,origin[1],origin[1]+image.shape[0]*resolution]
     runs = data['runs']
-    all_xy = np.asarray(runs['edited']['states'])[:,:2]
+    all_xy = np.concatenate([np.asarray(r['states'])[:,:2] for r in runs.values()])
     if local:
         heading = pose(runs['edited'], 6.0)[4]
         view = np.array([[np.cos(heading),np.sin(heading)],[-np.sin(heading),np.cos(heading)]])
@@ -70,43 +71,43 @@ def render(data, lang, mode):
         # Identical square windows preserve both the geometry and vehicle scale.
         center=(low+high)/2; half_x=max((high-low)[0]/2, 2.12*(high-low)[1]/2, 5.); half_y=half_x/2.12
         bounds=[center[0]-half_x,center[0]+half_x,center[1]-half_y,center[1]+half_y]
-        fig, axes=plt.subplots(2,1,figsize=(9,10),dpi=100)
-        fig.subplots_adjust(left=.025,right=.975,top=.86,bottom=.055,hspace=.20)
+        fig, one=plt.subplots(figsize=(9,7),dpi=100); axes=[one]*len(runs)
+        fig.subplots_adjust(left=.025,right=.975,top=.80,bottom=.09)
         speed=.5; end=7.8; start=5.2
     else:
         low,high=all_xy.min(0)-3,all_xy.max(0)+3
         bounds=[low[0],high[0],low[1],high[1]]
-        fig, one=plt.subplots(figsize=(9,8),dpi=100);axes=[one,one]
+        fig, one=plt.subplots(figsize=(9,8),dpi=100);axes=[one]*len(runs)
         fig.subplots_adjust(left=.03,right=.97,top=.87,bottom=.11)
-        speed=4.;start=0.;end=runs['edited']['seconds']+.8
+        speed=4.;start=0.;end=max(r['seconds'] for r in runs.values())+.8
         view=np.eye(2);heading=0.
     fig.patch.set_facecolor('#f6f4ef')
-    title = ('La stessa rete, pesi diversi' if it else 'Same network, different weights')
-    fig.suptitle(title,fontsize=23,fontweight='bold',y=.98,color='#211f1b')
-    sub=('Budapest · seed 1101 · esempio di sviluppo' if it else 'Budapest · seed 1101 · development example')
-    fig.text(.5,.935,sub+f' · {speed:g}×',ha='center',fontsize=14,color='#514e47')
+    title = data.get('titles',{}).get(lang, 'La stessa rete, pesi diversi' if it else 'Same network, different weights')
+    fig.suptitle(title,fontsize=22,fontweight='bold',y=.995,color='#211f1b')
+    sub=(f"{data['map']} · seed {data['seed']} · " + ('traiettorie registrate' if it else 'recorded trajectories'))
+    fig.text(.5,.925,sub+f' · {speed:g}×',ha='center',fontsize=14,color='#514e47')
     artists={}
     for (name,run),ax in zip(runs.items(),axes):
-        if local or name=='original':
+        if name=='original':
             ax.imshow(image,cmap='gray',origin='lower',extent=extent,interpolation='nearest',vmin=0,vmax=255)
             if local:
                 from matplotlib.transforms import Affine2D
                 ax.images[-1].set_transform(Affine2D().rotate(-heading)+ax.transData)
             ax.set(xlim=bounds[:2],ylim=bounds[2:],aspect='equal');ax.set_axis_off()
         color=COLORS[name]
-        if local:ax.set_title(labels[name],loc='left',fontsize=19,color=color,pad=10)
+
         line,=ax.plot([],[],color=color,lw=2.8,label=labels[name])
         dot,=ax.plot([],[],'o',color=color,ms=4)
         body=Polygon(np.zeros((4,2)),facecolor=color,edgecolor='#182724',lw=1.0)
         ax.add_patch(body)
-        text=ax.text(.015,.97 if local else (.98 if name=='original' else .91),'',
+        text=ax.text(.015,.98 - .085*list(runs).index(name),'',
                      transform=ax.transAxes,va='top',fontsize=15,color=color,
                      bbox=dict(facecolor='#fffef9',alpha=.94,edgecolor='none',pad=5))
         artists[name]=(line,dot,body,text)
     footer=('Pose registrate ogni 0,1 s · interpolazione solo visiva' if it else 'Recorded poses every 0.1 s · interpolation for display only')
     fig.text(.5,.022,footer,ha='center',fontsize=12,color='#514e47')
     fps=20
-    path=OUT/f'trajectory-{mode}-{lang}.mp4'
+    stem=data.get('stem','trajectory'); path=OUT/f'{stem}-{mode}-{lang}.mp4'
     width,height=fig.canvas.get_width_height()
     command=['ffmpeg','-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{width}x{height}',
              '-r',str(fps),'-i','-','-an','-c:v','libx264','-preset','fast','-crf','22',
@@ -122,18 +123,19 @@ def render(data, lang, mode):
                 line.set_data(points[:,0],points[:,1]);dot.set_data([center[0]],[center[1]])
                 c,s=np.cos(state[4]),np.sin(state[4]);rot=np.array([[c,-s],[s,c]])
                 body.set_xy((np.array([[-1,-1],[1,-1],[1,1],[-1,1]])*np.array([.29,.155]))@rot.T@view.T+center)
-                if name=='original' and time>=run['seconds']:
-                    status='Collisione registrata a 6,50 s' if it else 'Collision recorded at 6.50 s'
-                elif name=='edited' and time>=run['seconds']:
-                    status='Giro completato in 47,13 s' if it else 'Lap completed in 47.13 s'
+                if run['collision'] and time>=run['seconds']:
+                    status=(f"Collisione a {run['seconds']:.2f} s" if it else f"Collision at {run['seconds']:.2f} s")
+                elif run['success'] and time>=run['seconds']:
+                    status=(f"Giro in {run['seconds']:.2f} s" if it else f"Lap in {run['seconds']:.2f} s")
                 else:
                     actual=min(time,run['times'][-1])
                     status=f't = {actual:.2f} s'
-                if not local:status=labels[name]+' · '+status
+                status=labels[name]+' · '+status
                 text.set_text(status)
             fig.canvas.draw()
-            if n==0 or (local and abs(time-6.1)<speed/fps/2):
-                fig.savefig(OUT/f'trajectory-{mode}-{lang}-poster.jpg',dpi=100,facecolor=fig.get_facecolor())
+            poster_time = 32. if stem=='trajectory-overlay' else 8.
+            if n==0 or (local and abs(time-6.1)<speed/fps/2) or (not local and abs(time-poster_time)<speed/fps/2):
+                fig.savefig(OUT/f'{stem}-{mode}-{lang}-poster.jpg',dpi=100,facecolor=fig.get_facecolor())
             pixels=np.asarray(fig.canvas.buffer_rgba())[:,:,:3]
             process.stdin.write(pixels.tobytes())
         process.stdin.close()

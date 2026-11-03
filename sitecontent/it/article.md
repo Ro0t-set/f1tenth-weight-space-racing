@@ -33,11 +33,14 @@ A Budapest si può isolare l’effetto sui numeri. Prendendo **la stessa scansio
 
 ## Le traiettorie prima e dopo, in movimento
 
-I due pannelli usano lo stesso intervallo di tempo e la stessa finestra sulla pista. Rosso per la PPO originale, verde per la copia con i pesi modificati. Quando l’originale si schianta, il suo ultimo stato registrato rimane fermo mentre la rete corretta prosegue.
+Le due traiettorie sono sovrapposte sulla stessa pista e sincronizzate sul tempo simulato. Rosso per la PPO originale, verde per la copia con i pesi modificati. Quando l’originale si schianta, il suo ultimo stato registrato rimane fermo mentre la rete corretta prosegue.
 
-<figure id="trajectory-comparison" class="study-figure"><video src="results/article/trajectory-corner-it.mp4" poster="results/article/trajectory-corner-it-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Confronto animato delle traiettorie prima e dopo la modifica dei pesi"></video><figcaption>La curva a metà velocità, da 5,20 a 7,80 secondi simulati. Le pose archiviate sono distanti 0,10 s. L’interpolazione serve soltanto a rendere fluida la visualizzazione. La posa dopo l’urto non è registrata.</figcaption></figure>
+<figure id="trajectory-comparison" class="study-figure"><video src="results/article/trajectory-corner-it.mp4" poster="results/article/trajectory-corner-it-poster.jpg" controls autoplay loop muted playsinline preload="metadata" aria-label="Confronto animato delle traiettorie prima e dopo la modifica dei pesi"></video><figcaption>La curva a metà velocità, da 5,20 a 7,80 secondi simulati. Le pose archiviate sono distanti 0,10 s. L’interpolazione serve soltanto a rendere fluida la visualizzazione. La posa dopo l’urto non è registrata.</figcaption></figure>
 
-<figure class="study-figure"><video src="results/article/trajectory-lap-it.mp4" poster="results/article/trajectory-lap-it-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Intero giro di Budapest con le due traiettorie sovrapposte"></video><figcaption>Il giro completo a velocità 4×. La PPO originale si arresta a 6,50 s, la rete corretta completa il giro in 47,13 s. Premi riproduci o apri il video a schermo intero.</figcaption></figure>
+<figure class="study-figure"><video src="results/article/trajectory-lap-it.mp4" poster="results/article/trajectory-lap-it-poster.jpg" controls autoplay loop muted playsinline preload="metadata" aria-label="Intero giro di Budapest con le due traiettorie sovrapposte"></video><figcaption>Il giro completo a velocità 4×. La PPO originale si arresta a 6,50 s, la rete corretta completa il giro in 47,13 s. Premi riproduci o apri il video a schermo intero.</figcaption></figure>
+
+
+<figure class="study-figure"><video src="results/article/trajectory-overlay-lap-it.mp4" poster="results/article/trajectory-overlay-lap-it-poster.jpg" controls autoplay loop muted playsinline preload="metadata" aria-label="Tre traiettorie sovrapposte a Sochi"></video><figcaption><strong>PPO originale contro rete scritta da zero.</strong> A Sochi, seed 73101, le tre auto partono dalla stessa posa. Rosso per la PPO originale, verde per la PPO modificata, blu per la rete geometrica finale costruita da zero. Il confronto è sincronizzato e accelerato 4×. Le auto incidentate restano all’ultima posa registrata.</figcaption></figure>
 
 ## Quanto conta lo sterzo e quanto la velocità?
 

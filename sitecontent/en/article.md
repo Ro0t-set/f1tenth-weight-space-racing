@@ -33,11 +33,14 @@ At Budapest we can isolate the numerical effect. Feeding **the same recorded sca
 
 ## Before and after, in motion
 
-The two panels share the same time window and track area. Red shows the original PPO, green the copy with edited weights. After the original crashes, its last recorded state stays frozen while the repaired policy continues.
+The trajectories share the same track view and simulation clock. Red shows the original PPO, green the copy with edited weights. After the original crashes, its last recorded state stays frozen while the repaired policy continues.
 
-<figure id="trajectory-comparison" class="study-figure"><video src="results/article/trajectory-corner-en.mp4" poster="results/article/trajectory-corner-en-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Animated comparison of recorded trajectories before and after the weight edit"></video><figcaption>The corner at half speed, from 5.20 to 7.80 simulated seconds. Recorded poses are 0.10 s apart. Interpolation only smooths the display. No post-impact pose was recorded.</figcaption></figure>
+<figure id="trajectory-comparison" class="study-figure"><video src="results/article/trajectory-corner-en.mp4" poster="results/article/trajectory-corner-en-poster.jpg" controls autoplay loop muted playsinline preload="metadata" aria-label="Animated comparison of recorded trajectories before and after the weight edit"></video><figcaption>The corner at half speed, from 5.20 to 7.80 simulated seconds. Recorded poses are 0.10 s apart. Interpolation only smooths the display. No post-impact pose was recorded.</figcaption></figure>
 
-<figure class="study-figure"><video src="results/article/trajectory-lap-en.mp4" poster="results/article/trajectory-lap-en-poster.jpg" controls loop muted playsinline preload="metadata" aria-label="Full Budapest lap with both recorded trajectories"></video><figcaption>The full lap at 4× speed. The original PPO stops at 6.50 s and the repaired network finishes in 47.13 s. Press play or open the video full-screen.</figcaption></figure>
+<figure class="study-figure"><video src="results/article/trajectory-lap-en.mp4" poster="results/article/trajectory-lap-en-poster.jpg" controls autoplay loop muted playsinline preload="metadata" aria-label="Full Budapest lap with both recorded trajectories"></video><figcaption>The full lap at 4× speed. The original PPO stops at 6.50 s and the repaired network finishes in 47.13 s. Press play or open the video full-screen.</figcaption></figure>
+
+
+<figure class="study-figure"><video src="results/article/trajectory-overlay-lap-en.mp4" poster="results/article/trajectory-overlay-lap-en-poster.jpg" controls autoplay loop muted playsinline preload="metadata" aria-label="Three overlapping recorded trajectories at Sochi"></video><figcaption><strong>Original PPO against a network written from scratch.</strong> At Sochi, seed 73101, all three cars start from the same pose. Red is the original PPO, green the edited PPO and blue the final geometric network written from scratch. The overlay is synchronized and accelerated 4×. Crashed cars freeze at their last recorded pose.</figcaption></figure>
 
 ## Separating steering from speed
 
