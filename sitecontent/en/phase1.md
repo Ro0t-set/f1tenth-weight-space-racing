@@ -56,3 +56,5 @@ Loading each checkpoint through PPO reproduces the evaluator’s actions exactly
 - [Weight generator](experiments/edit_weights.py)
 - [Final paired comparison](results/final_comparison.json)
 - [Checkpoint formula and checks](artifacts/clearance_cautious.json)
+
+[Original F1TENTH report PDF, in English](output/pdf/original-f1tenth-report.pdf)

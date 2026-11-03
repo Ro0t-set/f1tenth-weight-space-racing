@@ -1,0 +1,24 @@
+{
+  "title": "Autonomous Racing: Enhancing Performance through Reinforcement Learning and PPO",
+  "authors": [
+    "Manuel Andruccioli",
+    "Tommaso Patriti",
+    "Giacomo Totaro"
+  ],
+  "upstream_repository": "https://github.com/zucchero-sintattico/svs-f1tenth_gym",
+  "revision": "9381a13eec6b182ff38e4fba55a105cf94219da6",
+  "engine": "Tectonic 0.15.0",
+  "source_files_sha256": {
+    "index.tex": "ae709660112ce536478afd820dc3345a257347839bda850c0c40401b8cc9359a",
+    "IEEEtran.cls": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
+    "bibliography.bib": "6e78e42cd161147e611eced0623491145931c439609c79cde2eed8e16557e7ea",
+    "img/General + YasMarina Model.png": "29ee9887c10ec2b370bc24c02af2d85c54ce9bfedef05e3f018101aaf48ca238",
+    "img/ppo.jpg": "a4b439822f7c95bb33765d2fb0894109eb8a17f7f28112c9f7efa3fb46b5f305",
+    "img/YasMarinaModel.png": "652d8cb0103c7734547b6da6032b43f0c28db6d866b3ee6e024ef78d2d4bd986",
+    "img/GeneralModel.png": "8e5b8e07d14ad7aa95befe6dd33cca7a687062bbe102f2286b51635fab40f9b1",
+    "img/Speed Optimization YasMarina.png": "6d5613d0104b65c603b9ab95ec5a38d6ba7d01b26788deba8d1133530cbde420",
+    "img/rando_map_training_model.png": "fe86e16280e72464ef9f4a24dc89f110a373262b647f507b47ece12d48c1bb01"
+  },
+  "pdf_sha256": "434baec19f66b4de1c9198cfa8c9c2ce74029bf788cc1dbb84704b821554365e",
+  "pages": 5
+}

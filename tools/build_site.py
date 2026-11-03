@@ -95,7 +95,8 @@ def transform(html, lang, slug, output):
         url = urlsplit(unescape(raw))
         path = unquote(url.path)
         figure_link = tag == "a" and path.startswith("results/article/") and path.endswith(".svg") and not (url.scheme or url.netloc)
-        if tag in ("img", "video", "source") or figure_link:
+        pdf_link = tag == "a" and path.startswith("output/pdf/") and path.endswith(".pdf")
+        if tag in ("img", "video", "source") or figure_link or pdf_link:
             if url.scheme or url.netloc or path.startswith("/"):
                 raise ValueError(f"{slug} has a non-local image: {raw}")
             src = (ROOT / path).resolve()
@@ -105,7 +106,7 @@ def transform(html, lang, slug, output):
             dest = output / target
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(src, dest)
-            if figure_link:
+            if figure_link or pdf_link:
                 return f'<a href="{escape(relative(current, target))}"'
             if tag in ("video", "source"):
                 return f'<{tag} {attr}="{escape(relative(current, target))}"'

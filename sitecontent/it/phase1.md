@@ -56,3 +56,5 @@ Il caricamento PPO riproduce esattamente le azioni del valutatore su 128 osserva
 - [Generatore dei pesi](experiments/edit_weights.py)
 - [Confronto finale appaiato](results/final_comparison.json)
 - [Formula e verifiche del checkpoint](artifacts/clearance_cautious.json)
+
+[Relazione F1TENTH originale in PDF, in inglese](output/pdf/original-f1tenth-report.pdf)

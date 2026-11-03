@@ -73,3 +73,9 @@ Run `python tools/article_trajectory_video.py` with NumPy, Pillow, Matplotlib an
 Eseguire lo stesso comando per rigenerare le due lingue dai dati compatti. Il dettaglio della curva è a velocità 0,5×, il giro completo a 4×. L’interpolazione rende fluide le pose registrate ogni 0,1 secondi. L’auto incidentata si ferma all’ultima posa pre-azione disponibile. Tempi di collisione e completamento provengono dai risultati originali.
 
 Map data © contributors to the F1TENTH racetrack collection, revision `3f581789c749261ae36fc4fef19a81372acc3ecf`. [Map licence](results/article/track-map-COPYING.txt).
+
+## Original report PDF · Relazione originale in PDF
+
+Run bash tools/build_original_report.sh to compile the pinned upstream LaTeX report using Tectonic. The result is output/pdf/original-f1tenth-report.pdf. Source hashes and the published PDF digest are recorded in the adjacent provenance JSON.
+
+Lo stesso comando compila la relazione LaTeX del progetto originale. Il PDF pubblicato è in inglese e conserva autori e contenuto del sorgente.
